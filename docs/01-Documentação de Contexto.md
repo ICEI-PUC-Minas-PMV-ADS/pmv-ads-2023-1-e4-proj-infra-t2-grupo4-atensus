@@ -29,12 +29,14 @@ O objetivo geral deste projeto é tornar o atendimento mais eficiente e a diminu
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+É comum encontrar reportagens, entrevistas e artigos científicos tratando o problema de superlotação em hospitais públicos de pronto atendimento, uma questão que demanda de um esforço contínuo do Estado para seu tratamento e que se relacionam com várias questões como:  contratação de profissionais na área da saúde, melhores infraestruturas hospitalares nas cidades, aumento da população entre outros fatores.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+Mas como podemos minimizar esse problema? 
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Pensando neste cenário e visando uma melhor organização dos hospitais públicos de pronto atendimento, a ideia do projeto AtenSUS é de criar um sistema de pré-cadastro dos usuários com seus dados e informações complementares, onde já poderão ser direcionados para a triagem, diminuindo assim o tempo de espera para o atendimento e possivelmente a diminuição da lotação dos hospitais. 
+
+Um dos principais pontos da proposta é ter um cadastro geral do usuário e dados como: peso, sintomas principais e após o cadastro os usuários seriam direcionados para uma fila de atendimento. Com isso, seria possível diminuir também a lotação dos espaços, já que o paciente poderia chegar diretamente para a triagem e com as validações necessárias seria assim direcionado ao especialista disponível. 
+
 
 ## Público-Alvo
 
