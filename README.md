@@ -1,23 +1,26 @@
-# TÍTULO DO PROJETO
+# AtenSUS
 
-`CURSO`
+`Análise e Desenvolvimento de Sistemas`
 
 `DISCIPLINA`
 
-`SEMESTRE`
+`4º`
 
 Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* André Soares Alves da Silva
+* Eduardo Lucci Imakawa de andrade
+* Filipe Marques
+* Jonatas Tonin Coelho
+* Lívia Cristina Leite Nunes Silva
+* Paulo Vitor Pereira Rocha
+* Tiago Miquéias Viana Rodrigues
 
 ## Orientador
 
-* Nome completo do professor 1
+* Leonardo Vilela Cardoso
 
 ## Instruções de utilização
 
