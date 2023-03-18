@@ -79,15 +79,31 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| Os sistemas precisam permitir o cadastro de usuários | ALTA | 
+|RF-002| Os sistemas devem oferecer um campo para escolha da especialidade médica desejada. | MÉDIA |
+|RF-003| Os sistemas devem permitir ao usuário visualize seu lugar na fila para atendimento da triagem. | Baixa | 
+|RF-004| Os sistemas devem oferecer a opções para o usuário sair da fila de atendimento. | MÉDIA |
+|RF-005| Os sistemas devem apresentar uma lista de pessoas cadastradas para o atendimento | ALTA |
+|RF-006| Os sistemas devem permitir salvar e adicionar informações relevantes do estado de saúde dos usuários | ALTA |
+|RF-007| A aplicação deve permitir a geração de relatórios personalizados com base nos dados coletados sobre o paciente, como um resumo do histórico médico ou uma análise de tendências de indicadores de saúde. | BAIXA |
+
+ | Baixa | 
+|RF-006| Os sistemas devem oferecer a opções para o usuário sair da fila de atendimento. | MÉDIA |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| O site deve ser publicado em um ambiente acessível publicamente na Internet (Repl.it, GitHub Pages, Heroku) | MÉDIA | 
+|RNF-002| O site deverá ser responsivo permitindo a visualização em um celular de forma adequada | ALTA | 
+|RNF-003| O site deve ter bom nível de contraste entre os elementos da tela em conformidade  | MÉDIA | 
+|RNF-004| O site deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge) |  BAIXA |
+|RNF-005| Os sistemas precisam ser desenvolvidos usando uma API para acessar o banco de dados | ALTA | 
+|RNF-006| O aplicativo Mobile precisa ser desenvolvido em React Native e precisa ser responsivo.  |  ALTA |
+|RNF-007| Os sistemas devem ser seguros para proteger as informações de saúdes dos usuários | ALTA | 
+|RNF-008| As interfaces precisam ser intuitivas, permitindo que todos os usuários entendam seu funcionamento. |  ALTA |
+|RNF-009| O aplicativo deve estar em conformidade com as normas e regulamentos locais, regionais e nacionais em relação ao armazenamento, transmissão e privacidade de informações de saúde.  |  ALTA |
+
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
@@ -110,8 +126,9 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|01| O projeto deverá ser entregue no final do semestre letivo, não podendo extrapolar a data de 05/06/2023. |
+|02| O aplicativo deve se restringir ao desenvolvimento de demandas dos hospitais de pronto atendimento.    |
+|03| A equipe não pode subcontratar o desenvolvimento do trabalho.  |
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
