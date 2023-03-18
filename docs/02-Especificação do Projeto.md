@@ -10,8 +10,8 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 Definição do diagrama de personas:
 
-![Augusto dos Santos ](img/Augusto.jpg)           
-|Augusto dos Santos                                 | Aplicativos     |
+![Augusto dos Santos ]           
+|Augusto dos Santos    (img/Augusto.jpg)           | Aplicativos     |
 |--------------------------------------------------|-----------------|
 |Idade: 27                                         |Linkedin         |
 |Ocupação: Estudante de mestrado de Psicologia.        |Instagram        |
