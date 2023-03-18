@@ -10,11 +10,11 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 Definição do diagrama de personas:
 
-![Augusto dos Santos ]           
-|Augusto dos Santos    (img/Augusto.jpg)           | Aplicativos     |
+![Augusto dos Santos ] (img/Augusto.jpg)            
+|Augusto dos Santos                                | Aplicativos     |
 |--------------------------------------------------|-----------------|
 |Idade: 27                                         |Linkedin         |
-|Ocupação: Estudante de mestrado de Psicologia.        |Instagram        |
+|Ocupação: Estudante de mestrado de Psicologia.    |Instagram        |
 |**Motivações:** •	Ter disposição física e psicológica para a realização de atividades físicas.
 •	Ser referência no tratamento de doenças mentais no Brasil.
 |**Frustrações:** Por ser profissional da saúde, Augusto entende as limitações dos hospitais públicos e se frustra com as faltas de iniciativas dos Estados na melhoria dos atendimentos e tratamento da população. 
