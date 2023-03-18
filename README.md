@@ -6,7 +6,7 @@
 
 `4º`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O projeto tem como proposta agilizar e melhorar a forma de como são realizados a marcação de consulta, diminuir as filas enormes que se formam em portas de hospitais públicos e diminuir a espera por um atendimento médico. O projeto está sendo concentrado em disponibilizar uma forma em que o próprio paciente, marque a sua consulta, descreva seus sintomas e deixe alguma observação, como por exemplo pedido de exames ou até mesmo encaminhamento para outros profissionais. 
 
 ## Integrantes
 
