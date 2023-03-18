@@ -21,7 +21,7 @@ O objetivo geral deste projeto é tornar o atendimento mais eficiente e a diminu
 - Agilidade no atendimento nos prontos atendimentos;
 - Diminuição do tempo de espera;
 - Diminuição da lotação nos hospitais;
-- Melhor organização institucional;
+- Melhor organização institucional.
 
  
 > **Links Úteis**:
