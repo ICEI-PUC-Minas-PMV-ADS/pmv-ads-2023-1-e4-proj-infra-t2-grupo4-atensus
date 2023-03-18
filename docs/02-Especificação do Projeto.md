@@ -33,6 +33,19 @@ Definição do diagrama de personas:
 •	Não ser atendida no dia. 
 |**Hobbies, História:**	Dona Maria aposetanda por tempo de contribuição, 60 anos de idade, ela se preocupa muito com sua saúde, tem duas filhas, gosta de aproveitar a vida viajando e cuidar de sua família|
 
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e4-proj-infra-t2-grupo4-atensus/blob/main/docs/img/vanderlei_resized.jpg)
+
+|Vanderlei Souza                                   | Aplicativos     |
+|--------------------------------------------------|-----------------|
+|Idade: 56                                         |WhatsApp         |
+|Ocupação: Pedreiro, mestre de obras.              |Facebook         |
+|**Motivações:** • Cuidar da Saúde e ter disposição no trabalho	
+• Conseguir atender mais demansdas de obras e formar uma equipe	
+•Família.
+|**Frustrações:** •	Perder o dia de trabalho, pois estava no hospital
+•	Demorar para marcar exames e consultas. 
+|**Hobbies, História:**	Seu Vanderlei, mestre de obras, pai de 2 filhas, gosta muito do trabalho que faz mas também gosta de passar momentos com sua família aos finais de semana|
+
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
@@ -41,6 +54,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |--------------------|------------------------------------|----------------------------------------|
 |Augusto dos Santos  | Conseguir um atendimento médico de forma prática           | Para tratar problemas de saúde de forma eficaz              |
 |Maria Conceição     | conseguir um pronto socorro com atendimento ágil e organizado           | Perder menos tempo dentro do Pronto Socorro |
+|Vanderlei Souza     | Ter um atendimento rápido e preciso           | Economizar meu tempo em hospitais e postos de saúde |
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
