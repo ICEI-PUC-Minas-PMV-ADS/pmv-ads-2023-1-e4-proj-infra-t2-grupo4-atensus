@@ -8,7 +8,17 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+Definição do diagrama de personas:
+
+![Augusto dos Santos ](img/patricia.png)           
+|Augusto dos Santos                                 | Aplicativos     |
+|--------------------------------------------------|-----------------|
+|Idade: 27                                         |Linkedin         |
+|Ocupação: Estudante de mestrado de Psicologia.        |Instagram        |
+|**Motivações:** •	Ter disposição física e psicológica para a realização de atividades físicas.
+•	Ser referência no tratamento de doenças mentais no Brasil.
+ |**Frustrações:** Por ser profissional da saúde, Augusto entende as limitações dos hospitais públicos e se frustra com as faltas de iniciativas dos Estados na melhoria dos atendimentos e tratamento da população. 
+|**Hobbies, História:**	Augusto estuda durante a semana e faz trilhas de biclicleta nos finais de semana, gosta de passar um tempo com a família e possui muitos amigos onde costuma conversar nos bares de Belo Horizonte durante o final de domingo.|
 
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
