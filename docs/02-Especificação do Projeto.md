@@ -16,7 +16,7 @@ Definição do diagrama de personas:
 |Idade: 27                                         |Linkedin         |
 |Ocupação: Estudante de mestrado de Psicologia.        |Instagram        |
 |**Motivações:** •	Ter disposição física e psicológica para a realização de atividades físicas.
-•	Ser referência no tratamento de doenças mentais no Brasil.
+                 •	Ser referência no tratamento de doenças mentais no Brasil.
  |**Frustrações:** Por ser profissional da saúde, Augusto entende as limitações dos hospitais públicos e se frustra com as faltas de iniciativas dos Estados na melhoria dos atendimentos e tratamento da população. 
 |**Hobbies, História:**	Augusto estuda durante a semana e faz trilhas de biclicleta nos finais de semana, gosta de passar um tempo com a família e possui muitos amigos onde costuma conversar nos bares de Belo Horizonte durante o final de domingo.|
 
