@@ -46,6 +46,19 @@ Definição do diagrama de personas:
 •	Demorar para marcar exames e consultas. 
 |**Hobbies, História:**	Seu Vanderlei, mestre de obras, pai de 2 filhas, gosta muito do trabalho que faz mas também gosta de passar momentos com sua família aos finais de semana|
 
+![image](https://user-images.githubusercontent.com/91296105/226124304-a898840a-e76c-4aba-bafd-bd31135c473a.png)
+
+|Rosimere Silva                                    | Aplicativos     |
+|--------------------------------------------------|-----------------|
+|Idade: 58                                         |WhatsApp         |
+|Ocupação: Dona de casa.                           |Facebook         |
+|**Motivações:** •	Passar menos tempo em filas.
+•	Cuidar da saúde
+•	Ter mais tempo com os netos e família.
+|**Frustrações:** •	Ficar horas em uma fila esperando por atendimento médico.
+•	Perder o dia com a espera do atendimento e não poder aproveitar os netos.
+|**Hobbies, História:**	Dona Meire, é dona de casa e tem 4 filhos e 5 netos, é muito dificil reunir toda a família, mas quando reúne é só alegria e brincadeiras e principalmente muitas risadas.|
+
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
