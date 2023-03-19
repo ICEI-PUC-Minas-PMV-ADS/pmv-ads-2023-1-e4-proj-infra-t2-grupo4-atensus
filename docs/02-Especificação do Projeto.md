@@ -131,6 +131,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-005| Os sistemas devem apresentar uma lista de pessoas cadastradas para o atendimento | ALTA |
 |RF-006| Os sistemas devem permitir salvar e adicionar informações relevantes do estado de saúde dos usuários | ALTA |
 |RF-007| A aplicação deve permitir a geração de relatórios personalizados com base nos dados coletados sobre o paciente, como um resumo do histórico médico ou uma análise de tendências de indicadores de saúde. | BAIXA | 
+|RF-007| As aplicações precisam funcionar em qualquer lugar, desde que os aparelhos tenham acesso a internet. | ALTA |
+
 
 
 ### Requisitos não Funcionais
@@ -146,6 +148,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-007| Os sistemas devem ser seguros para proteger as informações de saúdes dos usuários | ALTA | 
 |RNF-008| As interfaces precisam ser intuitivas, permitindo que todos os usuários entendam seu funcionamento. |  ALTA |
 |RNF-009| O aplicativo deve estar em conformidade com as normas e regulamentos locais, regionais e nacionais em relação ao armazenamento, transmissão e privacidade de informações de saúde.  |  ALTA |
+|RNF-010| O aplicativo deve estar em conformidade com as normas e regulamentos locais, regionais e nacionais em relação ao armazenamento, transmissão e privacidade de informações de saúde.  |  ALTA |
+|RNF-011| O HTML do site deve ser escrito com tags que possibilitem a acessibilidade para pessoas com PcD  |  Média |
 
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
