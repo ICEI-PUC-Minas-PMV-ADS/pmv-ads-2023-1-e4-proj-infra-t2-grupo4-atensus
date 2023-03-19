@@ -78,6 +78,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Augusto dos Santos  | Conseguir um atendimento médico de forma prática           | Para tratar problemas de saúde de forma eficaz              |
 |Maria Conceição     | conseguir um pronto socorro com atendimento ágil e organizado           | Perder menos tempo dentro do Pronto Socorro |
 |Vanderlei Souza     | Ter um atendimento rápido e preciso           | Economizar meu tempo em hospitais e postos de saúde |
+|Rosimere Silva      | Ter um atendimento rápido, prático e sem fila de espera           | Resolver todos os problemas de saúde com rapidez e precisão, sem longas filas |
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
