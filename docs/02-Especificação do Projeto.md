@@ -76,7 +76,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
 |Augusto dos Santos  | Conseguir um atendimento médico de forma prática           | Para tratar problemas de saúde de forma eficaz              |
-|Maria Conceição     | conseguir um pronto socorro com atendimento ágil e organizado           | Perder menos tempo dentro do Pronto Socorro |
+|Maria Conceição     | Conseguir um pronto socorro com atendimento ágil e organizado           | Perder menos tempo dentro do Pronto Socorro |
 |Vanderlei Souza     | Ter um atendimento rápido e preciso           | Economizar meu tempo em hospitais e postos de saúde |
 |Rosimere Silva      | Ter um atendimento rápido, prático e sem fila de espera           | Resolver todos os problemas de saúde com rapidez e precisão, sem longas filas |
 
@@ -149,7 +149,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-007| Os sistemas devem ser seguros para proteger as informações de saúdes dos usuários | ALTA | 
 |RNF-008| As interfaces precisam ser intuitivas, permitindo que todos os usuários entendam seu funcionamento. |  ALTA |
 |RNF-009| O aplicativo deve estar em conformidade com as normas e regulamentos locais, regionais e nacionais em relação ao armazenamento, transmissão e privacidade de informações de saúde.  |  ALTA |
-|RNF-010| O aplicativo deve estar em conformidade com as normas e regulamentos locais, regionais e nacionais em relação ao armazenamento, transmissão e privacidade de informações de saúde.  |  ALTA |
+|RNF-010| O aplicativo deverá ter um tela de navegação com elementos bem definidos e uma navegabilidade bem fluída.  |  ALTA |
 |RNF-011| O HTML do site deve ser escrito com tags que possibilitem a acessibilidade para pessoas com PcD  |  Média |
 
 
