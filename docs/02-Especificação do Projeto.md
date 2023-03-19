@@ -112,10 +112,14 @@ Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em segu
 
 Apresente aqui os principais indicadores de desempenho e algumas metas para o processo. Atenção: as informações necessárias para gerar os indicadores devem estar contempladas no diagrama de classe. Colocar no mínimo 5 indicadores. 
 
-Usar o seguinte modelo: 
+| # |Indicador | Objetivos |  Descrição |  Cálculo | Fonte dados |  Perspectiva|  
+|---|-----------|----------|-------------|---------|------------|-----------------------|
+| 1 |  |  |  |  |  |  |
+| 2 | Qualidade do Aplicativo | Avaliar a eficácia do aplicativo | Percentual de avaliações realizadas em 5 estrelas | (Atendimento.5estrelas/Atendimento.Total)/100 | Pesquisa de Satisação | Melhoria de atendimento |
+| 3 | Eficiência | Avaliar a capacidade do programa nas realizações de taferas | Medir a velocidade de processamento de dados e de possíveis alterações que possam ser realizadas pelo paciênte | Horário de finalização - Horário em que a solicitação chega para um enfermeiro | Aplicação | Melhoria no Atendimento |
+| 4 |  |  |  |  |  |  |
+| 5 |   |   |  |  |   |   |
 
-![Indicadores de Desempenho](img/02-indic-desemp.png)
-Obs.: todas as informações para gerar os indicadores devem estar no diagrama de classe a ser apresentado a posteriori. 
 
 ## Requisitos
 
