@@ -100,15 +100,41 @@ Um dos principais pontos da proposta é ter um cadastro geral do usuário e dado
 
 Funcionalidades 
 
-Entrada de documentos pelos canais digitais; CPF Nome do paciente. 
+• Entrada de documentos pelos canais digitais; CPF Nome do paciente. 
 
-Uso em Aparelho Móvel ou Desktop e Terminal de atendimento na Recepção do hospital. 
+• Uso em Aparelho Móvel ou Desktop e Terminal de atendimento na Recepção do hospital. 
 
-Status do processo de análise reportado ao paciente através de canais digitais por push ou meios de comunicação como SMS e e-mail; 
+• Status do processo de análise reportado ao paciente através de canais digitais por push ou meios de comunicação como SMS e e-mail; 
 
-Modelo de regra de atendimento mais inteligente reportando pendencias e/ou inconsistência de documentos (Datas de Exames e Horário de Consultas) de forma rápida ao paciente; 
+• Modelo de regra de atendimento mais inteligente reportando pendencias e/ou inconsistência de documentos (Datas de Exames e Horário de Consultas) de forma rápida ao paciente; 
 
-Uso de documentos digitais disponibilizado por órgãos externos (Carteira de Vacinação e Exames feitos). 
+• Uso de documentos digitais disponibilizado por órgãos externos (Carteira de Vacinação e Exames feitos).
+
+
+
+ 
+| COPONENTES | DESCRIÇÃO | 
+| --- | --- | 
+|  Microservice | Componente responsável pela implementação e exposição de cada um dos contextos de negócio da solução | 
+| API | Componente que provê a integração entre as plataformas externas e os microservices. 
+|Api Gateway | Camada de autenticação, autorização e log responsável por recepcionar qualquer requisição externa à cloud. 
+|Tópicos pub/sub | Filas responsáveis por garantir a integridade dos dados e garantir o processamento mesmo em casos de falha. 
+|Provedores  |Componentes responsáveis por recepcionar dados vindos dos contextos de negócio e entregar ao dispositivo do cliente. 
+|Mainframe  |Plataforma legada e privada que fornece dados interface para os contextos financiamento e imóveis via integração com Web Service SOAP. 
+|Canais Digitais |Componente que provê interface para comunicação com os contextos de negócio. 
+
+
+
+ 
+ 
+
+
+  
+
+ 
+
+ 
+ 
 
 
 
