@@ -2,9 +2,19 @@
 
 <span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
+O objetivo geral deste projeto é tornar o atendimento mais eficiente e a diminuição do tempo de espera nos hospitais públicos, envolvendo assim: 
 
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+- Agilidade no atendimento nos prontos atendimentos; 
+
+- Diminuição do tempo de espera; 
+
+- Diminuição da lotação nos hospitais; 
+
+-  Melhor organização institucional; 
+
+- Controle da atuação médica nos hospitais. .
+
+
 
 ## Personas
 
