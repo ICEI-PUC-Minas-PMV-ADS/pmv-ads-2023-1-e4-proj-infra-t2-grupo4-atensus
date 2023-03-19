@@ -96,7 +96,29 @@ Um dos principais pontos da proposta é ter um cadastro geral do usuário e dado
 
 
 
-### Processo 1 – NOME DO PROCESSO
+### Processo 1 – DOCUMENTAÇÃO DA ARQUITETURA DISTRIBUIDA  
+
+Funcionalidades 
+
+Entrada de documentos pelos canais digitais; CPF Nome do paciente. 
+
+Uso em Aparelho Móvel ou Desktop e Terminal de atendimento na Recepção do hospital. 
+
+Status do processo de análise reportado ao paciente através de canais digitais por push ou meios de comunicação como SMS e e-mail; 
+
+Modelo de regra de atendimento mais inteligente reportando pendencias e/ou inconsistência de documentos (Datas de Exames e Horário de Consultas) de forma rápida ao paciente; 
+
+Uso de documentos digitais disponibilizado por órgãos externos (Carteira de Vacinação e Exames feitos). 
+
+
+
+
+
+
+
+
+
+
 
 Apresente aqui o nome e as oportunidades de melhorias para o processo 1. Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN. 
 
