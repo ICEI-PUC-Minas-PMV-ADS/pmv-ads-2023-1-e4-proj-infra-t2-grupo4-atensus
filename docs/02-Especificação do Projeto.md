@@ -131,7 +131,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-005| Os sistemas devem apresentar uma lista de pessoas cadastradas para o atendimento | ALTA |
 |RF-006| Os sistemas devem permitir salvar e adicionar informações relevantes do estado de saúde dos usuários | ALTA |
 |RF-007| A aplicação deve permitir a geração de relatórios personalizados com base nos dados coletados sobre o paciente, como um resumo do histórico médico ou uma análise de tendências de indicadores de saúde. | BAIXA | 
-|RF-008| Os sistemas devem oferecer a opções para o usuário sair da fila de atendimento. | MÉDIA |
+
 
 ### Requisitos não Funcionais
 
