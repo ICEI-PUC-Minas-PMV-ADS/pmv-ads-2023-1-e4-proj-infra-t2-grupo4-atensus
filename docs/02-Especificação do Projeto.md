@@ -115,8 +115,8 @@ Apresente aqui os principais indicadores de desempenho e algumas metas para o pr
 | # |Indicador | Objetivos |  Descrição |  Cálculo | Fonte dados |  Perspectiva|  
 |---|-----------|----------|-------------|---------|------------|-----------------------|
 | 1 |  |  |  |  |  |  |
-| 2 | Qualidade do Aplicativo | Avaliar a eficácia do aplicativo | Percentual de avaliações realizadas em 5 estrelas | (Atendimento.5estrelas/Atendimento.Total)/100 | Pesquisa de Satisação | Melhoria de atendimento |
-| 3 | Eficiência | Avaliar a capacidade do programa nas realizações de taferas | Medir a velocidade de processamento de dados e de possíveis alterações que possam ser realizadas pelo paciênte | Horário de finalização - Horário em que a solicitação chega para um enfermeiro | Aplicação | Melhoria no Atendimento |
+| 2 | Qualidade do Aplicativo | Avaliar as funcionalidades do aplicativo | Percentual de avaliações realizadas em 5 estrelas | (Atendimento.5estrelas/Atendimento.Total)/100 | Pesquisa de Satisação | Melhoria de atendimento |
+| 3 | Eficiência | Avaliar o desempenho do programa nas realizações de taferas | Medir a velocidade de processamento de dados | Horário de finalização - Horário em que a solicitação chega para um enfermeiro | Aplicação | Melhoria no Atendimento |
 | 4 |  |  |  |  |  |  |
 | 5 |   |   |  |  |   |   |
 
