@@ -86,11 +86,14 @@ Apresente aqui as histórias de usuário que são relevantes para o projeto de s
 
 ### Análise da Situação Atual
 
-Apresente aqui os problemas existentes que viabilizam sua proposta. Apresente o modelo do sistema como ele funciona hoje. Caso sua proposta seja inovadora e não existam processos claramente definidos, apresente como as tarefas que o seu sistema pretende implementar são executadas atualmente, mesmo que não se utilize tecnologia computacional. 
+Um dos principais pontos da proposta é ter um cadastro geral do usuário e dados como: peso, sintomas principais e após o cadastro os usuários seriam direcionados para uma fila de atendimento. Com isso, seria possível diminuir também a lotação dos espaços, já que o paciente poderia chegar diretamente para a triagem e com as validações necessárias seria assim direcionado ao especialista disponível.  
+ 
 
 ### Descrição Geral da Proposta
 
-Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias.
+ Visando uma melhor organização dos hospitais públicos de pronto atendimento, a ideia do projeto “atenSUS” é de criar um sistema de pré-cadastro dos usuários com seus dados e informações complementares, onde já poderão ser direcionados para a triagem, diminuindo assim o tempo de espera para o atendimento e possivelmente a diminuição da lotação dos hospitais.  
+
+
 
 ### Processo 1 – NOME DO PROCESSO
 
