@@ -28,3 +28,9 @@ Link do figma https://www.figma.com/file/P7NEHGc80tfkZTYS19bjON/Untitled?node-id
 <img width="550" alt="2" src="https://user-images.githubusercontent.com/62525275/226222475-6c1f6935-9424-4813-8240-9464fcc93663.png">
 <img width="367" alt="3" src="https://user-images.githubusercontent.com/62525275/226222478-af571a82-7e17-46b7-8a99-8bfd4d099584.png">
 
+Wireframes em Web
+Link do figma https://www.figma.com/file/P7NEHGc80tfkZTYS19bjON/Untitled?node-id=0%3A1&t=IFsfi8gFvY0Vt4MN-1
+
+<img width="619" alt="1" src="https://user-images.githubusercontent.com/62525275/226227297-6cf77770-78fd-4b4c-8a7b-f1ef24f2459a.png">
+<img width="363" alt="2" src="https://user-images.githubusercontent.com/62525275/226227299-c7149590-f834-4280-b52a-960dc6af0b63.png">
+<img width="321" alt="3" src="https://user-images.githubusercontent.com/62525275/226227301-3a223d86-493b-44d3-95f8-1abf1dde8e48.png">
