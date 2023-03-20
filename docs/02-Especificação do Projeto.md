@@ -212,13 +212,9 @@ Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Cla
  correspondem a uma funcionalidade que deve estar presente na
   plataforma (ex: cadastro de usuário).
 - [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+- Link da planilha em Excel https://sgapucminasbr-my.sharepoint.com/:x:/g/personal/1358638_sga_pucminas_br/EY3Nuv5flgBCsVoW1aAMjQEBkm-p_synbrXtilL6IzGucQ?e=XAG5Nz
+  <img width="802" alt="Screenshot_1" src="https://user-images.githubusercontent.com/62525275/226222279-c166f8f6-8e87-4ab4-bb47-3bca10abf70f.png">
+
 
 ## Restrições
 
