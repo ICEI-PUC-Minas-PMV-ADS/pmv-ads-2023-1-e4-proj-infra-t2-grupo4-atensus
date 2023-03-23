@@ -165,7 +165,7 @@ Apresente aqui os principais indicadores de desempenho e algumas metas para o pr
 | 1 |  |  |  |  |  |  |
 | 2 | Qualidade do Aplicativo | Avaliar as funcionalidades do aplicativo | Percentual de avaliações realizadas em 5 estrelas | (Atendimento.5estrelas/Atendimento.Total)/100 | Pesquisa de Satisação | Melhoria de atendimento |
 | 3 | Eficiência | Avaliar o desempenho do programa nas realizações de taferas | Medir a velocidade de processamento de dados | Horário de finalização - Horário em que a solicitação chega para um enfermeiro | Aplicação | Melhoria no Atendimento |
-| 4 | Tempo de Espera da Fila | Avaliar o tempo total de espera para o paciente ser atendido | Calcular o tempo de espera ate que o paciente seja atendido | Tempo de ciclo de espera = horário de entrada do paciente - horário de saida do paciente |  |  |
+| 4 | Tempo de Espera da Fila | Avaliar o tempo total de espera para o paciente ser atendido | Calcular o tempo de espera ate que o paciente seja atendido | Tempo de ciclo de espera = horário de entrada do paciente - horário de saida do paciente | Aplicação | Melhorar a agilidade no atendimento |
 | 5 |   |   |  |  |   |   |
 
 
