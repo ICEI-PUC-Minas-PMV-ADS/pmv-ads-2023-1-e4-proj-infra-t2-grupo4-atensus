@@ -185,9 +185,6 @@ Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Cla
  correspondem a uma funcionalidade que deve estar presente na
   plataforma (ex: cadastro de usuário).
 - [Requisitos Não Funcionais
-- Link da planilha em Excel https://sgapucminasbr-my.sharepoint.com/:x:/g/personal/1358638_sga_pucminas_br/EY3Nuv5flgBCsVoW1aAMjQEBkm-p_synbrXtilL6IzGucQ?e=XAG5Nz
-  <img width="802" alt="Screenshot_1" src="https://user-images.githubusercontent.com/62525275/226222279-c166f8f6-8e87-4ab4-bb47-3bca10abf70f.png">
-
 
 ## Restrições
 
@@ -222,11 +219,8 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de
 
 # Matriz de Rastreabilidade
 
-A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualização dos relacionamento entre requisitos e outros artefatos ou objetos, permitindo a rastreabilidade entre os requisitos e os objetivos de negócio. 
-
-A matriz deve contemplar todos os elementos relevantes que fazem parte do sistema, conforme a figura meramente ilustrativa apresentada a seguir.
-
-![Exemplo de matriz de rastreabilidade](img/02-matriz-rastreabilidade.png)
+- Link da planilha em Excel https://sgapucminasbr-my.sharepoint.com/:x:/g/personal/1358638_sga_pucminas_br/EY3Nuv5flgBCsVoW1aAMjQEBkm-p_synbrXtilL6IzGucQ?e=XAG5Nz
+  <img width="802" alt="Screenshot_1" src="https://user-images.githubusercontent.com/62525275/226222279-c166f8f6-8e87-4ab4-bb47-3bca10abf70f.png">
 
 > **Links Úteis**:
 > - [Artigo Engenharia de Software 13 - Rastreabilidade](https://www.devmedia.com.br/artigo-engenharia-de-software-13-rastreabilidade/12822/)
