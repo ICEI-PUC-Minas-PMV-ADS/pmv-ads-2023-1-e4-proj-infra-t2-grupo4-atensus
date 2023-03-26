@@ -123,10 +123,9 @@ Funcionalidades
 |Mainframe  |Plataforma legada e privada que fornece dados interface para os contextos financiamento e imóveis via integração com Web Service SOAP. 
 |Canais Digitais |Componente que provê interface para comunicação com os contextos de negócio. 
 
+### Processo 1 – Análise BPMN
 
 
-
-Análise BPMN
 ![image](https://user-images.githubusercontent.com/90860609/227785237-649f3279-41ab-4ad6-945f-8fed4fdee40d.png)
 
 
