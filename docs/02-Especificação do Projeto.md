@@ -125,36 +125,10 @@ Funcionalidades
 
 
 
- 
- 
 
+Análise BPMN
+![image](https://user-images.githubusercontent.com/90860609/227785237-649f3279-41ab-4ad6-945f-8fed4fdee40d.png)
 
-  
-
- 
-
- 
- 
-
-
-
-
-
-
-
-
-
-
-
-Apresente aqui o nome e as oportunidades de melhorias para o processo 1. Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN. 
-
-![Processo 1](img/02-bpmn-proc1.png)
-
-### Processo 2 – NOME DO PROCESSO
-
-Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em seguida, apresente o modelo do processo 2, descrito no padrão BPMN.
-
-![Processo 2](img/02-bpmn-proc2.png)
 
 ## Indicadores de Desempenho
 
