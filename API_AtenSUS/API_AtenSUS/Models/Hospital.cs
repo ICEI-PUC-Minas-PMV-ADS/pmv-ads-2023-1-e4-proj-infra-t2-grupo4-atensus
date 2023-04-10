@@ -7,11 +7,7 @@ namespace API_AtenSUS.Models
         [BsonId]
         [BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
         public string Id { get; set; } = null;
-        [BsonElement("Nome")]
-        public string Nome { get; set; } = null;
-               
-        [BsonElement("Endereco")]
-        public string Endereco { get; set; } = null;
+                               
 
         [BsonElement("EspecialidadeEncaminhada")]
         public string EspecialidadeEncaminhada { get; set; } = null;
