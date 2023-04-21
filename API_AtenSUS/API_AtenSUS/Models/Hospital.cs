@@ -10,13 +10,13 @@ namespace API_AtenSUS.Models
                                
 
         [BsonElement("EspecialidadeEncaminhada")]
-        public string EspecialidadeEncaminhada { get; set; } = null;
+        public string? EspecialidadeEncaminhada { get; set; }
 
         [BsonElement("Temperatura")]
-        public int Temperatura { get; set; }
+        public int? Temperatura { get; set; }
 
         [BsonElement("Sintomas")]
-        public string Sintomas { get; set; } = null;
+        public string? Sintomas { get; set; }
     }
 
 }

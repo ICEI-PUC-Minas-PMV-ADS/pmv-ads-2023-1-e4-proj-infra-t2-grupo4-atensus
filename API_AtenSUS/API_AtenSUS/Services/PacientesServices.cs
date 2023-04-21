@@ -34,5 +34,9 @@ namespace API_AtenSUS.Services
         public async Task RemoveAsync(string id) =>
             await _PacientesCollection.DeleteOneAsync(x => x.Id == id);
 
+        internal Task DeleteAsync(string? id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
