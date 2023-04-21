@@ -6,7 +6,7 @@ Relatório com as evidências dos testes de software realizados no sistema pela 
 
 Registro de teste de API (AspNetCore e Mongodb) - Banco de dados não relacinal. 
 
-![Exemplo de Diagrama de Fluxo](img/Teste_API_MONGO.mp4)
+Link do vídeo demonstrativo: https://youtu.be/ZhU3AOsayLc
 
 ## Avaliação
 
