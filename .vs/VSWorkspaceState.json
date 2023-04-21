@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\API_AtenSUS",
+    "\\API_AtenSUS\\API_AtenSUS",
+    "\\API_AtenSUS\\API_AtenSUS\\Controllers",
+    "\\API_AtenSUS\\API_AtenSUS\\Services"
+  ],
+  "SelectedNode": "\\API_AtenSUS\\API_AtenSUS\\Controllers\\PacientesController.cs",
+  "PreviewInSolutionExplorer": false
+}

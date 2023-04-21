@@ -1183,11 +1183,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\AtenSUS-Github\\API_AtenSUS\\API_AtenSUS\\API_AtenSUS.csproj",
+      "projectUniqueName": "C:\\Users\\tiago\\OneDrive\\Documentos\\AtenSUS-GITHUB\\API_AtenSUS\\API_AtenSUS\\API_AtenSUS.csproj",
       "projectName": "API_AtenSUS",
-      "projectPath": "D:\\AtenSUS-Github\\API_AtenSUS\\API_AtenSUS\\API_AtenSUS.csproj",
+      "projectPath": "C:\\Users\\tiago\\OneDrive\\Documentos\\AtenSUS-GITHUB\\API_AtenSUS\\API_AtenSUS\\API_AtenSUS.csproj",
       "packagesPath": "C:\\Users\\tiago\\.nuget\\packages\\",
-      "outputPath": "D:\\AtenSUS-Github\\API_AtenSUS\\API_AtenSUS\\obj\\",
+      "outputPath": "C:\\Users\\tiago\\OneDrive\\Documentos\\AtenSUS-GITHUB\\API_AtenSUS\\API_AtenSUS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
