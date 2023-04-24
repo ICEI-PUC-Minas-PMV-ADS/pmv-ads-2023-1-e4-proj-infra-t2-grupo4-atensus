@@ -21,6 +21,18 @@ Imagem de referência do Banco de dados Paciente:
 
 Sendo assim, o projeto também contempla a RNF-005- Os sistemas precisam ser desenvolvidos usando uma API para acessar o banco de dados	 
 
+## Justificativa e avaliação do modelo de dados NoSQL para o contexto da aplicação
+
+<span>No contexto da aplicação AtenSus, o modelo de dados NoSQL é escolha interessante e adequada para armazenar e gerenciar as informações de marcação de consultas e sintomas dos pacientes.
+
+O modelo NoSQL oferece flexibilidade na forma de armazenar e acessar os dados, o que é muito vantajoso em um cenário de constante evolução e mudanças nos dados, como no caso de registros de saúde dos pacientes. Além disso, muitos bancos de dados NoSQL são escaláveis horizontalmente e possuem recursos de alta disponibilidade e tolerância a falhas, o que é crucial em um contexto de saúde pública em que é essencial garantir que os pacientes tenham acesso rápido e eficiente aos serviços médicos.
+
+O exemplo de banco de dados NoSQL escolhido para a aplicação AtenSus é o MongoDB. Este banco de dados é conhecido por sua flexibilidade e escalabilidade, além de oferecer recursos de indexação e busca de texto completo, o que pode ser útil para a busca de informações em grandes volumes de dados.
+
+A escolha do modelo de dados NoSQL para a aplicação AtenSus foi avaliada cuidadosamente, levando em consideração fatores como a complexidade e natureza dos dados a serem armazenados, as necessidades de integração com outros sistemas, as habilidades e conhecimentos da equipe de desenvolvimento, entre outros aspectos.
+
+Portanto, é fundamental destacar que fora feita uma avaliação cuidadosa das necessidades e recursos disponíveis antes de optar pelo modelo NoSQL para a aplicação AtenSus.</span>
+
 > **Links Úteis**:
 >
 > - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
