@@ -7,9 +7,11 @@ A API do projeto ATENSUS foi desenvolvida com ASPNET.Core e MONGO DB, respeitand
 Para tal, foi desenvolvido um banco para receber os dados dos Pacientes (usuários), que poderão cadastrar seus dados para entrar em uma fila da triagem.
 
 ![Imagem do WhatsApp de 2023-04-23 à(s) 21 00 48](https://user-images.githubusercontent.com/90812412/233874664-c164de4e-0f46-42a8-aaca-aa1690b86271.jpg)
+![Imagem do WhatsApp de 2023-04-23 à(s) 21 01 34](https://user-images.githubusercontent.com/90812412/233875097-6f249c4c-f383-4408-addc-542b99fb2ec0.jpg)
 
 
 Obedecendo assim o requisito: RF-001 - Os sistemas precisam permitir o cadastro de usuários	e RF-005 - Os sistemas devem apresentar uma lista de pessoas cadastradas para o atendimento	.
+
 
 Além disso o banco compatibiliza com o requisito: RF-006- Os sistemas devem permitir salvar e adicionar informações relevantes do estado de saúde dos usuários	, uma vez que é posssível para o usuário cadastar seu estado de saúde e passará por uma validação do hospital onde registrará dados adicionais de saúde do mesmo, registrando assim, os dados no banco não relacional "hospital".
 
