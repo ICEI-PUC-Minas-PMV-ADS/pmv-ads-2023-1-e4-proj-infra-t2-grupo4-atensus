@@ -18,8 +18,8 @@ const Inicial = () => {
 
             <div className="Div_Textos">
                 <div className="Textos">
+                     <p>O sistema que você precisa para se manter em dia!</p>
                     <h1>Consulte e gerencie atendimentos <br />sem burocracia, fácil e rápido!</h1>
-                    <p>O sistema que você precisa para se manter em dia!</p>
                     <button className="Botao_Comece_Ja">
                         <h1>Comece já</h1>
                     </button>
