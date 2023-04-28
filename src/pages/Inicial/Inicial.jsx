@@ -1,7 +1,6 @@
 import './Inicial.css';
 import Medica from '../../assets/medica.png';
 import LogoAtensus from '../../assets/logo atensus.png';
-import LogoGerenciamento from '../../assets/gerenciamento logo.png'
 
 const Inicial = () => {
     return (
@@ -24,7 +23,6 @@ const Inicial = () => {
                         <h1>Comece já</h1>
                     </button>
                 </div>
-                <img src={LogoGerenciamento} className="Logo_Div" />
             </div>
 
             <div className="Bolinha" />
