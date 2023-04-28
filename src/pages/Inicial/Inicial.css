@@ -39,6 +39,7 @@
     width: 60%;
     margin-left: 20%;
     margin-top: 5%;
+    pointer-events: none;
 }
 
 .Div_Textos{
@@ -47,8 +48,7 @@
     margin-top: 10%;
     margin-right: 10%;
     background-color: #118FB8;
-    opacity: 89%;
-    border-radius: 3%;
+    border-radius: 5%;
     z-index: 1;
 }
 
@@ -59,7 +59,7 @@
 }
 
 .Textos h1 {
-    margin-top: 10%;
+    margin-bottom: 5%;
     color: white;
     background-color: transparent;
 }
@@ -67,7 +67,7 @@
 .Textos p {
     font-size: 18px;
     color: white;
-    margin-top: 6%;
+    margin-top: 10%;
     margin-bottom: 6%;
     background-color: transparent;
 }
@@ -77,7 +77,7 @@
     height: 50px;
     border: none;
     background-color:#c46464;
-    border-radius: 5%;
+    border-radius: 3%;
 }
 
 .Botao_Comece_Ja h1 {
