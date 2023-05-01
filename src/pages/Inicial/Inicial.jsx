@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Inicial.css';
 import Medica from '../../assets/medica.png';
 import LogoAtensus from '../../assets/logo atensus.png';
@@ -17,11 +18,13 @@ const Inicial = () => {
 
             <div className="Div_Textos">
                 <div className="Textos">
-                     <p>O sistema que você precisa para se manter em dia!</p>
+                    <p>O sistema que você precisa para se manter em dia!</p>
                     <h1>Consulte e gerencie atendimentos <br />sem burocracia, fácil e rápido!</h1>
-                    <button className="Botao_Comece_Ja">
+
+                    <Link to='/Login'><button className="Botao_Comece_Ja">
                         <h1>Comece já</h1>
-                    </button>
+                    </button> </Link>
+
                 </div>
             </div>
 
