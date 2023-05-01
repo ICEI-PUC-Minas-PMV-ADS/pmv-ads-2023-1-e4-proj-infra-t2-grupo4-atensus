@@ -1,5 +1,6 @@
 import React from 'react';
 import Inicial from './pages/Inicial/Inicial';
+import Login from './pages/Login/Login';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ReactDOM  from 'react-dom/client';
 
@@ -9,6 +10,7 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path='/' strict element={<Inicial />} />
+      <Route path='/Login' strict element={<Login />} />
     </Routes> 
   </BrowserRouter>
 
