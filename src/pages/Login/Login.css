@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.Principal1 {
+    display: flex;
+    width: 100%;
+    height: 500;
+}
