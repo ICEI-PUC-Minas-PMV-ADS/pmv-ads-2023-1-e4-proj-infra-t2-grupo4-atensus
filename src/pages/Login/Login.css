@@ -1,12 +1,127 @@
-* {
+*{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     background-color: #ffffff;
     overflow: hidden;
 }
 
-.Principal1 {
+.Principal {
     display: flex;
     width: 100%;
     height: 500;
+}
+
+.Cabecalho{
+    width: 100%;
+    height: 300px;
+
+}
+
+.Logo {
+    position: absolute;
+    width: 18%;
+    top: -60px;
+    z-index: 1;
+    pointer-events: none;
+    background-color: transparent;
+}
+
+.Imagem_Principal {
+    position: absolute;
+    width: 40%; 
+    pointer-events: none;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.Logo_Div{
+    background-color: transparent;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+.Div_Login{
+    width: 800px;
+    height: 430px;
+    margin-top: 10%;
+    margin-right: 10%;
+   
+   
+    
+}
+
+.Inputs1{     
+    width: 100%;
+    margin:auto;
+    text-align: center;
+
+}
+.Inputs2{
+    width: 100%;
+    margin:auto;
+}
+
+.Textos h1 {
+    margin-top: 10%;
+    color: white;
+    background-color: transparent;
+}
+
+.Textos p {
+    font-size: 18px;
+    color: white;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    background-color: transparent;
+}
+
+.Bolinha {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #c45c5c;
+    border-radius: 100%;
+    top: 30%;
+    left: -7%;
+}
+
+.Bolinha1 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color:#73c2ab;
+    border-radius: 100%;
+    top: 90%;
+    left: 10%;
+}
+
+.Bolinha2 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color:#c7bcba;
+    border-radius: 100%;
+    top: 95%;
+    left: 50%;
+}
+
+.Bolinha3 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color:#4d5e74;
+    border-radius: 100%;
+    top: 15%;
+    left:50%;
+}
+
+.Bolinha4 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color:#84ccb7;
+    border-radius: 100%;
+    top: 15%;
+    left: 95%;
 }
