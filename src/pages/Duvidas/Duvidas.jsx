@@ -34,37 +34,42 @@ const dataCollections = [
 ];
 
 function Accordion() {
+  const [accordion, setAccordion] = useState(-1);
 
-    const [accordion, setAccordion] = useState(-1);
-
-    function toogleAccordion(index) {
-        setAccordion(index);
-    }
+  function toggleAccordion(index) {
+    setAccordion(accordion === index ? -1 : index);
+  }
 
   return (
     <>
       <div className="container">
         <div>
-          <span className="accordion__title">Perguntas Frequentes</span>
+          <h1>Perguntas Frequentes</h1>
           <h1>Vamos responder algumas de suas perguntas</h1>
         </div>
         <div className="accordion__faq">
-            {dataCollections.map((item, index) => 
-                <div key={index} onClick={()=> toogleAccordion(index)}>
-                    <div className="accordion__faq-heading">
-                    <h3 className={accordion === index ? "active" : ""}>{item.questao}</h3>
-                    </div>
-                    <div>
-                          {accordion === index ? (<><span className="verticle">-</span></>) : (<><span className="verticle">+</span></>)}
-                        
-                    </div>
-                    <div>
-                        <p className={accordion === index ? "active" : "inactive"}>{item.resposta}</p>
-                    </div>
-                </div>
-            )}
+          {dataCollections.map((item, index) => (
+            <div key={index} onClick={() => toggleAccordion(index)}>
+              <div className="accordion__faq-heading">
+                <h3 className={accordion === index ? "active" : ""}>{item.questao}</h3>
+              </div>
+              <div>
+                {accordion === index ? (
+                  <span className="verticle" onClick={() => toggleAccordion(index)}>
+                    -
+                  </span>
+                ) : (
+                  <span className="verticle" onClick={() => toggleAccordion(index)}>
+                    +
+                  </span>
+                )}
+              </div>
+              <div>
+                <p className={accordion === index ? "active" : "inactive"}>{item.resposta}</p>
+              </div>
+            </div>
+          ))}
         </div>
-
       </div>
     </>
   );

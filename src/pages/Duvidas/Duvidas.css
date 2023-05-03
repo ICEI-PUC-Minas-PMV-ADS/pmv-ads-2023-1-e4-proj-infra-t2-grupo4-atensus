@@ -1,27 +1,19 @@
 :root {
     --background: #f2f5f7;
-    --text-primary: #2f4770;
+    --text-primary: #73c2ab;
     --text-secondary: #647780;
     --white: #ffffff;
+    --gray: #4d5e74;
 }
 
 body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-        sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    padding: 10px;
-    /* reduzido o valor do padding */
     background-color: var(--background);
 }
 
 .container {
     width: 100%;
-    /* alterado max-width para width */
-    max-width: 1140px;
-    margin: auto;
+    max-width: 1100px;
+    margin: 60px auto;
 }
 
 code {
@@ -34,8 +26,9 @@ code {
 h1 {
     font-size: 42px;
     color: var(--text-primary);
-    margin: 0px;
+    margin: 0;
     margin-bottom: 30px;
+    text-align: left;
 }
 
 .accordion-simple>.active {
@@ -49,9 +42,10 @@ h1 {
 .accordion__faq>div {
     background-color: var(--white);
     margin-bottom: 20px;
-    padding: 0px 15px;
+    padding: 0 15px;
     border-radius: 5px;
     cursor: pointer;
+    position: relative;
 }
 
 .accordion__title {
@@ -73,22 +67,33 @@ h1 {
 .accordion__faq-heading h3 {
     color: var(--text-secondary);
     font-weight: 600;
+    font-size: 24px;
 }
 
 .accordion__faq p {
-    margin: 0px;
+    margin: 0;
     padding-bottom: 30px;
     color: var(--text-secondary);
     line-height: 1.4;
+    font-size: 18px;
 }
 
-/* Adicionado regras para tornar o accordion responsivo */
-@media only screen and (max-width: 600px) {
-    .container {
-        padding: 5px;
-    }
+.accordion__faq-heading::after {
+    content: "";
+    font-size: 24px;
+    color: var(--text-secondary);
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
 
-    .accordion__faq>div {
-        padding: 10px;
-    }
+.accordion__faq-heading.active::after {
+    content: "-";
+}
+
+.accordion__faq-content {
+    padding: 20px;
+    overflow: hidden;
 }
