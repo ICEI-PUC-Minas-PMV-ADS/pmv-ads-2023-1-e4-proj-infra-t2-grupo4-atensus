@@ -23,7 +23,7 @@ const Login = () => {
     <div className='Inputs2'>
     <div className="Form">
       <input type="password" class="form-control"  placeholder="Digite a sua senha"></input>
-      <label for="FloatingPassword"> Digite a sua senha</label>
+      <label for="FloatingPassword"></label>
     </div>
     </div>
   <div class="mb-3form-check">
