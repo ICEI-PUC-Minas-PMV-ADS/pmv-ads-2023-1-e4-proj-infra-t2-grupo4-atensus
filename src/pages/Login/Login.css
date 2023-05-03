@@ -1,23 +1,19 @@
 *{
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #ffffff;
-    overflow: hidden;
+font-family: 'Montserrat', sans-serif;
 }
-
-.Principal {
-    display: flex;
+.Container{
+width: 100vw;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.Header{
     width: 100%;
-    height: 500;
+    height: 50px;
 }
-
-.Cabecalho{
-    width: 100%;
-    height: 300px;
-
-}
-
-.Logo {
+.Logo{
     position: absolute;
     width: 18%;
     top: -60px;
@@ -25,57 +21,53 @@
     pointer-events: none;
     background-color: transparent;
 }
-
-.Imagem_Principal {
-    position: absolute;
-    width: 40%; 
-    pointer-events: none;
-    background-color: transparent;
-    z-index: 1;
+.Container forms{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
-
-.Logo_Div{
-    background-color: transparent;
-    width: 60%;
-    margin-left: 20%;
-    margin-top: 5%;
+.Container forms .InputContainer{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column; 
 }
-
-.Div_Login{
-    width: 800px;
-    height: 430px;
-    margin-top: 10%;
-    margin-right: 10%;
-   
-   
-    
+.Container forms .InputContainer label{
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+margin-bottom: 10px;
 }
-
-.Inputs1{     
-    width: 100%;
-    margin:auto;
-    text-align: center;
-
+.Container forms .InputContainer input{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px;
+    width: 520px;
+    height: 49px;
+    border: 1px #118FB8;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    border-color: #118FB8;
 }
-.Inputs2{
-    width: 100%;
-    margin:auto;
-}
-
-.Textos h1 {
-    margin-top: 10%;
-    color: white;
-    background-color: transparent;
-}
-
-.Textos p {
+.Container forms .Button{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 300px;
+    height: 48px;
+    background-color: #118FB8;
+    border-radius: 12px;
     font-size: 18px;
-    color: white;
-    margin-top: 6%;
-    margin-bottom: 6%;
-    background-color: transparent;
+    line-height: 22px;  
+    color: #fff;  
 }
-
+.Container forms .Button:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
 .Bolinha {
     position: absolute;
     width: 200px;
@@ -112,15 +104,15 @@
     height: 200px;
     background-color:#4d5e74;
     border-radius: 100%;
-    top: 15%;
-    left:50%;
+    top: 85%;
+    left: 70%;
 }
 
 .Bolinha4 {
     position: absolute;
     width: 200px;
     height: 200px;
-    background-color:#84ccb7;
+    background-color:#118FB8;
     border-radius: 100%;
     top: 15%;
     left: 95%;
