@@ -21,7 +21,7 @@ const Inicial = () => {
                     <p>O sistema que você precisa para se manter em dia!</p>
                     <h1>Consulte e gerencie atendimentos <br />sem burocracia, fácil e rápido!</h1>
 
-                    <Link to='/Login'><button className="Botao_Comece_Ja">
+                    <Link to='/Duvidas'><button className="Botao_Comece_Ja">
                         <h1>Comece já</h1>
                     </button> </Link>
 
