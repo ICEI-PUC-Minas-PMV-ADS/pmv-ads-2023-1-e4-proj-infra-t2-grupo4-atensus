@@ -3,14 +3,14 @@
     --text-primary: #73c2ab;
     --text-secondary: #647780;
     --white: #ffffff;
-    --gray: #4d5e74;
+    --gray: #3c3c3c;
 }
 
 body {
     background-color: var(--background);
 }
 
-.container {
+.container_duvidas {
     width: 100%;
     max-width: 1100px;
     margin: 60px auto;
@@ -23,11 +23,19 @@ code {
 
 /* accordion styles */
 
-h1 {
+.text_question{
     font-size: 42px;
-    color: var(--text-primary);
+    color: #3c3c3c;
+    margin: 15;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.text_resposta{
+    font-size: 30px;
+    color: #3c3c3c;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-align: left;
 }
 
@@ -41,8 +49,9 @@ h1 {
 
 .accordion__faq>div {
     background-color: var(--white);
-    margin-bottom: 20px;
-    padding: 0 15px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    padding: 0 5px;
     border-radius: 5px;
     cursor: pointer;
     position: relative;
@@ -68,19 +77,20 @@ h1 {
     color: var(--text-secondary);
     font-weight: 600;
     font-size: 24px;
+    
 }
 
 .accordion__faq p {
     margin: 0;
-    padding-bottom: 30px;
+    padding-bottom: 80px;
     color: var(--text-secondary);
     line-height: 1.4;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .accordion__faq-heading::after {
     content: "";
-    font-size: 24px;
+    font-size: 30px;
     color: var(--text-secondary);
     position: absolute;
     right: 20px;
@@ -94,6 +104,7 @@ h1 {
 }
 
 .accordion__faq-content {
-    padding: 20px;
+    padding: 40px;
     overflow: hidden;
 }
+

@@ -42,10 +42,10 @@ function Accordion() {
 
   return (
     <>
-      <div className="container">
+      <div className="container_duvidas">
         <div>
-          <h1>Perguntas Frequentes</h1>
-          <h1>Vamos responder algumas de suas perguntas</h1>
+          <h1 className='text_question'>Perguntas Frequentes</h1>
+          <h1 className='text_resposta'>Vamos responder algumas de suas perguntas</h1>
         </div>
         <div className="accordion__faq">
           {dataCollections.map((item, index) => (
@@ -71,7 +71,15 @@ function Accordion() {
           ))}
         </div>
       </div>
-    </>
+
+      <div className="Bolinha" />
+      <div className="Bolinha1" />
+      <div className="Bolinha2" />
+      <div className="Bolinha3" />
+      <div className="Bolinha4" />
+</>
+
+    
   );
 }
 
