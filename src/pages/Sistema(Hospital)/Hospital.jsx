@@ -30,7 +30,7 @@ const Hospital = () => {
             </div>
 
             <div className="Texto_Inputs">
-                <h1>Sintomas</h1>
+                <h1 className="Titulo_Texto_Inputs">Sintomas</h1>
                 <input type='text' className="Input"></input>
                 <h1>Observação</h1>
                 <input type='text' className="Input"></input>
