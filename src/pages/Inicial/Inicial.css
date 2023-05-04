@@ -3,6 +3,11 @@
     font-family: 'Montserrat', sans-serif;
     background-color: #ffffff;
     overflow: hidden;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 .Principal {
@@ -59,7 +64,7 @@
     background-color: transparent;
 }
 
-.Textos h1 {
+.Titulo_Textos {
     margin-bottom: 6%;
     color: white;
     background-color: transparent;
