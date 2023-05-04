@@ -11,17 +11,17 @@ const Inicial = () => {
             </style>
 
             <div className="Cabecalho">
-                <img src={LogoAtensus} className="Logo" />
+                <img src={LogoAtensus} alt='Logo Atensus' className="Logo" />
             </div>
 
-            <img src={Medica} className="Imagem_Principal" />
+            <img src={Medica} alt='Médica' className="Imagem_Principal" />
 
             <div className="Div_Textos">
                 <div className="Textos">
                     <p>O sistema que você precisa para se manter em dia!</p>
-                    <h1>Consulte e gerencie atendimentos <br />sem burocracia, fácil e rápido!</h1>
+                    <h1 className="Titulo_Textos">Consulte e gerencie atendimentos <br />sem burocracia, fácil e rápido!</h1>
 
-                    <Link to='/Duvidas'><button className="Botao_Comece_Ja">
+                    <Link to='/Login'><button className="Botao_Comece_Ja">
                         <h1>Comece já</h1>
                     </button> </Link>
 
