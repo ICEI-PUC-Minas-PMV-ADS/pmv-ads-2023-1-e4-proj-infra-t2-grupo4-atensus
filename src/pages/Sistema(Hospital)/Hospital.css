@@ -34,12 +34,8 @@
     margin-left: 50%;
 }
 
-.Paciente h1, p {
-    display: inline;
-    background-color: transparent;
-}
-
 .Texto_Paciente {
+    display: inline;
     background-color: transparent;
     color: #118FB8;
     margin-right: 1%;
@@ -47,6 +43,7 @@
 }
 
 .Texto_Nome_Paciente {
+    display: inline;
     background-color: transparent;
     color: #3c3c3c;
     font-size: 25px;
@@ -61,7 +58,7 @@
     margin-left: 45%;
 }
 
-.Texto_Inputs h1 {
+.Titulo_Texto_Inputs {
     margin-right: 30%;
     font-size: 25px;
     color: #3c3c3c;
