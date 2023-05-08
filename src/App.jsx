@@ -3,6 +3,7 @@ import Inicial from './pages/Inicial';
 import Login from './pages/Login';
 import Hospital from './pages/Sistema(Hospital)';
 import Duvidas from './pages/Duvidas';
+import Cadastro from './pages/Cadastro';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
