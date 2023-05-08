@@ -4,8 +4,7 @@ import './Duvidas.css';
 const dataCollections = [
   {
     questao: "O que é o AtenSUS",
-    resposta:
-      "O AtenSUS é um aplicativo desenvolvido pelo grupo 4 do 4º semestre de Análise e Desenvolvimento de Sistemas da Universidade PUC MINAS, visando facilitar o agendamento de consultas de emergência em unidades de saúde do Sistema Único de Saúde (SUS).",
+    resposta: "O AtenSUS é um aplicativo desenvolvido pelo grupo 4 do 4º semestre de Análise e Desenvolvimento de Sistemas da Universidade PUC MINAS, visando facilitar o agendamento de consultas de emergência em unidades de saúde do Sistema Único de Saúde (SUS).",
   },
   { 
     questao: "Como funciona o agendamento pelo AtenSUS", 
@@ -63,6 +62,7 @@ function Accordion() {
                     +
                   </span>
                 )}
+
               </div>
               <div>
                 <p className={accordion === index ? "active" : "inactive"}>{item.resposta}</p>
@@ -72,11 +72,7 @@ function Accordion() {
         </div>
       </div>
 
-      <div className="Bolinha" />
-      <div className="Bolinha1" />
-      <div className="Bolinha2" />
-      <div className="Bolinha3" />
-      <div className="Bolinha4" />
+     
 </>
 
     
