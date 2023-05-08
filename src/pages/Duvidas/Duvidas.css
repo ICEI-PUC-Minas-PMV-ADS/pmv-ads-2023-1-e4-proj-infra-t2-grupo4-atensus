@@ -105,8 +105,57 @@ body {
     text-align: left;
     font-size: 1.5rem;
     color: var(--text-secondary);
-    margin-bottom: 30px;
-    
+    margin-bottom: 30px;    
+}
+
+.Bolinha_d {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #c45c5c;
+    border-radius: 100%;
+    top: 30%;
+    left: -7%;
+}
+
+.Bolinha_d1 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #73c2ab;
+    border-radius: 100%;
+    top: 90%;
+    left: 10%;
+}
+
+.Bolinha_d2 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #c7bcba;
+    border-radius: 100%;
+    top: 95%;
+    left: 50%;
+}
+
+.Bolinha_d3 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #4d5e74;
+    border-radius: 100%;
+    top: 95%;
+    right: 0%;
+}
+
+.Bolinha_d4 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #118FB8;
+    border-radius: 100%;
+    top: 15%;
+    left: 95%;
 }
 
 

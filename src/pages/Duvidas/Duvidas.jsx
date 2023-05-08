@@ -70,6 +70,12 @@ function Accordion() {
             </div>
           ))}
         </div>
+        <div className="Bolinha_d" />
+        <div className="Bolinha_d1" />
+        <div className="Bolinha_d2" />
+        <div className="Bolinha_d3" />
+        <div className="Bolinha_d4" />
+
       </div>
 
      
