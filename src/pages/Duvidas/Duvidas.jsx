@@ -3,11 +3,11 @@ import './Duvidas.css';
 
 const dataCollections = [
   {
-    questao: "O que é o AtenSUS",
+    questao: "O que é o AtenSUS? ",
     resposta: "O AtenSUS é um aplicativo desenvolvido pelo grupo 4 do 4º semestre de Análise e Desenvolvimento de Sistemas da Universidade PUC MINAS, visando facilitar o agendamento de consultas de emergência em unidades de saúde do Sistema Único de Saúde (SUS).",
   },
   { 
-    questao: "Como funciona o agendamento pelo AtenSUS", 
+    questao: "Como funciona o agendamento pelo AtenSUS? ", 
     resposta: "Para utilizar o aplicativo AtenSUS, o usuário deve primeiramente criar uma conta através do site ou aplicativo. Com a conta criada, o usuário poderá acessar a opção de agendamento de consultas de emergência. O aplicativo permite que o usuário escolha a unidade de saúde mais próxima e disponível para o atendimento de emergência, oferecendo uma seleção de unidades que atendem a sua localização e necessidade.", 
     },
     {

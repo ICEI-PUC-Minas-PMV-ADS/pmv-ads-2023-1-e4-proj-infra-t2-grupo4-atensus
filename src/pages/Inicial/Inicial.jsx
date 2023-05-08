@@ -3,6 +3,7 @@ import './Inicial.css';
 import Medica from '../../assets/medica.png';
 import LogoAtensus from '../../assets/logo atensus.png';
 
+
 const Inicial = () => {
     return (
         <div className="Principal">
@@ -23,6 +24,10 @@ const Inicial = () => {
 
                     <Link to='/Login'><button className="Botao_Comece_Ja">
                         <h1>Comece já</h1>
+                    </button> </Link>
+
+                    <Link to='/Duvidas'><button className="Botao_Comece_Ja">
+                        <h1>Duvidas</h1>
                     </button> </Link>
 
                 </div>
