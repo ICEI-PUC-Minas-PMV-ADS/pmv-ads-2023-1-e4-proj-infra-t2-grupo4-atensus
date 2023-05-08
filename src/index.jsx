@@ -15,6 +15,7 @@ root.render(
       <Route path='/Login' strict element={<Login />} />
       <Route path='/Hospital' strict element={<Hospital />} />
       <Route path='/Duvidas' strict element={<Duvidas />} />
+      <Route path='/Cadastro' strict element={<Cadastro />} />
     </Routes> 
   </BrowserRouter>
 
