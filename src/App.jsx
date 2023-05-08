@@ -18,6 +18,7 @@ export const App = () => {
                 <Route path ='/Login' exact element={<Login />} />
                 <Route path ='/Hospital' exact element={<Login />} />
                 <Route path ='/Duvidas' exact element={<Duvidas />} />
+                <Route path ='/Cadastro' exact element={<Cadastro />} />
 
             </Routes>
         </BrowserRouter>
