@@ -43,7 +43,7 @@ const Login = () => {
 
           <Link to="/Hospital"><button className="Button">Entrar</button></Link>
           <div className="footer">
-            <p> Não tem Cadastro? Registre-se aqui</p>
+            <p> Não tem Cadastro? <Link to='/Cadastro'>Registre-se aqui</Link></p>
           </div>
 
         </forms>
