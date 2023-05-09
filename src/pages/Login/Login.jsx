@@ -1,7 +1,7 @@
 import './Login.css';
 import LogoAtensus from '../../assets/logo atensus.png';
 import { Link } from 'react-router-dom';
-import Medico from '../../assets/medica.png';
+import Medico from '../../assets/medico.png';
 
 
 const Login = () => {
@@ -43,7 +43,7 @@ const Login = () => {
 
           <Link to="/Hospital"><button className="Button">Entrar</button></Link>
           <div className="footer">
-            <p> Não tem Cadastro? Registre-se aqui</p>
+           <Link to="/Cadastro"> <p> Não tem Cadastro? Registre-se aqui</p></Link>
           </div>
 
         </forms>
