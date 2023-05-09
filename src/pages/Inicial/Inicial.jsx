@@ -23,7 +23,7 @@ const Inicial = () => {
 
                     <Link to='/Login'><button className="Botao_Comece_Ja">
                         <h1>Comece já</h1>
-                    </button> </Link>                   
+                    </button> </Link>
 
                 </div>
             </div>
