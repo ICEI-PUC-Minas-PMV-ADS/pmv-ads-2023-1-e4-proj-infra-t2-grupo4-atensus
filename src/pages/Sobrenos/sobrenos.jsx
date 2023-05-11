@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import './Inicial.css';
-import Medica from '../../assets/medica.png';
 import LogoAtensus from '../../assets/logo atensus.png';
 
 
