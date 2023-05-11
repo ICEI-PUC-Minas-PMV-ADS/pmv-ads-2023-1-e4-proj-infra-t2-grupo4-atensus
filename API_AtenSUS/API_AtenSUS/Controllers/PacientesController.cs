@@ -35,6 +35,18 @@ namespace API_AtenSUS.Controllers
 
             return Ok(paciente);
         }
+        [HttpGet("{cpf:length(24)&senha:length(24)}")]
+        public async Task<IActionResult> GetLogin(string senha, string cpf)
+        {
+            var paciente = await _pacientesServices.GetAsync(id);
+
+            if (paciente == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(paciente);
+        }
 
         [HttpPost]
         public async Task<IActionResult> PostPacientes(Pacientes pacientes)

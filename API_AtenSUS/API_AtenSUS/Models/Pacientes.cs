@@ -14,16 +14,23 @@ namespace API_AtenSUS.Models
         [BsonElement("Idade")]
         public int Idade { get; set; }
 
-        [BsonElement("Altura")]
-        public double Altura { get; set; }
+        //[BsonElement("Altura")]
+        //public double Altura { get; set; }
 
-        [BsonElement("Peso")]
-        public double Peso { get; set; }
+        //[BsonElement("Peso")]
+        //public double Peso { get; set; }
 
         [BsonElement("Endereco")]
         public string Endereco { get; set; } = null;
 
-        [BsonElement("Sintomas")]
-        public string Sintomas { get; set; } = null;
+        //[BsonElement("Sintomas")]
+        //public string Sintomas { get; set; } = null;
+
+        [BsonElement("CPF")]
+        public string CPF { get; set; }
+
+        [BsonElement("Senha")]
+        public string Senha { get; set; }
     }
+
 }
