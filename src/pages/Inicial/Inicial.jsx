@@ -3,7 +3,9 @@ import './Inicial.css';
 import Medica from '../../assets/medica.png';
 import LogoAtensus from '../../assets/logo atensus.png';
 
+
 const Inicial = () => {
+
     return (
         <div className="Principal">
             <style>

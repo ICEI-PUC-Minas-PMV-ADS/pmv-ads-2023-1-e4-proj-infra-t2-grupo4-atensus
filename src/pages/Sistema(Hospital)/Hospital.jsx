@@ -1,7 +1,23 @@
 import './Hospital.css'
 import LogoAtensus from '../../assets/logo atensus.png';
+import { useEffect, useState } from 'react';
+import api from '../../lib/axios';
 
 const Hospital = () => {
+
+    const [paciente, setPaciente] = useState([]);
+   
+    async function  buscarDadosPaciente() {
+        const response = await api.get('/pacientes/645c2dfc937c38bb088c979d');
+        setPaciente(response.data);
+    }
+
+    useEffect(() =>{
+
+        buscarDadosPaciente();
+        
+    }, []);
+
     return (
         <div className="Principal2">
             <style>
@@ -16,9 +32,12 @@ const Hospital = () => {
                 <h1>Gerenciamento de pacientes</h1>
             </div>
 
-            <div className="Paciente">
-                <h1 className="Texto_Paciente">Paciente:</h1>
-                <p className="Texto_Nome_Paciente">Luiza Almeida</p>
+            <div className="Paciente">        
+            <h1 className="Texto_Paciente">Paciente:</h1>
+            <p className="Texto_Nome_Paciente">{paciente.nome}</p>
+            <pre></pre>
+            <h1 className="Texto_Paciente">CPF:</h1>
+            <p className="Texto_CPF_Paciente">{paciente.cpf}</p>
                 <form className="Especialidades" action="#">
                     <select name="Especialidades" id="lang">
                         <option value="Triagem">Triagem</option>

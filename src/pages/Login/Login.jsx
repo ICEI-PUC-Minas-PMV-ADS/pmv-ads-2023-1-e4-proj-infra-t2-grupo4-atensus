@@ -2,9 +2,26 @@ import './Login.css';
 import LogoAtensus from '../../assets/logo atensus.png';
 import { Link } from 'react-router-dom';
 import Medico from '../../assets/medico.png';
+import { useEffect, useState } from 'react';
+import api from '../../lib/axios';
+
 
 
 const Login = () => {
+    const [cpf, setCpf] = useState([]);
+    const [senha, setSenha] = useState([]);
+   
+    async function  LoginDadosPaciente() {
+        const response = await api.get('/pacientes/645c2dfc937c38bb088c979d');
+        setPaciente(response.data);
+    }
+
+    useEffect(() =>{
+
+        LoginDadosPaciente();
+        
+    }, []);
+
   return (
     <div className="Container">
       <style>
