@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.Principal {
+    display: flex;
+    width: 100%;
+    height: 500;
+}
+
+.Cabecalho{
+    width: 100%;
+    height: 300px;
+
+}
+
+.Logo {
+    position: absolute;
+    width: 18%;
+    top: -60px;
+    z-index: 1;
+    pointer-events: none;
+    background-color: transparent;
+}
+
+.Imagem_Principal {
+    position: absolute;
+    width: 40%; 
+    left: 3%;
+    pointer-events: none;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.Logo_Div{
+    background-color: transparent;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 5%;
+    pointer-events: none;
+}
+
+.Div_Textos{
+    width: 100%;
+    height: 400px;
+    margin-top: 12%;
+    margin-right: 10%;
+    border-radius: 30px;
+    background-color: #3c3c3c;
+    z-index: 1;
+}
+
+.Textos {
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+}
+
+.Titulo_Textos {
+    margin-bottom: 6%;
+    color: white;
+    background-color: transparent;
+}
+
+.Textos p {
+    font-size: 18px;
+    color: white;
+    margin-top: 14%;
+    margin-bottom: 5%;
+    background-color: transparent;
+}
+
+.Botao_Saiba_Mais{
+    width: 120px;
+    height: 50px;
+    border: none;
+    background-color:#73c2ab;
+    border-radius:10px;
+}
+
+.Botao_Saiba_Mais h1 {
+    font-size: 16px;
+    color: white;
+    background-color: transparent;
+    margin:auto;
+}
+
+.Bolinha {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #c45c5c;
+    border-radius: 100%;
+    top: 30%;
+    left: -7%;
+}
+
+.Bolinha1 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color:#73c2ab;
+    border-radius: 100%;
+    top: 90%;
+    left: 10%;
+}
+
+.Bolinha2 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color:#c7bcba;
+    border-radius: 100%;
+    top: 95%;
+    left: 50%;
+}
+
+.Bolinha3 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color:#73c2ab;
+    border-radius: 100%;
+    top: 90%;
+    left: 95%;
+}
+
+.Bolinha4 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color:#84ccb7;
+    border-radius: 100%;
+    top: 15%;
+    left: 95%;
+}
