@@ -1,0 +1,150 @@
+
+  
+.Container-Agendamento {
+    width: 100%;
+    height: auto;
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.Page-Title {
+    text-align: center;
+    margin: 0 auto !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Header-Agendamento {
+    width: 100%;
+    height: 100px;
+}
+
+.Logo {
+    position: absolute;
+    width: 18%;
+    top: -60px;
+    z-index: 1;
+    pointer-events: none;
+    background-color: transparent;
+}
+
+.Imagem_Principal3 {
+    position: absolute;
+    width: 45%;
+    left: 1%;
+    pointer-events: none;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.Container-Agendamento forms {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    background-color: transparent;
+}
+
+.Input-Field {
+    width: 25vw;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    font-size: 16px;
+    font-family: inherit;
+    background-color: #333;
+    color: white;
+}
+
+.Container-Agendamento forms .Input-Agendamento {
+    display: flex;
+    flex-direction: column;
+}
+
+.Container-Agendamento forms .Input-Agendamento label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 13px;
+
+}
+
+.Container-Agendamento forms .Input-Agendamento input {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    width: 35vw;
+    height: 10vh;
+    border-radius: 12px;
+    margin-bottom: 13px;
+    border: none;
+    background-color: #F1F1F1;
+}
+
+.Container-Agendamento forms .Input-Agendamento textarea {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    width: 35vw;
+    height: 10vh;
+    border-radius: 12px;
+    margin-bottom: 13px;
+    border: none;
+    background-color: #F1F1F1;
+}
+
+
+.Container-Agendamento forms .Button {
+
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 300px;
+    height: 48px;
+    background-color: #73c2ab;
+    border-radius: 12px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+  }
+  
+  .Container-Agendamento forms .ButtonCancel {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 150px;
+    height: 35px;
+    background-color: red;
+    border-radius: 12px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+  }
+  
+
+
+@media only screen and (max-width: 480px) {
+    .Logo {
+        width: 70%;
+    }
+
+    .Imagem_Principal3 {
+        display: none;
+    }
+
+}
