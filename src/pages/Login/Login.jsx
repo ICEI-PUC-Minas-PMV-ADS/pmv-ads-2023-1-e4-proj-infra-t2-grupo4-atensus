@@ -2,25 +2,23 @@ import './Login.css';
 import LogoAtensus from '../../assets/logo atensus.png';
 import { Link } from 'react-router-dom';
 import Medico from '../../assets/medico.png';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import api from '../../lib/axios';
 
-
-
 const Login = () => {
-    const [cpf, setCpf] = useState([]);
-    const [senha, setSenha] = useState([]);
-   
-    async function  LoginDadosPaciente() {
-        const response = await api.get('/pacientes/645c2dfc937c38bb088c979d');
-        setPaciente(response.data);
+  const [cpf, setCpf] = useState('');
+  const [senha, setSenha] = useState('');
+
+  async function handleLogin(event) {
+    event.preventDefault();
+    try {
+      const response = await api.get(`/pacientes/login?CPF=${cpf}&senha=${senha}`);
+      console.log(response.data);
+      // Redirecionar para página de Hospital
+    } catch (error) {
+      console.log(error);
     }
-
-    useEffect(() =>{
-
-        LoginDadosPaciente();
-        
-    }, []);
+  }
 
   return (
     <div className="Container">
@@ -37,33 +35,38 @@ const Login = () => {
       <h3> Entre ou Cadastre-se</h3>
 
       <div className="Div_Forms">
-        <forms>
+        <form onSubmit={handleLogin}>
           <div className="InputContainer">
             <label htmlFor="CPF">CPF</label>
             <input
               type="text"
-              Name="CPF"
-              Id="CPF"
+              name="CPF"
+              id="CPF"
+              value={cpf}
+              onChange={(event) => setCpf(event.target.value)}
               placeholder=" Ex: 856.457.857-86">
             </input>
           </div>
+         
 
           <div className="InputContainer">
             <label htmlFor="Password">Digite a sua Senha</label>
             <input
-              type="Password"
-              Name="Password"
-              Id="Password"
+              type="password"
+              name="Password"
+              id="Password"
+              value={senha}
+              onChange={(event) => setSenha(event.target.value)}
               placeholder="**********">
             </input>
           </div>
 
-          <Link to="/Hospital"><button className="Button">Entrar</button></Link>
+          
+          <button type="submit" className="Button">Entrar</button>
           <div className="footer">
            <Link to="/Cadastro"> <p> Não tem Cadastro? Registre-se aqui</p></Link>
           </div>
-
-        </forms>
+        </form>
       </div>
 
       <div className="Bolinha" />
@@ -71,10 +74,7 @@ const Login = () => {
       <div className="Bolinha2" />
       <div className="Bolinha3" />
       <div className="Bolinha4" />
-
     </div>
-
-
   )
 }
 
