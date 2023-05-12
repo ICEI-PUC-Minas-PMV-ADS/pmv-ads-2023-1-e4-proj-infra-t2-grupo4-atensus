@@ -17,8 +17,8 @@ const Agendamento = () => {
                     <label htmlFor="Consulta">Escolha a especialidade</label>
                     <select name="Consulta" id="Consulta" className='Input-Field'>
                         {opcoesTriagem.map((opcao) => (
-                            <option style={{color: 'black'}} key={opcao} value={opcao}>
-                                {opcao}
+                            <option style={{color: 'black'}} key={opcao.value} value={opcao.value}>
+                                {opcao.name}
                             </option>
                         ))}
                     </select>

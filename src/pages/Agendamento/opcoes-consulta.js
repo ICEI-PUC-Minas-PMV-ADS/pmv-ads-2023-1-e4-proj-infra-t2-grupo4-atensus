@@ -1,19 +1,12 @@
 const opcoesTriagem = [
-    "Dor de cabeça",
-    "Febre",
-    "Tosse",
-    "Dor de garganta",
-    "Dificuldade para respirar",
-    "Perda do olfato ou paladar",
-  ];
+  { name: "Triagem simples", value: 1 },
+  { name: "Triagem avançada", value: 2 },
+  { name: "Triagem contínua integrada", value: 3 },
+  { name: "Triagem prática aplicada", value: 4 },
+  { name: "Etiquetagem", value: 5 },
+];
+
+
   
-  const opcoesAcompanhamento = [
-    "Consulta médica",
-    "Exame de sangue",
-    "Exame de imagem",
-    "Acompanhamento domiciliar",
-    "Internação hospitalar",
-  ];
-  
-  export { opcoesTriagem, opcoesAcompanhamento };
+  export { opcoesTriagem };
   
