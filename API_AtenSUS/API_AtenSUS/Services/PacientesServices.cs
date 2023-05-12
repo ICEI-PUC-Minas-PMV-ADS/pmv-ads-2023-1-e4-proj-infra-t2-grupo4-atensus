@@ -1,38 +1,43 @@
 ﻿using API_AtenSUS.Models;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace API_AtenSUS.Services
 {
     public class PacientesServices
     {
-        private readonly IMongoCollection<Pacientes> _PacientesCollection; //Nome aleatório
+        private readonly IMongoCollection<Pacientes> _pacientesCollection;
 
-        public PacientesServices(IOptions<PacientesDatabaseSettings> pacientesServices) { //O nome dado é o mesmo da class, porém com p minúsculo
-           
-            var mongoClient = new MongoClient(pacientesServices.Value.ConnectionString);
-            var mongoDatabase = mongoClient.GetDatabase(pacientesServices.Value.DatabaseName);
+        public PacientesServices(IOptions<PacientesDatabaseSettings> pacientesDatabaseSettings)
+        {
+            var client = new MongoClient(pacientesDatabaseSettings.Value.ConnectionString);
+            var database = client.GetDatabase(pacientesDatabaseSettings.Value.DatabaseName);
 
-            _PacientesCollection = mongoDatabase.GetCollection<Pacientes>
-                (pacientesServices.Value.PacientesCollectionName);
+            _pacientesCollection = database.GetCollection<Pacientes>(pacientesDatabaseSettings.Value.PacientesCollectionName);
         }
 
-        //Criação de métodos async da API, Get, Create, Update e Delete
-
-        public async Task<List<Pacientes>> GetAsync() =>
-            await _PacientesCollection.Find(x => true).ToListAsync();
+        public async Task<List<Pacientes>> GetAsync(string cpf, string senha) =>
+            await _pacientesCollection.Find(x => true).ToListAsync();
 
         public async Task<Pacientes> GetAsync(string id) =>
-            await _PacientesCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
+            await _pacientesCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
 
-        public async Task CreateAsync(Pacientes pacientes) =>
-            await _PacientesCollection.InsertOneAsync(pacientes);
+        public async Task CreateAsync(Pacientes paciente) =>
+            await _pacientesCollection.InsertOneAsync(paciente);
 
-        public async Task UpdateAsync(string id, Pacientes pacientes) =>
-            await _PacientesCollection.ReplaceOneAsync(x => x.Id == id, pacientes);
+        public async Task UpdateAsync(string id, Pacientes pacienteIn) =>
+            await _pacientesCollection.ReplaceOneAsync(x => x.Id == id, pacienteIn);
+
+        public async Task RemoveAsync(Pacientes pacienteIn) =>
+            await _pacientesCollection.DeleteOneAsync(x => x.Id == pacienteIn.Id);
 
         public async Task RemoveAsync(string id) =>
-            await _PacientesCollection.DeleteOneAsync(x => x.Id == id);
+            await _pacientesCollection.DeleteOneAsync(x => x.Id == id);
+
+        public async Task<List<Pacientes>> GetByQueryAsync(string cpf, string senha) =>
+            await _pacientesCollection.Find(p => p.CPF == cpf && p.Senha == senha).ToListAsync();
 
         internal Task DeleteAsync(string? id)
         {
@@ -40,3 +45,4 @@ namespace API_AtenSUS.Services
         }
     }
 }
+

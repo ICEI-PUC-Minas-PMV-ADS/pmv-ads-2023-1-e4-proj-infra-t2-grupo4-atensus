@@ -16,13 +16,7 @@ namespace API_AtenSUS.Controllers
             _pacientesServices = pacientesServices;
         }
 
-        //Adição dos métodos
-        //Adicionado rota de comprimento do id para 24 caracteres
-        //Isso garante que o ID tenha o formato correto antes de ser usado para acessar o banco de dados.
-        //POST, é retornado um código de status 201 Created com um cabeçalho Location que aponta para a URL do recurso recém-criado.
-        //PUT, é verificado se o paciente com o ID fornecido existe e, em seguida, é chamado o método UpdateAsync para atualizar os dados.
-        //DELETE, também é verificado se o paciente com o ID fornecido existe e, em seguida, é chamado o método DeleteAsync para removê-lo do banco de dados.
-
+     
         [HttpGet("{id:length(24)}")]
         public async Task<IActionResult> GetPacientes(string id)
         {
@@ -35,10 +29,23 @@ namespace API_AtenSUS.Controllers
 
             return Ok(paciente);
         }
-        [HttpGet("{cpf:length(24)&senha:length(24)}")]
-        public async Task<IActionResult> GetLogin(string senha, string cpf)
+        //[HttpGet("{cpf:length(24)&senha:length(24)}")]
+        // public async Task<IActionResult> GetLogin(string senha, string cpf)
+        //{
+        // var paciente = await _pacientesServices.GetAsync();
+
+        //if (paciente == null)
+        //{
+        //  return NotFound();
+        // }
+
+        //return Ok(paciente);
+        //}
+
+        [HttpGet("login")]
+        public async Task<IActionResult> GetLogin(string CPF, string senha)
         {
-            var paciente = await _pacientesServices.GetAsync(id);
+            var paciente = await _pacientesServices.GetAsync(CPF, senha);
 
             if (paciente == null)
             {
@@ -47,6 +54,7 @@ namespace API_AtenSUS.Controllers
 
             return Ok(paciente);
         }
+
 
         [HttpPost]
         public async Task<IActionResult> PostPacientes(Pacientes pacientes)
@@ -85,6 +93,8 @@ namespace API_AtenSUS.Controllers
 
             return NoContent();
         }
+
+
 
     }
 
