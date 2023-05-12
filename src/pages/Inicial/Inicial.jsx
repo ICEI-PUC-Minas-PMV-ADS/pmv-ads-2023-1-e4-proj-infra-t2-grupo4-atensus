@@ -27,6 +27,9 @@ const Inicial = () => {
                         <h1>Comece já</h1>
                     </button> </Link>
 
+                    <Link to='/Agendamento'><button className="Botao_Agendamento">
+                    <h3>Fazer Agendamento</h3>
+                </button> </Link>
                 </div>
             </div>
 

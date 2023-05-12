@@ -56,6 +56,7 @@
     border-radius: 30px;
     background-color: #3c3c3c;
     z-index: 1;
+    
 }
 
 .Textos {
@@ -92,6 +93,28 @@
     background-color: transparent;
     margin:auto;
 }
+
+.Botao_Agendamento{
+    width: 120px;
+    height: 50px;
+    border: none;
+    background-color:#73c2ab;
+    border-radius:10px;
+
+}
+
+.Botao_Agendamento h3 {
+    font-size: 14px;
+    color: white;
+    background-color: transparent;
+    margin:auto;
+}
+
+.Botao_Comece_Ja, .Botao_Agendamento {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px; /* opcional para separar um pouco os botões */
+  }
 
 .Bolinha {
     position: absolute;

@@ -9,7 +9,7 @@ const Agendamento = () => {
                 <img src={LogoAtensus} className='Logo'></img>
             </header>
             <div className='Page-Title'>
-                <h1>Agenda sua Consulta!</h1>
+                <h1>Agende sua Consulta!</h1>
             </div>
             <br />
             <forms>
