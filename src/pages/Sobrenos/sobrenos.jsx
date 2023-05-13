@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './Inicial.css';
+import './sobrenos.css';
 import LogoAtensus from '../../assets/logo atensus.png';
 
 
@@ -43,4 +43,4 @@ const Inicial = () => {
     )
 }
 
-export default Inicial;
+export default sobrenos;
