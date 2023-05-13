@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './Cadastro.css';
 import LogoAtensus from '../../assets/logo atensus.png';
 import MedicaCadastro from '../../assets/medicaCadastro.png';
+import { useNavigate } from 'react-router-dom';
 
 const Cadastro = () => {
   const [formData, setFormData] = useState({
@@ -14,6 +15,8 @@ const Cadastro = () => {
     CPF: '',
     Senha: ''
   });
+
+  const navigate = useNavigate();
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -32,6 +35,7 @@ const Cadastro = () => {
     .then(response => response.json())
     .then(data => {
       console.log(data);
+      navigate('/login');
     })
     .catch(error => {
       console.error(error);
@@ -104,6 +108,7 @@ const Cadastro = () => {
             placeholder="Sintomas"
             onChange={handleInputChange}
           />
+
         </div>
         <div className='Input-Cadastro'>
           <label htmlFor="CPF">CPF</label>
@@ -114,16 +119,6 @@ const Cadastro = () => {
             placeholder="CPF"
             onChange={handleInputChange}
             /> 
-          </div>
-        <div className='Input-Cadastro'>
-          <label htmlFor="Senha">Cadastrar Senha</label>
-          <input
-            type="password"
-            name="Senha"
-            id="Senha"
-            placeholder="Cadastre a sua senha"
-            onChange={handleInputChange}
-          />
         </div>
 
         <button type="submit" className="Button">Cadastrar</button>
