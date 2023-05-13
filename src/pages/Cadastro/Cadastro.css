@@ -59,7 +59,7 @@
 
 
 .Container-Cadastro form .Input-Cadastro input {
-    width: 100%;
+    width: 250px;
     padding: 10px;
     margin-bottom: 20px;
     border: none;
@@ -72,4 +72,26 @@
 .Container-Cadastro form .Input-Cadastro input:focus {
     outline: none;
     background-color: #e6e6e6;
+}
+
+.Container-Cadastro form .Button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 220px;
+    height: 38px;
+    background-color: #73c2ab;
+    border-radius: 12px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+}
+
+.Container-Cadastro form .Button:hover {
+    opacity: 0.9;
+    cursor: pointer;
 }
