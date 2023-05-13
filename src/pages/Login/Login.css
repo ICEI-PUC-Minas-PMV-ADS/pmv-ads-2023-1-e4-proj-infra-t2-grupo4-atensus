@@ -23,7 +23,7 @@
 
 .Imagem_Principal2 {
     position: absolute;
-    width: 33%; 
+    width: 33%;
     left: 9%;
     pointer-events: none;
     background-color: transparent;
@@ -38,41 +38,39 @@ h3 {
     margin-left: 26%;
 }
 
-.Container forms {
+.Container form {
     display: flex;
     align-items: center;
     flex-direction: column;
-    
 }
 
-.Container forms .InputContainer {
+.Container form .InputContainer {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
 }
 
-.Container forms .InputContainer label {
+.Container form .InputContainer label {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     margin-bottom: 10px;
 }
 
-.Container forms .InputContainer input {
+.Container form .InputContainer input {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 16px;
-    width: 520px;
-    height: 40px;
+    width: 480px;
+    height: 30px;
     border: 1px #118FB8;
     border-radius: 12px;
     margin-bottom: 10px;
-    border-color: #118FB8;
     background-color: #F1F1F1;
 }
 
-.Container forms .Button {
+.Container form .Button {
     margin-top: 30px;
     margin-bottom: 30px;
     display: flex;
@@ -89,7 +87,7 @@ h3 {
     color: #fff;
 }
 
-.Container forms .Button:hover {
+.Container form .Button:hover {
     opacity: 0.9;
     cursor: pointer;
 }
