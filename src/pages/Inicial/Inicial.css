@@ -16,10 +16,13 @@
     height: 500;
 }
 
+a {
+    background-color: transparent;
+}
+
 .Cabecalho{
     width: 100%;
     height: 300px;
-
 }
 
 .Logo {
@@ -100,7 +103,15 @@
     border: none;
     background-color:#73c2ab;
     border-radius:10px;
+}
 
+.Botao_Duvidas {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    font-size: 8px;
+    top: 3%;
+    left: 90%;
 }
 
 .Botao_Agendamento h3 {
