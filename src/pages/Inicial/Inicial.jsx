@@ -18,6 +18,11 @@ const Inicial = () => {
 
             <img src={Medica} alt='Médica' className="Imagem_Principal" />
 
+            <Link to='/Duvidas'><button className="Botao_Duvidas">
+                <h1>Dúvidas</h1>
+            </button> 
+            </Link>
+
             <div className="Div_Textos">
                 <div className="Textos">
                     <p>O sistema que você precisa para se manter em dia!</p>
@@ -28,10 +33,13 @@ const Inicial = () => {
                     </button> </Link>
 
                     <Link to='/Agendamento'><button className="Botao_Agendamento">
-                    <h3>Fazer Agendamento</h3>
-                </button> </Link>
+                        <h3>Agendamento</h3>
+                    </button> </Link>
+
                 </div>
+
             </div>
+
 
             <div className="Bolinha" />
             <div className="Bolinha1" />
