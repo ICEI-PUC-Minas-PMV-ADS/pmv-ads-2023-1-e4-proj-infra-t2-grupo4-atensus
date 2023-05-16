@@ -1,9 +1,7 @@
-﻿using API_AtenSUS.Models;
+using API_AtenSUS.Models;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-
+ 
 namespace API_AtenSUS.Services
 {
     public class PacientesServices
@@ -20,6 +18,9 @@ namespace API_AtenSUS.Services
 
         public async Task<List<Pacientes>> GetAsync(string cpf, string senha) =>
             await _pacientesCollection.Find(x => true).ToListAsync();
+
+        public async Task<Pacientes> GetPaciente(string cpf, string senha) =>
+           await _pacientesCollection.Find(x => x.CPF.Equals(cpf)).FirstOrDefaultAsync();
 
         public async Task<Pacientes> GetAsync(string id) =>
             await _pacientesCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
@@ -45,4 +46,3 @@ namespace API_AtenSUS.Services
         }
     }
 }
-
