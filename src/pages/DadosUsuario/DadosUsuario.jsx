@@ -22,7 +22,6 @@ const DadosUsuario = ({ route }) => {
     Altura: '',
     Peso: '',
     Endereco: '',
-    Sintomas: '',
     CPF: '',
     Senha: ''
   });
@@ -122,17 +121,6 @@ const DadosUsuario = ({ route }) => {
             placeholder="Rua, Nº, Bairro, Cidade/Estado"
             onChange={handleInputChange}
           />
-        </div>
-        <div className='Input-Cadastro'>
-          <label htmlFor="Sintomas">Sintomas</label>
-          <input
-            type="text"
-            name="Sintomas"
-            id="Sintomas"
-            placeholder="Sintomas"
-            onChange={handleInputChange}
-          />
-
         </div>
         <div className='Input-Cadastro'>
           <label htmlFor="CPF">CPF</label>
