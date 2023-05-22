@@ -100,12 +100,12 @@ const Cadastro = () => {
           />
         </div>
         <div className='Input-Cadastro'>
-          <label htmlFor="Sintomas">Sintomas</label>
+          <label htmlFor="Senha">Senha</label>
           <input
             type="text"
-            name="Sintomas"
-            id="Sintomas"
-            placeholder="Sintomas"
+            name="Senha"
+            id="Senha"
+            placeholder="Senha"
             onChange={handleInputChange}
           />
 
