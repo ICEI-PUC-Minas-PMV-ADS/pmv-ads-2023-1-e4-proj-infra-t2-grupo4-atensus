@@ -1177,24 +1177,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tiago\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Adalberto Valadares\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tiago\\OneDrive\\Documentos\\AtenSUS-GITHUB\\API_AtenSUS\\API_AtenSUS\\API_AtenSUS.csproj",
+      "projectUniqueName": "F:\\repos\\pmv-ads-2023-1-e4-proj-infra-t2-grupo4-atensus\\API_AtenSUS\\API_AtenSUS\\API_AtenSUS.csproj",
       "projectName": "API_AtenSUS",
-      "projectPath": "C:\\Users\\tiago\\OneDrive\\Documentos\\AtenSUS-GITHUB\\API_AtenSUS\\API_AtenSUS\\API_AtenSUS.csproj",
-      "packagesPath": "C:\\Users\\tiago\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tiago\\OneDrive\\Documentos\\AtenSUS-GITHUB\\API_AtenSUS\\API_AtenSUS\\obj\\",
+      "projectPath": "F:\\repos\\pmv-ads-2023-1-e4-proj-infra-t2-grupo4-atensus\\API_AtenSUS\\API_AtenSUS\\API_AtenSUS.csproj",
+      "packagesPath": "C:\\Users\\Adalberto Valadares\\.nuget\\packages\\",
+      "outputPath": "F:\\repos\\pmv-ads-2023-1-e4-proj-infra-t2-grupo4-atensus\\API_AtenSUS\\API_AtenSUS\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\tiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Adalberto Valadares\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1202,7 +1197,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1249,7 +1244,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
