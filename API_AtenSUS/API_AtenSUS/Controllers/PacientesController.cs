@@ -71,7 +71,7 @@ namespace API_AtenSUS.Controllers
         }
 
         [HttpPut("atualizar")]
-        public async Task<IActionResult> PutPacientes(Pacientes pacienteIn)
+        public async Task<IActionResult> PutPacientes([FromBody]  Pacientes pacienteIn)
         {
 
             await _pacientesServices.UpdateAsync(pacienteIn);
