@@ -47,7 +47,7 @@ namespace API_AtenSUS.Controllers
         [HttpPost]
         public async Task<IActionResult> PostPacientes(Pacientes pacientes)
         {
-            pacientes.Senha = pacientes.CPF;
+            //  pacientes.Senha = pacientes.CPF;
             await _pacientesServices.CreateAsync(pacientes);
 
 
@@ -65,10 +65,22 @@ namespace API_AtenSUS.Controllers
                 return NotFound();
             }
 
-            await _pacientesServices.UpdateAsync(id, pacienteIn);
+            // await _pacientesServices.UpdateAsync(id, pacienteIn);
 
-            return NoContent();
+            return Ok(paciente);
         }
+
+        [HttpPut("atualizar")]
+        public async Task<IActionResult> PutPacientes(Pacientes pacienteIn)
+        {
+
+            await _pacientesServices.UpdateAsync(pacienteIn);
+            return Ok(pacienteIn);
+
+            // return CreatedAtAction(nameof(GetPacientes), new { id = pacienteIn.Id }, );
+        }
+
+
 
         [HttpDelete("{id:length(24)}")]
         public async Task<IActionResult> DeletePacientes(string id)

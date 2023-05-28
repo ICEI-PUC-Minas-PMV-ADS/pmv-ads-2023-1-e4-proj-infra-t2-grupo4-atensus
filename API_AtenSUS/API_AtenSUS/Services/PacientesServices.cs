@@ -28,8 +28,8 @@ namespace API_AtenSUS.Services
         public async Task CreateAsync(Pacientes paciente) =>
             await _pacientesCollection.InsertOneAsync(paciente);
 
-        public async Task UpdateAsync(string id, Pacientes pacienteIn) =>
-            await _pacientesCollection.ReplaceOneAsync(x => x.Id == id, pacienteIn);
+        public async Task UpdateAsync(Pacientes pacienteIn) =>
+           await _pacientesCollection.ReplaceOneAsync(x => x.Id == pacienteIn.Id, pacienteIn);
 
         public async Task RemoveAsync(Pacientes pacienteIn) =>
             await _pacientesCollection.DeleteOneAsync(x => x.Id == pacienteIn.Id);
