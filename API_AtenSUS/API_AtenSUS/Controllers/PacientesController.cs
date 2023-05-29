@@ -71,13 +71,10 @@ namespace API_AtenSUS.Controllers
         }
 
         [HttpPut("atualizar")]
-        public async Task<IActionResult> PutPacientes([FromBody]  Pacientes pacienteIn)
+        public async Task<IActionResult> PutPacientes([FromBody] Pacientes pacienteIn)
         {
-
             await _pacientesServices.UpdateAsync(pacienteIn);
             return Ok(pacienteIn);
-
-            // return CreatedAtAction(nameof(GetPacientes), new { id = pacienteIn.Id }, );
         }
 
 
