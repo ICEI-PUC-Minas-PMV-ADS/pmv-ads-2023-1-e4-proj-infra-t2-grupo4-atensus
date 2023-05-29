@@ -97,6 +97,7 @@ export const styles = StyleSheet.create({
     fontSize: 20,
     color: '#73c2ab',
     marginBottom: 10,
+    marginTop: 40,
   },
   text_resposta: {
     textAlign: 'left',
@@ -162,3 +163,5 @@ export const styles = StyleSheet.create({
     color: '#ffffff', 
   },
 });
+
+
