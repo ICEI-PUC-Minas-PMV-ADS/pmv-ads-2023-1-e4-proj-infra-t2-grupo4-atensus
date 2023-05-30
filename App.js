@@ -6,6 +6,8 @@ import TelaInicial from './Pages/Agendamentos(Cliente)/index';
 import Fila from './Pages/Agendamentos(Cliente)/indexFila';
 import Agendar from './Pages/Agendamentos(Cliente)/indexAgendar';
 
+import IndexDuvidas from './Pages/Duvidas/indexDuvidas'
+
 
 export default function App() {
 
