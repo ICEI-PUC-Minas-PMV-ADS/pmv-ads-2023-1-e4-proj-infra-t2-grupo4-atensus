@@ -1,24 +1,31 @@
-import React from "react";
+import { React } from "react";
 import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+import { StatusBar } from "expo-status-bar";
+import Agendar from "./indexAgendar";
+import Fila from "./indexFila";
 
 
+export default function TelaInicial() {
 
-export default function IndexBoasVindas() {
+    const navigation = useNavigation();
+
     return (
 
         <View style={styles.container}>
+            <StatusBar backgroundColor='#61c2a1' barStyle='dark-content' />
 
             <Text style={styles.textoBemVindo}>Seja bem-vindo @user</Text>
             <Text style={styles.escolherServico}>Escolha um serviço</Text>
-            <TouchableOpacity style={styles.botaoAgendar}>
+            <TouchableOpacity style={styles.botaoAgendar} onPress={() => navigation.navigate('Agendar', { screen: 'Agendar' })}>
                 <Text style={styles.textoAgendar}>Agendar</Text>
             </TouchableOpacity>
             <Text style={styles.explicarAgendar}>É permitido apenas um atendimento por pessoa.</Text>
-            <TouchableOpacity style={styles.botaoPosicao} onPress={() => navigation.navigate('LoginRoutes', {screen: 'Login'})}>
+            <TouchableOpacity style={styles.botaoPosicao} onPress={() => navigation.navigate('Fila', { screen: 'Fila' })}>
                 <Text style={styles.textoFila}>Posição na fila</Text>
             </TouchableOpacity>
             <Text style={styles.explicarFila}>Consulte sua posição no agendamento ativo.</Text>
-            <Image style={styles.imagemLogo}source={require('../../assets/logo.png')}></Image>
+            <Image style={styles.imagemLogo} source={require('../../assets/logo.png')}></Image>
 
             <View style={styles.bolinha}></View>
             <View style={styles.bolinha1}></View>
@@ -44,7 +51,7 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: 700
     },
-    escolherServico:{
+    escolherServico: {
         marginTop: '18%',
         fontSize: 15,
         fontWeight: 700
