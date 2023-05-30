@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, ScrollView } from 'react-native';
-import { StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, ScrollView, StyleSheet  } from 'react-native';
+
 
 
 const dataCollections = [
