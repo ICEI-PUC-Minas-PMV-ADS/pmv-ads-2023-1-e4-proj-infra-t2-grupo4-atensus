@@ -20,10 +20,6 @@ export default function TelaInicial() {
             <TouchableOpacity style={styles.botaoAgendar} onPress={() => navigation.navigate('Agendar', { screen: 'Agendar' })}>
                 <Text style={styles.textoAgendar}>Agendar</Text>
             </TouchableOpacity>
-
-            <TouchableOpacity style={styles.botaoAgendar} onPress={() => navigation.navigate('Agendar', { screen: 'Agendar' })}>
-                <Text style={styles.textoAgendar}>Agendamentos</Text>
-            </TouchableOpacity>
             <Text style={styles.explicarAgendar}>É permitido apenas um atendimento por pessoa.</Text>
             <TouchableOpacity style={styles.botaoPosicao} onPress={() => navigation.navigate('Fila', { screen: 'Fila' })}>
                 <Text style={styles.textoFila}>Posição na fila</Text>
