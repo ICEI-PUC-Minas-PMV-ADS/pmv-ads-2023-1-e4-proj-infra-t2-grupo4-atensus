@@ -10,6 +10,7 @@ import AgendamentoHospital from './Pages/Agendamentos(Hospital)/indexAgendamento
 import GerenciamentoPaciente from './Pages/Agendamentos(Hospital)/indexGerir';
 
 import IndexDuvidas from './Pages/Duvidas/indexDuvidas'
+import Duvidas from './Pages/Duvidas/indexDuvidas';
 
 
 export default function App() {

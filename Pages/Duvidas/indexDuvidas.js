@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, ScrollView, StyleSheet  } from 'react-native';
+import { React } from "react";
+import { View, Text, TouchableOpacity, ScrollView, StyleSheet } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 
+export default function Duvidas() {
 
-const dataCollections = [
+  const navigation = useNavigation();
+
+  const dataCollections = [
   {
     questao: "O que é o AtenSUS? ",
     resposta: "O AtenSUS é um aplicativo desenvolvido pelo grupo 4 do 4º semestre de Análise e Desenvolvimento de Sistemas da Universidade PUC MINAS, visando facilitar o agendamento de consultas de emergência em unidades de saúde do Sistema Único de Saúde (SUS).",
@@ -34,50 +38,51 @@ const dataCollections = [
   },
 ];
 
-function Accordion() {
-  const [accordion, setAccordion] = useState(-1);
+  function Accordion() {
+    const [accordion, setAccordion] = useState(-1);
 
-  function toggleAccordion(index) {
-    setAccordion(accordion === index ? -1 : index);
-  }
+    function toggleAccordion(index) {
+      setAccordion(accordion === index ? -1 : index);
+    }
 
-  return (
-    <View style={styles.container}>
-      <View style={styles.container_duvidas}>
-        <Text style={styles.text_question}>Perguntas Frequentes</Text>
-        <Text style={styles.text_resposta}>Vamos responder algumas de suas perguntas</Text>
-        <ScrollView style={styles.scrollView}>
-          <View style={styles.accordion__faq}>
-            {dataCollections.map((item, index) => (
-              <TouchableOpacity
-                key={index}
-                onPress={() => toggleAccordion(index)}
-                style={styles.accordion__faqItem}
-              >
-                <View style={styles.accordion__faqHeading}>
-                  <Text style={[styles.questao, accordion === index && styles.active]}>{item.questao}</Text>
-                </View>
-                <View style={styles.respostaContainer}>
-                  {accordion === index ? (
-                    <Text style={styles.verticle} onPress={() => toggleAccordion(index)}>
-                      -
+    return (
+      <View style={styles.container}>
+        <View style={styles.container_duvidas}>
+          <Text style={styles.text_question}>Perguntas Frequentes</Text>
+          <Text style={styles.text_resposta}>Vamos responder algumas de suas perguntas</Text>
+          <ScrollView style={styles.scrollView}>
+            <View style={styles.accordion__faq}>
+              {dataCollections.map((item, index) => (
+                <TouchableOpacity
+                  key={index}
+                  onPress={() => toggleAccordion(index)}
+                  style={styles.accordion__faqItem}
+                >
+                  <View style={styles.accordion__faqHeading}>
+                    <Text style={[styles.questao, accordion === index && styles.active]}>{item.questao}</Text>
+                  </View>
+                  <View style={styles.respostaContainer}>
+                    {accordion === index ? (
+                      <Text style={styles.verticle} onPress={() => toggleAccordion(index)}>
+                        -
+                      </Text>
+                    ) : (
+                      <Text style={styles.verticle} onPress={() => toggleAccordion(index)}>
+                        +
+                      </Text>
+                    )}
+                    <Text style={[styles.text_resposta, accordion === index ? styles.active : styles.inactive]}>
+                      {item.resposta}
                     </Text>
-                  ) : (
-                    <Text style={styles.verticle} onPress={() => toggleAccordion(index)}>
-                      +
-                    </Text>
-                  )}
-                  <Text style={[styles.text_resposta, accordion === index ? styles.active : styles.inactive]}>
-                    {item.resposta}
-                  </Text>
-                </View>
-              </TouchableOpacity>
-            ))}
-          </View>
-        </ScrollView>
+                  </View>
+                </TouchableOpacity>
+              ))}
+            </View>
+          </ScrollView>
+        </View>
       </View>
-    </View>
-  );
+    );
+  }
 }
 
 
@@ -161,7 +166,7 @@ export const styles = StyleSheet.create({
     flex: 1,
     fontSize: 14, 
     color: '#ffffff', 
-  },
-});
+  }
+})
 
 
