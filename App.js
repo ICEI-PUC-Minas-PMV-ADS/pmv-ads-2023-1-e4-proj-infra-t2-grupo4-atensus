@@ -26,6 +26,8 @@ export default function App() {
         <Stack.Screen name="Agendar" component={Agendar} options={{ headerShown: false, gestureEnabled: false }} />
         <Stack.Screen name="AgendamentoHospital" component={AgendamentoHospital} options={{ headerShown: false, gestureEnabled: false }} />
         <Stack.Screen name="GerenciamentoPaciente" component={GerenciamentoPaciente} options={{ headerShown: false, gestureEnabled: false }} />
+        <Stack.Screen name="Duvidas" component={Duvidas} options={{ headerShown: false, gestureEnabled: false }} />
+
 
       </Stack.Navigator>
     </NavigationContainer>

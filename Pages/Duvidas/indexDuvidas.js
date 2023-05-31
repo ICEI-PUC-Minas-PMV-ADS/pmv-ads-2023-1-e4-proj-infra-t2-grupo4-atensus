@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, ScrollView } from 'react-native';
+import { View, Text, TouchableOpacity, ScrollView, StatusBar } from 'react-native';
 import { StyleSheet } from 'react-native';
-
+import { useNavigation } from '@react-navigation/native';
 
 const dataCollections = [
   {
@@ -43,6 +43,7 @@ function Accordion() {
 
   return (
     <View style={styles.container}>
+      <StatusBar backgroundColor='#61c2a1' barStyle='dark-content' />
       <View style={styles.container_duvidas}>
         <Text style={styles.text_question}>Perguntas Frequentes</Text>
         <Text style={styles.text_resposta}>Vamos responder algumas de suas perguntas</Text>
@@ -57,33 +58,28 @@ function Accordion() {
                 <View style={styles.accordion__faqHeading}>
                   <Text style={[styles.questao, accordion === index && styles.active]}>{item.questao}</Text>
                 </View>
-                <View style={styles.respostaContainer}>
-                  {accordion === index ? (
-                    <Text style={styles.verticle} onPress={() => toggleAccordion(index)}>
-                      -
-                    </Text>
-                  ) : (
-                    <Text style={styles.verticle} onPress={() => toggleAccordion(index)}>
-                      +
-                    </Text>
-                  )}
-                  <Text style={[styles.text_resposta, accordion === index ? styles.active : styles.inactive]}>
-                    {item.resposta}
-                  </Text>
-                </View>
+                {accordion === index && (
+                  <View style={styles.respostaContainer}>
+                    <Text style={styles.resposta}>{item.resposta}</Text>
+                  </View>
+                )}
               </TouchableOpacity>
             ))}
           </View>
+          <TouchableOpacity style={styles.botaoCancelar} onPress={() => navigation.navigate('TelaInicial', { screen: 'TelaInicial' })}>
+                <Text style={styles.textoCancelar}>Voltar</Text>
+          </TouchableOpacity>
         </ScrollView>
+        
       </View>
     </View>
   );
 }
 
-
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#ffffff',
   },
   container_duvidas: {
     flex: 1,
@@ -94,7 +90,7 @@ export const styles = StyleSheet.create({
   },
   text_question: {
     textAlign: 'left',
-    fontSize: 20,
+    fontSize: 30,
     color: '#73c2ab',
     marginBottom: 10,
     marginTop: 40,
@@ -112,10 +108,9 @@ export const styles = StyleSheet.create({
     marginBottom: 20,
   },
   accordion__faqItem: {
-    backgroundColor: '#3c3c3c',
-    color: '#ffffff',
+    backgroundColor: '#2a2a2a',
     borderRadius: 10,
-    padding: 20,
+    padding: 10,
     marginBottom: 20,
     shadowColor: '#3d3c3c',
     shadowOffset: { width: 0, height: 2 },
@@ -126,7 +121,6 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: '#3c3c3c',
     paddingHorizontal: 10,
     paddingVertical: 5,
   },
@@ -136,25 +130,11 @@ export const styles = StyleSheet.create({
     color: '#ffffff', 
     textAlign: 'left',
     margin: 0,
-    backgroundColor: '#3c3c3c',
-  },
-  verticle: {
-    fontSize: 15,
-    color: '#ffffff',
-    cursor: 'pointer',
-    backgroundColor: '#3c3c3c',
   },
   active: {
     color: '#ffffff',
-    backgroundColor: '#3c3c3c',
-  },
-  inactive: {
-    display: 'none',
   },
   respostaContainer: {
-    flexDirection: 'row',
-    alignItems: 'flex-start',
-    paddingHorizontal: 10,
     marginTop: 10,
   },
   resposta: {
@@ -162,8 +142,20 @@ export const styles = StyleSheet.create({
     fontSize: 14, 
     color: '#ffffff', 
   },
+   botaoCancelar:{
+        backgroundColor: '#B41C1C',
+        width: 150,
+        height: 50,
+        top: '-2%',
+        borderRadius: 10,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    textoCancelar:{
+        color: 'white',
+        fontSize: 16,
+        fontWeight: 600
+    },
 });
-
-
 
 export default Accordion;

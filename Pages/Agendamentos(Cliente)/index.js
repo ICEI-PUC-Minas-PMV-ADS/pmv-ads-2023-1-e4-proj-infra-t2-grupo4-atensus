@@ -5,6 +5,8 @@ import { StatusBar } from "expo-status-bar";
 import Agendar from "./indexAgendar";
 import Fila from "./indexFila";
 
+import Duvidas from "../Duvidas/indexDuvidas"
+
 
 export default function TelaInicial() {
 
@@ -25,6 +27,14 @@ export default function TelaInicial() {
                 <Text style={styles.textoAgendar}>Consultar Agendamentos</Text>
             </TouchableOpacity>
             <Text style={styles.explicarAgendar}>É permitido apenas um atendimento por pessoa.</Text>
+
+            <TouchableOpacity style={styles.botaoConsultarAgendamento} onPress={() => navigation.navigate('Duvidas', { screen: 'Duvidas' })}>
+                <Text style={styles.textoAgendar}>Tire suas duvidas</Text>
+            </TouchableOpacity>
+            <Text style={styles.explicarAgendar}>Tire suas duvidas aqui.</Text>
+
+
+
             <TouchableOpacity style={styles.botaoPosicao} onPress={() => navigation.navigate('Fila', { screen: 'Fila' })}>
                 <Text style={styles.textoFila}>Posição na fila</Text>
             </TouchableOpacity>
