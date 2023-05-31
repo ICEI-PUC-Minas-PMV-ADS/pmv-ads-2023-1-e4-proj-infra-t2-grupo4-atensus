@@ -28,6 +28,7 @@ export default function Fila() {
     )
 }
 
+
 const styles = StyleSheet.create({
     containerFila: {
         flex: 1,

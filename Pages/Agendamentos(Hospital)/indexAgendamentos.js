@@ -1,30 +1,47 @@
-import { React } from "react";
-import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
+import React from "react";
+import { StyleSheet, Text, View, TouchableOpacity, Image, ScrollView } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { StatusBar } from "expo-status-bar";
-import Agendar from "./indexAgendar";
-import Fila from "./indexFila";
 
 
-export default function TelaInicial() {
+export default function AgendamentoHospital() {
 
     const navigation = useNavigation();
 
-    return (
+    const data = [
+        { key: 1, name: 'Jonatas', value: 'Triagem', position: 1 },
+        { key: 2, name: 'Luiza', value: 'Consulta', position: 2 },
+        { key: 3, name: 'Paulo', value: 'Acompanhamento', position: 3 },
+        { key: 4, name: 'Vanessa', value: 'Triagem', position: 4 },
+        { key: 5, name: 'Vitória', value: 'Consulta', position: 5 },
+    ]
 
-        <View style={styles.container}>
+    return (
+        <ScrollView contentContainerStyle={styles.container}>
+
             <StatusBar backgroundColor='#61c2a1' barStyle='dark-content' />
 
-            <Text style={styles.textoBemVindo}>Seja bem-vindo @user</Text>
-            <Text style={styles.escolherServico}>Escolha um serviço</Text>
-            <TouchableOpacity style={styles.botaoAgendar} onPress={() => navigation.navigate('Agendar', { screen: 'Agendar' })}>
-                <Text style={styles.textoAgendar}>Agendar</Text>
+            <Text style={styles.textoPrincipal}>Gerenciamento de Pacientes</Text>
+
+            <Text style={styles.subtituloPrincipal}>Acompanhe aqui os pacientes</Text>
+
+            {data.map(item => (
+                <TouchableOpacity key={item.key} style={styles.botaoAgendamento} onPress={() => {
+                    obterInformacoesUsuario(item.key);
+                    navigation.navigate('GerenciamentoPaciente', {
+                        screen: 'Agendar',
+                        userId: item.key
+                    })
+                }}
+                >
+                    <Text style={styles.textoAgendar}>{item.name} ● {item.value}  ● Posição {item.position}</Text>
+                </TouchableOpacity>
+            ))}
+
+            <TouchableOpacity style={styles.botaoVoltar} onPress={() => navigation.navigate('TelaInicial', { screen: 'TelaInicial' })}>
+                <Text style={styles.textoVoltar}>Voltar</Text>
             </TouchableOpacity>
-            <Text style={styles.explicarAgendar}>É permitido apenas um atendimento por pessoa.</Text>
-            <TouchableOpacity style={styles.botaoPosicao} onPress={() => navigation.navigate('Fila', { screen: 'Fila' })}>
-                <Text style={styles.textoFila}>Posição na fila</Text>
-            </TouchableOpacity>
-            <Text style={styles.explicarFila}>Consulte sua posição no agendamento ativo.</Text>
+
             <Image style={styles.imagemLogo} source={require('../../assets/logo.png')}></Image>
 
             <View style={styles.bolinha}></View>
@@ -35,70 +52,69 @@ export default function TelaInicial() {
             <View style={styles.bolinha5}></View>
             <View style={styles.bolinha6}></View>
 
-        </View>
-
+        </ScrollView>
     )
 }
 
+
+const obterInformacoesUsuario = (id) => {
+    //ESSA FUNÇÃO ESÁ RECEBENDO O ID DO USUÁRIO CLICADO NA LISTAGEM
+    //A IDEIA AQUI É: QUANDO CLICAR NO BOTÃO, FAREMOS UMA REQUISIÇÃO PARA UMA ROTA QUE RETORNARÁ TODOS OS DADOS DO USUÁRIO
+    //ESSES DADOS ACESSAREMOS NA TELA indexGerir, PARA APRESENTA-LOS
+    return id;
+};
 const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: 'white',
         alignItems: 'center',
     },
-    textoBemVindo: {
-        marginTop: '40%',
-        fontSize: 20,
-        fontWeight: 700
-    },
-    escolherServico: {
-        marginTop: '18%',
-        fontSize: 15,
-        fontWeight: 700
-    },
-    botaoAgendar: {
+    botaoAgendamento: {
         backgroundColor: '#118FB8',
-        width: 200,
+        width: '90%',
         height: 60,
         top: '5%',
+        marginTop: 20,
         borderRadius: 10,
         justifyContent: 'center',
         alignItems: 'center'
+    },
+    textoPrincipal: {
+        marginTop: '25%',
+        fontSize: 23,
+        fontWeight: 700
     },
     textoAgendar: {
         color: 'white',
         fontSize: 16,
         fontWeight: 600
     },
-    explicarAgendar: {
-        width: 170,
-        top: '9%',
-        textAlign: 'center'
+
+    subtituloPrincipal: {
+        top: '2%',
+        fontSize: 15
     },
-    botaoPosicao: {
-        backgroundColor: '#118FB8',
-        width: 200,
-        height: 60,
-        top: '14%',
-        borderRadius: 10,
-        justifyContent: 'center',
-        alignItems: 'center'
-    },
-    textoFila: {
-        color: 'white',
-        fontSize: 16,
-        fontWeight: 600
-    },
-    explicarFila: {
-        width: 170,
-        top: '18%',
-        textAlign: 'center'
-    },
+
     imagemLogo: {
         width: 300,
         height: 100,
         top: '23%',
         left: '4%'
+    },
+    botaoVoltar:{
+        backgroundColor: '#118FB8',
+        width: 150,
+        height: 50,
+        top: '8%',
+        borderRadius: 10,
+        justifyContent: 'center',
+        alignItems: 'center',
+        color: 'white'
+    },
+    textoVoltar:{
+        color: 'white',
+        fontSize: 16,
+        fontWeight: 600
     },
     bolinha: {
         width: 120,
@@ -156,4 +172,5 @@ const styles = StyleSheet.create({
         right: '90%',
         top: '30%'
     }
+
 })
