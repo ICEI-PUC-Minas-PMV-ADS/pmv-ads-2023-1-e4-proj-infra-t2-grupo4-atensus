@@ -21,8 +21,8 @@ export default function TelaInicial() {
                 <Text style={styles.textoAgendar}>Agendar</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={styles.botaoAgendar} onPress={() => navigation.navigate('AgendamentoHospital', { screen: 'Agendar' })}>
-                <Text style={styles.textoAgendar}>Agendamentos</Text>
+            <TouchableOpacity style={styles.botaoConsultarAgendamento} onPress={() => navigation.navigate('AgendamentoHospital', { screen: 'Agendar' })}>
+                <Text style={styles.textoAgendar}>Consultar Agendamentos</Text>
             </TouchableOpacity>
             <Text style={styles.explicarAgendar}>É permitido apenas um atendimento por pessoa.</Text>
             <TouchableOpacity style={styles.botaoPosicao} onPress={() => navigation.navigate('Fila', { screen: 'Fila' })}>
@@ -65,6 +65,15 @@ const styles = StyleSheet.create({
         width: 200,
         height: 60,
         top: '5%',
+        borderRadius: 10,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    botaoConsultarAgendamento: {
+        backgroundColor: '#118FB8',
+        width: 200,
+        height: 60,
+        top: '7%',
         borderRadius: 10,
         justifyContent: 'center',
         alignItems: 'center'
