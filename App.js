@@ -9,6 +9,7 @@ import Agendar from './Pages/Agendamentos(Cliente)/indexAgendar';
 import AgendamentoHospital from './Pages/Agendamentos(Hospital)/indexAgendar';
 
 import IndexDuvidas from './Pages/Duvidas/indexDuvidas'
+import Duvidas from './Pages/Duvidas/indexDuvidas';
 
 
 export default function App() {
@@ -23,6 +24,7 @@ export default function App() {
         <Stack.Screen name="Fila" component={Fila} options={{ headerShown: false, gestureEnabled: false }} />
         <Stack.Screen name="Agendar" component={Agendar} options={{ headerShown: false, gestureEnabled: false }} />
         <Stack.Screen name="AgendamentoHospital" component={AgendamentoHospital} options={{ headerShown: false, gestureEnabled: false }} />
+         <Stack.Screen name="Duvidas" component={Duvidas} options={{ headerShown: false, gestureEnabled: false }} />
 
       </Stack.Navigator>
     </NavigationContainer>
