@@ -5,6 +5,9 @@ import { StatusBar } from "expo-status-bar";
 import Agendar from "./indexAgendar";
 import Fila from "./indexFila";
 
+import Duvidas from "../Duvidas/indexDuvidas"
+import Cadastro from "../Cadastro/indexCadastro"
+
 
 export default function TelaInicial() {
 
@@ -20,7 +23,25 @@ export default function TelaInicial() {
             <TouchableOpacity style={styles.botaoAgendar} onPress={() => navigation.navigate('Agendar', { screen: 'Agendar' })}>
                 <Text style={styles.textoAgendar}>Agendar</Text>
             </TouchableOpacity>
+
+            <TouchableOpacity style={styles.botaoConsultarAgendamento} onPress={() => navigation.navigate('AgendamentoHospital', { screen: 'Agendar' })}>
+                <Text style={styles.textoAgendar}>Consultar Agendamentos</Text>
+            </TouchableOpacity>
             <Text style={styles.explicarAgendar}>É permitido apenas um atendimento por pessoa.</Text>
+
+            <TouchableOpacity style={styles.botaoDuvidas} onPress={() => navigation.navigate('Duvidas', { screen: 'Duvidas' })}>
+                <Text style={styles.textoAgendar}>Tire suas duvidas</Text>
+            </TouchableOpacity>
+            <Text style={styles.explicarAgendar}>Tire suas dúvidas aqui.</Text>
+
+            {/* Retirar */}
+
+            <TouchableOpacity style={styles.botaoDuvidas} onPress={() => navigation.navigate('Cadastro', { screen: 'Cadastro' })}>
+                <Text style={styles.textoAgendar}>Cadastre-se</Text>
+            </TouchableOpacity>
+
+            {/* Retirar */}
+
             <TouchableOpacity style={styles.botaoPosicao} onPress={() => navigation.navigate('Fila', { screen: 'Fila' })}>
                 <Text style={styles.textoFila}>Posição na fila</Text>
             </TouchableOpacity>
@@ -65,6 +86,25 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center'
     },
+    botaoConsultarAgendamento: {
+        backgroundColor: '#118FB8',
+        width: 200,
+        height: 60,
+        top: '7%',
+        borderRadius: 10,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    botaoDuvidas: {
+        backgroundColor: '#118FB8',
+        width: 200,
+        height: 60,
+        top: '4%',
+        borderRadius: 10,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },   
+
     textoAgendar: {
         color: 'white',
         fontSize: 16,
