@@ -20,6 +20,7 @@ export default function Agendar() {
     ]
 
     return (
+        
         <View style={styles.containerAgendar}>
 
             <StatusBar backgroundColor='#61c2a1' barStyle='dark-content' />
