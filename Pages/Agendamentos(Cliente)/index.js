@@ -31,7 +31,7 @@ export default function TelaInicial() {
             <TouchableOpacity style={styles.botaoDuvidas} onPress={() => navigation.navigate('Duvidas', { screen: 'Duvidas' })}>
                 <Text style={styles.textoAgendar}>Tire suas duvidas</Text>
             </TouchableOpacity>
-            <Text style={styles.explicarAgendar}>Tire suas duvidas aqui.</Text>
+            <Text style={styles.explicarAgendar}>Tire suas dúvidas aqui.</Text>
 
 
 
