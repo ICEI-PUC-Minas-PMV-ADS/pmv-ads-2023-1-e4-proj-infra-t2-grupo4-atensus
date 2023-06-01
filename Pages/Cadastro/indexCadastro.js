@@ -140,8 +140,8 @@ const styles = StyleSheet.create({
     color: '#666',
   },
   button: {
-    marginTop: 30,
-    marginBottom: 30,
+    marginTop: 0,
+    marginBottom: 0,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
