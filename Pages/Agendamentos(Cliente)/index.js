@@ -6,6 +6,7 @@ import Agendar from "./indexAgendar";
 import Fila from "./indexFila";
 
 import Duvidas from "../Duvidas/indexDuvidas"
+import Cadastro from "../Cadastro/indexCadastro"
 
 
 export default function TelaInicial() {
@@ -33,7 +34,13 @@ export default function TelaInicial() {
             </TouchableOpacity>
             <Text style={styles.explicarAgendar}>Tire suas dúvidas aqui.</Text>
 
+            {/* Retirar */}
 
+            <TouchableOpacity style={styles.botaoDuvidas} onPress={() => navigation.navigate('Cadastro', { screen: 'Cadastro' })}>
+                <Text style={styles.textoAgendar}>Cadastre-se</Text>
+            </TouchableOpacity>
+
+            {/* Retirar */}
 
             <TouchableOpacity style={styles.botaoPosicao} onPress={() => navigation.navigate('Fila', { screen: 'Fila' })}>
                 <Text style={styles.textoFila}>Posição na fila</Text>
