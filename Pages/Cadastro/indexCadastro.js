@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, TextInput, TouchableOpacity, Text, Image, StyleSheet, Dimensions } from 'react-native';
+import { View, TextInput, TouchableOpacity, Text, Image, StyleSheet, Dimensions, ScrollView } from 'react-native';
 
 import { useNavigation } from '@react-navigation/native';
 
@@ -42,7 +42,7 @@ const Cadastro = () => {
   };
 
   return (
-    <View style={styles.container}>
+    <ScrollView contentContainerStyle={styles.container}>
       <View style={styles.form}>
         <View style={styles.inputContainer}>
           <Text style={styles.label}>Nome Completo</Text>
@@ -105,13 +105,13 @@ const Cadastro = () => {
           <Text style={styles.buttonText}>Cadastrar</Text>
         </TouchableOpacity>
       </View>
-    </View>
+    </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flexGrow: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
@@ -141,7 +141,7 @@ const styles = StyleSheet.create({
   },
   button: {
     marginTop: 0,
-    marginBottom: 0,
+    marginBottom: 20,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
