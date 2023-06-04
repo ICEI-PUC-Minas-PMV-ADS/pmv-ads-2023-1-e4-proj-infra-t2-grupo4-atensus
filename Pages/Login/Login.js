@@ -12,22 +12,18 @@ export default function Login() {
 
   async function handleLogin() {
     try {
-
-
       const cpf = '33333333333';
+      
       const senha = '33333333333';
       const url = `/pacientes/login/${cpf}/${senha}`;
       //const url = '/Pacientes/64700a7b151f1659302794d7'
- 
+
       const response = await api.get(url);
       var usuario = response.data
 
-     // console.log( JSON.stringify(usuario)  );
-    var usuarioLocalizado = JSON.stringify(usuario)
-
- 
-
- navigation.navigate('DadosUsuario',{usuarioLocalizado }); // Navegue para a página de agendamentos em caso de sucesso
+      // console.log( JSON.stringify(usuario)  );
+      var usuarioLocalizado = JSON.stringify(usuario)
+      navigation.navigate('DadosUsuario', { usuarioLocalizado }); // Navegue para a página de agendamentos em caso de sucesso
 
     } catch (error) {
       console.log(error);
