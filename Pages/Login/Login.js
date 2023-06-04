@@ -8,23 +8,23 @@ export default function Login() {
   const navigation = useNavigation();
   const [cpf, setCpf] = useState('');
   const [senha, setSenha] = useState('');
-  const [erro, setErro] = useState(false); // Crie um estado para armazenar se houve um erro de login
+  const [erro, setErro] = useState(false); 
 
   async function handleLogin() {
     try {
+
+     const cpf = '123456789'
+     const  senha='1234'
       const url = `/pacientes/login/${cpf}/${senha}`;
-      //const url = '/Pacientes/64700a7b151f1659302794d7'
 
       const response = await api.get(url);
       var usuario = response.data
 
-      // console.log( JSON.stringify(usuario)  );
       var usuarioLocalizado = JSON.stringify(usuario)
-      navigation.navigate('DadosUsuario', { usuarioLocalizado }); // Navegue para a página de agendamentos em caso de sucesso
-
+      navigation.navigate('DadosUsuario', { usuarioLocalizado }); 
     } catch (error) {
       console.log(error);
-      setErro(true); // Configure o estado de erro como verdadeiro em caso de falha
+      setErro(true); 
     }
   }
 

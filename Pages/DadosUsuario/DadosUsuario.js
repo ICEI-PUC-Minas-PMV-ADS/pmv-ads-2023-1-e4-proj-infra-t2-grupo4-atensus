@@ -2,6 +2,7 @@ import axios from 'axios';
 
 import React, { useState } from 'react';
 import { View, TextInput, TouchableOpacity, Text, Image, StyleSheet, Dimensions, ScrollView } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 import { useRoute } from '@react-navigation/native';
 import api from '../../services/api';
 
@@ -11,16 +12,16 @@ import LogoAtensus from '../../assets/logo.png';
 //import MedicaCadastro from '../assets/medicaCadastro.png';
 
 export default function DadosUsuario({ }) {
+    const navigation = useNavigation();
     const route = useRoute()
-    const t = route
+    const objetoRota = route
     var valor;
 
-    Object.entries(t.params).map(([key, value]) => {
+    Object.entries(objetoRota.params).map(([key, value]) => {
         valor = value
     })
 
     var objeto = JSON.parse(valor);
- 
 
     const [formData, setFormData] = useState({
         Id :objeto.id,
@@ -39,7 +40,6 @@ export default function DadosUsuario({ }) {
     };
   
     const handleUpdate = () => {
- 
         
         axios({
             method: 'PUT',
@@ -120,17 +120,14 @@ export default function DadosUsuario({ }) {
                 />
             </View>
 
-            {/* <TouchableOpacity style={styles.button} onPress={handleUpdate}>
-      <Text style={styles.buttonText}>Buscar Dados</Text>
-      </TouchableOpacity>
-       */}
+           
 
             <TouchableOpacity style={styles.button} onPress={handleUpdate}>
                 <Text style={styles.buttonText}>Alterar Dados</Text>
             </TouchableOpacity>
 
 
-            <TouchableOpacity style={styles.button} onPress={handleUpdate}>
+            <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Agendar', { screen: 'Agendar' })}>  
                 <Text style={styles.buttonText}>Ir para Agendamento</Text>
             </TouchableOpacity>
 
