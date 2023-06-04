@@ -48,19 +48,9 @@ export default function DadosUsuario({ }) {
             data: formData,
             headers: {
                 "Content-Type": "application/json",
-                
+
             },
         });
-
-        // axios.put('https://localhost:7160/api/Pacientes/atualizar', formData)
-        // .then(response => {
-        //   console.log( 'Deu certo');
-        // })
-        // .catch(error => {
-        //   console.log(error);
-        // });
-
-        
     };
 
 

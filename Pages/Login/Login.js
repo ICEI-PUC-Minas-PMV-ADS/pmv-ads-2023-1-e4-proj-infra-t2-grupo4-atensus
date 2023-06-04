@@ -12,9 +12,6 @@ export default function Login() {
 
   async function handleLogin() {
     try {
-      const cpf = '33333333333';
-      
-      const senha = '33333333333';
       const url = `/pacientes/login/${cpf}/${senha}`;
       //const url = '/Pacientes/64700a7b151f1659302794d7'
 
