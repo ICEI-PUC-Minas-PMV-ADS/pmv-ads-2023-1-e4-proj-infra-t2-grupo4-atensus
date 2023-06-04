@@ -12,6 +12,7 @@ import AgendamentoHospital from './Pages/Agendamentos(Hospital)/indexAgendamento
 import GerenciamentoPaciente from './Pages/Agendamentos(Hospital)/indexGerir';
 
 import Cadastro from './Pages/Cadastro/indexCadastro'
+import DadosUsuario from './Pages/DadosUsuario/DadosUsuario';
 
 
 export default function App() {
@@ -29,6 +30,7 @@ export default function App() {
         <Stack.Screen name="GerenciamentoPaciente" component={GerenciamentoPaciente} options={{ headerShown: false, gestureEnabled: false }} />
         <Stack.Screen name="Duvidas" component={Duvidas} options={{ headerShown: false, gestureEnabled: false }} />
         <Stack.Screen name="Cadastro" component={Cadastro} options={{ headerShown: false, gestureEnabled: false }} />
+        <Stack.Screen name="DadosUsuario" component={DadosUsuario} options={{ headerShown: false, gestureEnabled: false }} />
 
 
       </Stack.Navigator>
