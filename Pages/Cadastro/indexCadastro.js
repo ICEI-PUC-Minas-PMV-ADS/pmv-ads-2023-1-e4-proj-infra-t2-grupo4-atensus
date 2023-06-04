@@ -123,7 +123,7 @@ const styles = StyleSheet.create({
   },
   form: {
     alignItems: 'center',
-    marginTop: height * 0.25,
+    marginTop: height * 0.05,
     paddingHorizontal: 20,
   },
   inputContainer: {
