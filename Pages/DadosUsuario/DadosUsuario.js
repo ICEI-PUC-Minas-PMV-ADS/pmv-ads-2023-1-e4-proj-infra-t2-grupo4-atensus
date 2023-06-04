@@ -38,13 +38,14 @@ console.log(objeto.senha );
 console.log(objeto.sintomas );
       
     const [formData, setFormData] = useState({
-        Nome: '',
-        Idade: '',
-        Altura: '',
-        Peso: '',
-        Endereco: '',
-        CPF: '',
-        Senha: ''
+        Nome: objeto.nome,
+        Idade: objeto.idade,
+        Altura: objeto.altura,
+        Peso: objeto.peso,
+        Endereco: objeto.endereco,
+        CPF: objeto.cpf,
+        Senha:objeto.senha,
+        Sintomas:objeto.sintomas
     });
 
     const handleInputChange = (name, value) => {
