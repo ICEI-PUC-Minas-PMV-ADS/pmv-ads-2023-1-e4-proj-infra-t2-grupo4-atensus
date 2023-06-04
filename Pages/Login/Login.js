@@ -3,6 +3,9 @@ import { StyleSheet, Text, View, TouchableOpacity, Image, TextInput } from 'reac
 import { useNavigation } from '@react-navigation/native';
 import { StatusBar } from "expo-status-bar";
 
+
+
+
 export default function Login() {
 
     const navigation = useNavigation();
@@ -34,7 +37,7 @@ export default function Login() {
                     <Text style={styles.textoEntrarLogin}>Entrar</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.buttonRegistrarLogin}>
+                <TouchableOpacity style={styles.buttonRegistrarLogin}onPress={() => navigation.navigate('Cadastro', { screen: 'Cadastro' })}>
                     <Text style={styles.textoRegistrarLogin}>Registre-se</Text>
                 </TouchableOpacity>
 

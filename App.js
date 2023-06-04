@@ -6,8 +6,12 @@ import TelaInicial from './Pages/Agendamentos(Cliente)/index';
 import Fila from './Pages/Agendamentos(Cliente)/indexFila';
 import Agendar from './Pages/Agendamentos(Cliente)/indexAgendar';
 
+import Duvidas from './Pages/Duvidas/indexDuvidas'
+
 import AgendamentoHospital from './Pages/Agendamentos(Hospital)/indexAgendamentos';
 import GerenciamentoPaciente from './Pages/Agendamentos(Hospital)/indexGerir';
+
+import Cadastro from './Pages/Cadastro/indexCadastro'
 
 
 export default function App() {
