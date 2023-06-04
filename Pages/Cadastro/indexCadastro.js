@@ -104,6 +104,11 @@ const Cadastro = () => {
         <TouchableOpacity style={styles.button} onPress={handleSubmit}>
           <Text style={styles.buttonText}>Cadastrar</Text>
         </TouchableOpacity>
+
+        <TouchableOpacity style={styles.botaoVoltar} onPress={() => navigation.navigate('Login', { screen: 'Login' })}>
+                <Text style={styles.textoVoltar}>Voltar</Text>
+        </TouchableOpacity>
+
       </View>
     </ScrollView>
   );
@@ -154,6 +159,20 @@ const styles = StyleSheet.create({
     fontSize: 18,
     lineHeight: 22,
     color: '#fff',
+  },
+  botaoVoltar:{
+        backgroundColor: '#B41C1C',
+        width: 150,
+        height: 50,
+        top: '-1%',
+        borderRadius: 10,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+  textoVoltar:{
+      color: 'white',
+      fontSize: 16,
+      fontWeight: 600
   },
 });
 
