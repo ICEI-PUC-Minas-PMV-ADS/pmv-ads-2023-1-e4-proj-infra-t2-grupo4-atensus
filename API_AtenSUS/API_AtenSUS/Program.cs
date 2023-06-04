@@ -15,11 +15,21 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddCors(p => p.AddPolicy("corsapp", builder =>
+{
+    builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+}));
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+    app.UseCors((g) => g.AllowAnyOrigin() 
+                                     .AllowAnyMethod()
+                                     .AllowAnyHeader());
+
     app.UseSwagger();
     app.UseSwaggerUI();
 }
@@ -27,12 +37,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
-
-app.UseCors(builder => builder
-       .AllowAnyHeader()
-       .AllowAnyMethod()
-       .AllowAnyOrigin()
-);
+app.UseCors((g) => g.AllowAnyOrigin());
+ 
 app.MapControllers();
 
 app.Run();

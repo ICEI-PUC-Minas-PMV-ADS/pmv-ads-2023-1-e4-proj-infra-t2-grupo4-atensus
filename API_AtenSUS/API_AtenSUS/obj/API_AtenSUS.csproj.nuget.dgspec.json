@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\repos\\pmv-ads-2023-1-e4-proj-infra-t2-grupo4-atensus\\API_AtenSUS\\API_AtenSUS\\API_AtenSUS.csproj": {}
+    "F:\\repos\\atensusApi\\API_AtenSUS\\API_AtenSUS\\API_AtenSUS.csproj": {}
   },
   "projects": {
-    "F:\\repos\\pmv-ads-2023-1-e4-proj-infra-t2-grupo4-atensus\\API_AtenSUS\\API_AtenSUS\\API_AtenSUS.csproj": {
+    "F:\\repos\\atensusApi\\API_AtenSUS\\API_AtenSUS\\API_AtenSUS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\repos\\pmv-ads-2023-1-e4-proj-infra-t2-grupo4-atensus\\API_AtenSUS\\API_AtenSUS\\API_AtenSUS.csproj",
+        "projectUniqueName": "F:\\repos\\atensusApi\\API_AtenSUS\\API_AtenSUS\\API_AtenSUS.csproj",
         "projectName": "API_AtenSUS",
-        "projectPath": "F:\\repos\\pmv-ads-2023-1-e4-proj-infra-t2-grupo4-atensus\\API_AtenSUS\\API_AtenSUS\\API_AtenSUS.csproj",
+        "projectPath": "F:\\repos\\atensusApi\\API_AtenSUS\\API_AtenSUS\\API_AtenSUS.csproj",
         "packagesPath": "C:\\Users\\Adalberto Valadares\\.nuget\\packages\\",
-        "outputPath": "F:\\repos\\pmv-ads-2023-1-e4-proj-infra-t2-grupo4-atensus\\API_AtenSUS\\API_AtenSUS\\obj\\",
+        "outputPath": "F:\\repos\\atensusApi\\API_AtenSUS\\API_AtenSUS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Adalberto Valadares\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -41,6 +41,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[2.19.1, )"
