@@ -125,17 +125,15 @@ export default function DadosUsuario({ }) {
                 <Text style={styles.buttonText}>Alterar Dados</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Agendar', sintomas)}>
+            <TouchableOpacity style={styles.buttonAgendar} onPress={() => navigation.navigate('Agendar', sintomas)}>
                 <Text style={styles.buttonText}>Ir para Agendamento</Text>
             </TouchableOpacity>
 
             <Image style={styles.imagemLogo} source={require('../../assets/logo.png')}></Image>
 
-            {/* <View style={styles.bolinha}></View>
-            <View style={styles.bolinha1}></View> */}
-            <View style={styles.bolinha2}></View>
-            <View style={styles.bolinha3}></View>
-            <View style={styles.bolinha4}></View>
+            <View style={styles.bolinha}></View>
+            <View style={styles.bolinha1}></View>
+            <View style={styles.bolinha2}></View>             
             <View style={styles.bolinha5}></View>
             <View style={styles.bolinha6}></View>
 
@@ -149,6 +147,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center',
+       
     },
     form: {
         alignItems: 'center',
@@ -167,19 +166,31 @@ const styles = StyleSheet.create({
         fontWeight: '400',
         fontSize: 16,
         lineHeight: 19,
-        marginBottom: 13,
+        marginBottom: 10,
+        marginTop: '5%',
     },
     input: {
         width: 250,
         padding: 10,
-        marginBottom: 10,
+        marginBottom: 6,
         borderRadius: 4,
         backgroundColor: '#f2f2f2',
         fontSize: 16,
         color: '#666',
     },
     button: {
-        marginTop: 0,
+        marginTop: '5%',
+        marginBottom: 20,
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+        width: 220,
+        height: 38,
+        backgroundColor: '#73c2ab',
+        borderRadius: 12,
+    },
+     buttonAgendar: {
+        marginTop: '1%',
         marginBottom: 20,
         flexDirection: 'row',
         justifyContent: 'center',
