@@ -21,6 +21,8 @@ export default function Agendar() {
         { key: '5', value: 'Oftalmologia' },
     ]
 
+    const navigation = useNavigation();
+
     return (
 
         <View style={styles.containerAgendar}>

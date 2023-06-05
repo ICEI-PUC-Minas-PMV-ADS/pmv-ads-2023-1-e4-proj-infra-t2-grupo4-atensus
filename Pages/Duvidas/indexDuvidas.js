@@ -41,6 +41,8 @@ function Accordion() {
     setAccordion(accordion === index ? -1 : index);
   }
 
+  const navigation = useNavigation();
+
   return (
     <View style={styles.container}>
       <StatusBar backgroundColor='#61c2a1' barStyle='dark-content' />

@@ -131,8 +131,8 @@ export default function DadosUsuario({ }) {
 
             <Image style={styles.imagemLogo} source={require('../../assets/logo.png')}></Image>
 
-            <View style={styles.bolinha}></View>
-            <View style={styles.bolinha1}></View>
+            {/* <View style={styles.bolinha}></View>
+            <View style={styles.bolinha1}></View> */}
             <View style={styles.bolinha2}></View>
             <View style={styles.bolinha3}></View>
             <View style={styles.bolinha4}></View>
