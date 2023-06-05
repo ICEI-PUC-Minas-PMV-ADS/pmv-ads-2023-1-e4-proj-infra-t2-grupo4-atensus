@@ -5,22 +5,24 @@ import { StatusBar } from "expo-status-bar";
 import { SelectList } from 'react-native-dropdown-select-list'
 import { TextInput } from "react-native-gesture-handler";
 
+import { useRoute } from '@react-navigation/native';
+
 export default function Agendar() {
 
-    const navigation = useNavigation();
+    const route = useRoute()
 
     const [selected, setSelected] = React.useState("");
 
     const data = [
-        { key: '1', value: 'Triagem'},
+        { key: '1', value: 'Triagem' },
         { key: '2', value: 'Odontologia' },
         { key: '3', value: 'Ortopedia' },
-        { key: '4', value: 'Dermatologia'},
+        { key: '4', value: 'Dermatologia' },
         { key: '5', value: 'Oftalmologia' },
     ]
 
     return (
-        
+
         <View style={styles.containerAgendar}>
 
             <StatusBar backgroundColor='#61c2a1' barStyle='dark-content' />
@@ -30,19 +32,19 @@ export default function Agendar() {
             <Text style={styles.textoEspecialidade}>Escolha a especialidade</Text>
 
             <SelectList
-            dropdownStyles={{width: 300, alignItems: 'center', backgroundColor: '#2a2a2a', borderWidth: 0}}
-            dropdownTextStyles={{color: 'white'}}
-            inputStyles={{color: 'white'}}
-            setSelected={(val) => setSelected(val)}
-            boxStyles={{backgroundColor: '#2a2a2a', borderWidth: 0, top: '5%', width: 300, borderWidth: 0, justifyContent: 'center'}}
-            data={data}
-            save="value"
-            search={false} 
-            defaultOption={{ key:'1', value:'Triagem' }}
+                dropdownStyles={{ width: 300, alignItems: 'center', backgroundColor: '#2a2a2a', borderWidth: 0 }}
+                dropdownTextStyles={{ color: 'white' }}
+                inputStyles={{ color: 'white' }}
+                setSelected={(val) => setSelected(val)}
+                boxStyles={{ backgroundColor: '#2a2a2a', borderWidth: 0, top: '5%', width: 300, borderWidth: 0, justifyContent: 'center' }}
+                data={data}
+                save="value"
+                search={false}
+                defaultOption={{ key: '1', value: 'Triagem' }}
             />
 
             <Text style={styles.textoSintomas}>Descreva seus sintomas</Text>
-            <TextInput style={styles.textInputSintomas}></TextInput>
+            <TextInput style={styles.textInputSintomas} value={route.params}></TextInput>
             <Text style={styles.textoObservacao}>Observação</Text>
             <TextInput style={styles.textInputSintomas}></TextInput>
 
@@ -53,7 +55,6 @@ export default function Agendar() {
             <TouchableOpacity style={styles.botaoCancelar} onPress={() => navigation.navigate('TelaInicial', { screen: 'TelaInicial' })}>
                 <Text style={styles.textoCancelar}>Cancelar</Text>
             </TouchableOpacity>
-
 
         </View>
     )
@@ -80,13 +81,13 @@ const styles = StyleSheet.create({
         fontWeight: 700,
         color: '#118FB8'
     },
-    textoSintomas:{
+    textoSintomas: {
         marginTop: '13%',
         fontSize: 23,
         fontWeight: 700,
         color: '#118FB8'
     },
-    textoObservacao:{
+    textoObservacao: {
         marginTop: '8%',
         fontSize: 23,
         fontWeight: 700,
@@ -100,7 +101,7 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         textAlign: 'center'
     },
-    botaoEnviar:{
+    botaoEnviar: {
         backgroundColor: '#118FB8',
         width: 200,
         height: 50,
@@ -109,12 +110,12 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center'
     },
-    textoEnviar:{
+    textoEnviar: {
         color: 'white',
         fontSize: 16,
         fontWeight: 600
     },
-    botaoCancelar:{
+    botaoCancelar: {
         backgroundColor: '#B41C1C',
         width: 150,
         height: 50,
@@ -123,10 +124,9 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center'
     },
-    textoCancelar:{
+    textoCancelar: {
         color: 'white',
         fontSize: 16,
         fontWeight: 600
     },
-
 })
