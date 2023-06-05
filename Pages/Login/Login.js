@@ -12,9 +12,6 @@ export default function Login() {
 
   async function handleLogin() {
     try {
-
-     const cpf = '123456789'
-     const  senha='1234'
       const url = `/pacientes/login/${cpf}/${senha}`;
 
       const response = await api.get(url);
