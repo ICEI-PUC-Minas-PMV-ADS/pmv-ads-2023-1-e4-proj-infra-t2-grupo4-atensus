@@ -22,9 +22,10 @@ export default function DadosUsuario({ }) {
     })
 
     var objeto = JSON.parse(valor);
+    var sintomas = objeto.sintomas
 
     const [formData, setFormData] = useState({
-        Id :objeto.id,
+        Id: objeto.id,
         Nome: objeto.nome,
         Idade: objeto.idade,
         Altura: objeto.altura,
@@ -38,9 +39,9 @@ export default function DadosUsuario({ }) {
     const handleInputChange = (name, value) => {
         setFormData({ ...formData, [name]: value });
     };
-  
+
     const handleUpdate = () => {
-        
+
         axios({
             method: 'PUT',
             url: 'https://localhost:7160/api/Pacientes/atualizar',
@@ -63,7 +64,7 @@ export default function DadosUsuario({ }) {
 
             <View style={styles.form}>
                 <Text style={styles.label}>Nome Completo</Text>
-               
+
                 <TextInput
                     style={styles.input}
                     placeholder="Nome Completo"
@@ -120,17 +121,13 @@ export default function DadosUsuario({ }) {
                 />
             </View>
 
-           
-
             <TouchableOpacity style={styles.button} onPress={handleUpdate}>
                 <Text style={styles.buttonText}>Alterar Dados</Text>
             </TouchableOpacity>
 
-
-            <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Agendar', { screen: 'Agendar' })}>  
+            <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Agendar', sintomas)}>
                 <Text style={styles.buttonText}>Ir para Agendamento</Text>
             </TouchableOpacity>
-
 
             <Image style={styles.imagemLogo} source={require('../../assets/logo.png')}></Image>
 
@@ -143,8 +140,6 @@ export default function DadosUsuario({ }) {
             <View style={styles.bolinha6}></View>
 
         </View>
-
-
     );
 };
 
@@ -157,7 +152,6 @@ const styles = StyleSheet.create({
     },
     form: {
         alignItems: 'center',
-        //marginTop: height * 0.05,
         paddingHorizontal: 20,
     },
     imagemLogo: {
