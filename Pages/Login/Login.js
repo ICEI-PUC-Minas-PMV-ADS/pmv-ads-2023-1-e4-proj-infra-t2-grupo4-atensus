@@ -13,7 +13,8 @@ export default function Login() {
   async function handleLogin() {
     try {
 
-      const url = `/pacientes/login/${cpf}/${senha}`;
+      //const url = `/pacientes/login/${cpf}/${senha}`;
+      const url = `/pacientes/login/1/1`;
 
       const response = await api.get(url);
       var usuario = response.data

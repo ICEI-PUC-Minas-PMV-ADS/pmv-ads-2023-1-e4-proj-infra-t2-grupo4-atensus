@@ -104,6 +104,14 @@ export default function DadosUsuario({ }) {
                     onChangeText={value => handleInputChange('Endereco', value)}
                 />
 
+                <Text style={styles.label}>Sintomas</Text>
+                <TextInput
+                    style={styles.input}
+                    placeholder="Sintomas"
+                    value={formData.Sintomas}
+                    onChangeText={value => handleInputChange('Sintomas', value)}
+                />
+
                 <Text style={styles.label}>CPF</Text>
                 <TextInput
                     style={styles.input}
@@ -125,7 +133,7 @@ export default function DadosUsuario({ }) {
                 <Text style={styles.buttonText}>Alterar Dados</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={styles.buttonAgendar} onPress={() => navigation.navigate('Agendar', sintomas)}>
+            <TouchableOpacity style={styles.buttonAgendar} onPress={() => navigation.navigate('Agendar', formData)}>
                 <Text style={styles.buttonText}>Ir para Agendamento</Text>
             </TouchableOpacity>
 
@@ -133,7 +141,7 @@ export default function DadosUsuario({ }) {
 
             <View style={styles.bolinha}></View>
             <View style={styles.bolinha1}></View>
-            <View style={styles.bolinha2}></View>             
+            <View style={styles.bolinha2}></View>
             <View style={styles.bolinha5}></View>
             <View style={styles.bolinha6}></View>
 
@@ -147,7 +155,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         alignItems: 'center',
         justifyContent: 'center',
-       
+
     },
     form: {
         alignItems: 'center',
@@ -189,7 +197,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#73c2ab',
         borderRadius: 12,
     },
-     buttonAgendar: {
+    buttonAgendar: {
         marginTop: '1%',
         marginBottom: 20,
         flexDirection: 'row',

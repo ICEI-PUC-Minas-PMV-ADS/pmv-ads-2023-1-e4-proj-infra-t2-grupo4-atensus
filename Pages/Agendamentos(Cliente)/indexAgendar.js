@@ -4,7 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 import { StatusBar } from "expo-status-bar";
 import { SelectList } from 'react-native-dropdown-select-list'
 import { TextInput } from "react-native-gesture-handler";
-
+import axios from 'axios';
 import { useRoute } from '@react-navigation/native';
 
 export default function Agendar() {
@@ -12,6 +12,7 @@ export default function Agendar() {
     const route = useRoute()
 
     const [selected, setSelected] = React.useState("");
+    const [Descricao, setDescricao] = React.useState("");
 
     const data = [
         { key: '1', value: 'Triagem' },
@@ -20,8 +21,40 @@ export default function Agendar() {
         { key: '4', value: 'Dermatologia' },
         { key: '5', value: 'Oftalmologia' },
     ]
-
+    route.params.descricao = Descricao
     const navigation = useNavigation();
+    const handleUpdate = () => {
+
+
+         
+            fetch('https://localhost:7160/api/Pacientes/atualizar', {
+              method: 'PUT',
+              body: JSON.stringify(route.params),
+              headers: {
+                'Content-Type': 'application/json'
+              }
+            })
+              .then(response => response.json())
+              .then(data => {
+                console.log(data);
+                //CASO DE SUCESSO.
+                //TODO: PESQUISAR COMO MOSTRAR NOTIFICAÇÂO NO REACT 
+                //TODO: COLOCAR O QUE ACHOU COM A MENSAGEM BUNITINHA
+                alert('Dados Alterado com sucesso')
+                //navigation.navigate('FILA');
+              })
+              .catch(error => {
+                //CASO DE ERRO
+                //TODO: PESQUISAR COMO MOSTRAR NOTIFICAÇÂO NO REACT 
+                //TODO: COLOCAR O QUE ACHOU COM A MENSAGEM BUNITINHA
+                alert('Erro ao alterar o paciente.')
+                console.error(error);
+
+
+              });
+        
+       
+    };
 
     return (
 
@@ -45,12 +78,17 @@ export default function Agendar() {
                 defaultOption={{ key: '1', value: 'Triagem' }}
             />
 
-            <Text style={styles.textoSintomas}>Descreva seus sintomas</Text>
-            <TextInput style={styles.textInputSintomas} value={route.params}></TextInput>
-            <Text style={styles.textoObservacao}>Observação</Text>
-            <TextInput style={styles.textInputSintomas}></TextInput>
+            <View style={styles.textoSintomas}>
+                <Text style={styles.label}>Descrição</Text>
+                <TextInput
+                    style={styles.textInputSintomas}
+                    placeholder="Descrição"
+                    onChangeText={setDescricao}
+                />
+            </View>
 
-            <TouchableOpacity style={styles.botaoEnviar}>
+
+            <TouchableOpacity style={styles.botaoEnviar} onPress={(handleUpdate)}>
                 <Text style={styles.textoEnviar}>Enviar</Text>
             </TouchableOpacity>
 
@@ -67,6 +105,9 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: 'white',
         alignItems: 'center',
+    },
+    inputContainer: {
+        marginBottom: 10,
     },
     textoPrincipal: {
         marginTop: '25%',

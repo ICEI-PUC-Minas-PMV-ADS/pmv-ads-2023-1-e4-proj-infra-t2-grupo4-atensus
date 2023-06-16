@@ -85,6 +85,14 @@ const Cadastro = () => {
           />
         </View>
         <View style={styles.inputContainer}>
+          <Text style={styles.label}>Sintomas</Text>
+          <TextInput
+            style={styles.input}
+            placeholder="Sintomas"
+            onChangeText={value => handleInputChange('Sintomas', value)}
+          />
+        </View>
+        <View style={styles.inputContainer}>
           <Text style={styles.label}>Senha</Text>
           <TextInput
             style={styles.input}
