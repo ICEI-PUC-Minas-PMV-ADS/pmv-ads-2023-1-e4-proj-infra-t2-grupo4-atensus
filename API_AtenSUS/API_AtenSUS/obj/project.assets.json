@@ -1547,11 +1547,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\repos\\atensusApi\\API_AtenSUS\\API_AtenSUS\\API_AtenSUS.csproj",
+      "projectUniqueName": "F:\\repos\\API-AtenSUS\\API_AtenSUS\\API_AtenSUS\\API_AtenSUS.csproj",
       "projectName": "API_AtenSUS",
-      "projectPath": "F:\\repos\\atensusApi\\API_AtenSUS\\API_AtenSUS\\API_AtenSUS.csproj",
+      "projectPath": "F:\\repos\\API-AtenSUS\\API_AtenSUS\\API_AtenSUS\\API_AtenSUS.csproj",
       "packagesPath": "C:\\Users\\Adalberto Valadares\\.nuget\\packages\\",
-      "outputPath": "F:\\repos\\atensusApi\\API_AtenSUS\\API_AtenSUS\\obj\\",
+      "outputPath": "F:\\repos\\API-AtenSUS\\API_AtenSUS\\API_AtenSUS\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Adalberto Valadares\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1616,13 +1616,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema ao ler o arquivo de cache F:\\repos\\atensusApi\\API_AtenSUS\\API_AtenSUS\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

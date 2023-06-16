@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\repos\\atensusApi\\API_AtenSUS\\API_AtenSUS\\API_AtenSUS.csproj": {}
+    "F:\\repos\\API-AtenSUS\\API_AtenSUS\\API_AtenSUS\\API_AtenSUS.csproj": {}
   },
   "projects": {
-    "F:\\repos\\atensusApi\\API_AtenSUS\\API_AtenSUS\\API_AtenSUS.csproj": {
+    "F:\\repos\\API-AtenSUS\\API_AtenSUS\\API_AtenSUS\\API_AtenSUS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\repos\\atensusApi\\API_AtenSUS\\API_AtenSUS\\API_AtenSUS.csproj",
+        "projectUniqueName": "F:\\repos\\API-AtenSUS\\API_AtenSUS\\API_AtenSUS\\API_AtenSUS.csproj",
         "projectName": "API_AtenSUS",
-        "projectPath": "F:\\repos\\atensusApi\\API_AtenSUS\\API_AtenSUS\\API_AtenSUS.csproj",
+        "projectPath": "F:\\repos\\API-AtenSUS\\API_AtenSUS\\API_AtenSUS\\API_AtenSUS.csproj",
         "packagesPath": "C:\\Users\\Adalberto Valadares\\.nuget\\packages\\",
-        "outputPath": "F:\\repos\\atensusApi\\API_AtenSUS\\API_AtenSUS\\obj\\",
+        "outputPath": "F:\\repos\\API-AtenSUS\\API_AtenSUS\\API_AtenSUS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Adalberto Valadares\\AppData\\Roaming\\NuGet\\NuGet.Config",

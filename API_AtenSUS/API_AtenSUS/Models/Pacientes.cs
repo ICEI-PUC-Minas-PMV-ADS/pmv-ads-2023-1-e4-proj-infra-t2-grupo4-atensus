@@ -26,6 +26,9 @@ namespace API_AtenSUS.Models
         [BsonElement("Sintomas")]
         public string Sintomas { get; set; } = null;
 
+        [BsonElement("Descricao")]
+        public string Descricao { get; set; } = null;
+
         [BsonElement("CPF")]
         public string CPF { get; set; }
 
