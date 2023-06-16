@@ -20,7 +20,7 @@ namespace API_AtenSUS.Services
             await _pacientesCollection.Find(x => true).ToListAsync();
 
         public async Task<Pacientes> GetPaciente(string cpf, string senha) =>
-           await _pacientesCollection.Find(x => x.CPF.Equals(cpf)).FirstOrDefaultAsync();
+           await _pacientesCollection.Find(x => x.CPF.Equals(cpf) && x.Senha.Equals(senha)).FirstOrDefaultAsync();
 
         public async Task<Pacientes> GetAsync(string id) =>
             await _pacientesCollection.Find(x => x.Id == id).FirstOrDefaultAsync();

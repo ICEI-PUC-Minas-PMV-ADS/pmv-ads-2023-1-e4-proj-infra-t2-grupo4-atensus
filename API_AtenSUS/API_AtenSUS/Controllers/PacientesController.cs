@@ -65,7 +65,7 @@ namespace API_AtenSUS.Controllers
                 return NotFound();
             }
 
-            // await _pacientesServices.UpdateAsync(id, pacienteIn);
+             await _pacientesServices.UpdateAsync( pacienteIn);
 
             return Ok(paciente);
         }
