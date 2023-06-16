@@ -35,5 +35,4 @@ namespace API_AtenSUS.Models
         [BsonElement("Senha")]
         public string Senha { get; set; }
     }
-
 }
