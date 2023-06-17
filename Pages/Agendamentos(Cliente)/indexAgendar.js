@@ -4,7 +4,6 @@ import { useNavigation } from '@react-navigation/native';
 import { StatusBar } from "expo-status-bar";
 import { SelectList } from 'react-native-dropdown-select-list'
 import { TextInput } from "react-native-gesture-handler";
-import axios from 'axios';
 import { useRoute } from '@react-navigation/native';
 
 export default function Agendar() {
@@ -37,16 +36,12 @@ export default function Agendar() {
               .then(response => response.json())
               .then(data => {
                 console.log(data);
-                //CASO DE SUCESSO.
-                //TODO: PESQUISAR COMO MOSTRAR NOTIFICAÇÂO NO REACT 
-                //TODO: COLOCAR O QUE ACHOU COM A MENSAGEM BUNITINHA
-                alert('Dados Alterado com sucesso')
+               
+                alert('Descrição enviado com sucesso!')
                 //navigation.navigate('FILA');
               })
               .catch(error => {
-                //CASO DE ERRO
-                //TODO: PESQUISAR COMO MOSTRAR NOTIFICAÇÂO NO REACT 
-                //TODO: COLOCAR O QUE ACHOU COM A MENSAGEM BUNITINHA
+             
                 alert('Erro ao alterar o paciente.')
                 console.error(error);
 
@@ -78,11 +73,11 @@ export default function Agendar() {
                 defaultOption={{ key: '1', value: 'Triagem' }}
             />
 
-            <View style={styles.textoSintomas}>
-                <Text style={styles.label}>Descrição</Text>
+            <View style={styles.textoPrincipal}>
+                <Text style={styles.label}>Descreva seus sintomas</Text>
                 <TextInput
                     style={styles.textInputSintomas}
-                    placeholder="Descrição"
+                    placeholder="Descreva seus sintomas"
                     onChangeText={setDescricao}
                 />
             </View>
@@ -90,6 +85,10 @@ export default function Agendar() {
 
             <TouchableOpacity style={styles.botaoEnviar} onPress={(handleUpdate)}>
                 <Text style={styles.textoEnviar}>Enviar</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity style={styles.botaoFila} onPress={() => navigation.navigate('Fila', { screen: 'Fila' })}>
+                <Text style={styles.textoFila}>Ir para fila</Text>
             </TouchableOpacity>
 
             <TouchableOpacity style={styles.botaoCancelar} onPress={() => navigation.navigate('TelaInicial', { screen: 'TelaInicial' })}>
@@ -158,6 +157,22 @@ const styles = StyleSheet.create({
         fontSize: 16,
         fontWeight: 600
     },
+
+    botaoFila: {
+        backgroundColor: '#118FB8',
+        width: 200,
+        height: 50,
+        top: '6%',
+        borderRadius: 10,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    textoFila: {
+        color: 'white',
+        fontSize: 16,
+        fontWeight: 600
+    },
+
     botaoCancelar: {
         backgroundColor: '#B41C1C',
         width: 150,

@@ -13,8 +13,7 @@ export default function Login() {
   async function handleLogin() {
     try {
 
-      //const url = `/pacientes/login/${cpf}/${senha}`;
-      const url = `/pacientes/login/1/1`;
+      const url = `/pacientes/login/${cpf}/${senha}`;
 
       const response = await api.get(url);
       var usuario = response.data
@@ -22,6 +21,7 @@ export default function Login() {
       var usuarioLocalizado = JSON.stringify(usuario)
       navigation.navigate('DadosUsuario', { usuarioLocalizado }); 
     } catch (error) {
+      alert('Erro ao tentar acessar a conta, verifique se os dados estão escrito corretamente')
       console.log(error);
       setErro(true); 
     }

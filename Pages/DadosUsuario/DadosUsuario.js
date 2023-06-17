@@ -1,14 +1,9 @@
 import axios from 'axios';
-
 import React, { useState } from 'react';
 import { View, TextInput, TouchableOpacity, Text, Image, StyleSheet, Dimensions, ScrollView } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { useRoute } from '@react-navigation/native';
-import api from '../../services/api';
 
-import Logo from '../../assets/logo.png';
-
-import LogoAtensus from '../../assets/logo.png';
 //import MedicaCadastro from '../assets/medicaCadastro.png';
 
 export default function DadosUsuario({ }) {
@@ -52,6 +47,8 @@ export default function DadosUsuario({ }) {
 
             },
         });
+
+        alert('Dados alterados com sucesso!')
     };
 
 
