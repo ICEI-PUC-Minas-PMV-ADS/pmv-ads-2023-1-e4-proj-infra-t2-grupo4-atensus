@@ -2,9 +2,19 @@ import { React } from "react";
 import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { StatusBar } from "expo-status-bar";
+import api from '../../Services/api';
 
 
 export default function Fila() {
+
+    const [infoFila, setInfoFila] = useState({});
+    const [buscarDados, setBuscarDados] = usteState('');
+
+
+    const getFila = async () => {
+        const{data} = await api.get(`${buscarDados}/api`);
+        setInfoFila(data);
+    };
 
     const navigation = useNavigation();
 
@@ -13,7 +23,7 @@ export default function Fila() {
             <StatusBar backgroundColor='#61c2a1' barStyle='dark-content' />
             <Text style={styles.textoPosicao}>Sua posição na fila é:</Text>
             <View style={styles.circulo}>
-                <Text style={styles.posicaoFila}>13</Text>
+                <Text style={styles.posicaoFila}>{infoFila.id}</Text>
             </View>
             <Text style={styles.textoAviso}>Logo mais chegara sua hora!</Text>
             <Text style={styles.textoConsulta}>Triagem com Dr.Lemos</Text>
@@ -40,22 +50,22 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: 700
     },
-    posicaoFila:{
+    posicaoFila: {
         fontSize: 70,
         fontWeight: 700,
-        color: 'white',    
+        color: 'white',
         textAlign: 'center'
     },
     textoAviso: {
         marginTop: '20%',
         fontSize: 15,
     },
-    textoConsulta:{
+    textoConsulta: {
         marginTop: '10%',
         fontSize: 20,
         fontWeight: 700
     },
-    textoAvisoSaida:{
+    textoAvisoSaida: {
         width: 200,
         marginTop: '15%',
         fontSize: 15,
@@ -76,7 +86,7 @@ const styles = StyleSheet.create({
         top: '5%',
         justifyContent: 'center'
     },
-    botaoSair:{
+    botaoSair: {
         backgroundColor: '#B41C1C',
         width: 200,
         height: 60,
@@ -85,7 +95,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
     },
-    textoSair:{
+    textoSair: {
         color: 'white',
         fontWeight: 600,
         fontSize: 15
