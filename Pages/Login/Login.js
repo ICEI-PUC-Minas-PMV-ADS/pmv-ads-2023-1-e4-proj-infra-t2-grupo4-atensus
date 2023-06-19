@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, Image, TextInput } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { StatusBar } from "expo-status-bar";
-import api from '../../services/api';
+import api from '../../Services/api';
 
 export default function Login() {
   const navigation = useNavigation();
