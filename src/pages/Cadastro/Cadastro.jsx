@@ -24,6 +24,7 @@ const Cadastro = () => {
   };
 
   const handleSubmit = (event) => {
+    console.log(formData)
     event.preventDefault();
     fetch('https://localhost:7160/api/Pacientes', {
       method: 'POST',
@@ -42,12 +43,15 @@ const Cadastro = () => {
     });
   };
 
+  
+
   return (
     <div className="Container-Cadastro">
       <header className='Header-Cadastro'>
         <img src={LogoAtensus} className='Logo'></img>
       </header>
       <img src={MedicaCadastro} alt='Médica' className="Imagem_Principal3" />
+      
       <form onSubmit={handleSubmit}>
         <div className='Input-Cadastro'>
           <label htmlFor="Nome">Nome Completo</label>
@@ -100,12 +104,12 @@ const Cadastro = () => {
           />
         </div>
         <div className='Input-Cadastro'>
-          <label htmlFor="Senha">Senha</label>
+          <label htmlFor="Sintomas">Sintomas</label>
           <input
             type="text"
-            name="Senha"
-            id="Senha"
-            placeholder="Senha"
+            name="Sintomas"
+            id="Sintomas"
+            placeholder="Sintomas"
             onChange={handleInputChange}
           />
 
@@ -121,8 +125,20 @@ const Cadastro = () => {
             /> 
         </div>
 
+        <div className='Input-Cadastro'>
+          <label htmlFor="Senha">Senha</label>
+          <input
+            type="text"
+            name="Senha"
+            id="Senha"
+            placeholder="Senha"
+            onChange={handleInputChange}
+            /> 
+        </div>
+
         <button type="submit" className="Button">Cadastrar</button>
       </form>
+      
       <div className="Bolinha" />
       <div className="Bolinha1" />
       <div className="Bolinha2" />
