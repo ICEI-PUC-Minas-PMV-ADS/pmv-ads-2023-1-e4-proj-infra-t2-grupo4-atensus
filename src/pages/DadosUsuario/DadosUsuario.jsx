@@ -12,8 +12,8 @@ const DadosUsuario = ({ route }) => {
 
 
  
-  const cpf = location.state.cpf;
-  const senha = location.state.senha;
+  // const cpf = location.state.cpf;
+  // const senha = location.state.senha;
 
   const [formData, setFormData] = useState({
 
@@ -32,33 +32,33 @@ const DadosUsuario = ({ route }) => {
   };
 
  
-  console.log( cpf );
-   console.log( senha );
+  // console.log( cpf );
+  //  console.log( senha );
   
  
   const handleSubmit = () => {
     
-    fetch(`https://localhost:7160/api/Pacientes/login/${cpf}/${senha}`, {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    })
-    .then(response => response.json())
-    .then(data => {
-     console.log(document.location)
+    // fetch(`https://localhost:7160/api/Pacientes/login/${cpf}/${senha}`, {
+    //   method: 'GET',
+    //   headers: {
+    //     'Content-Type': 'application/json'
+    //   }
+    // })
+    // .then(response => response.json())
+    // .then(data => {
+    //  console.log(document.location)
 
-      document.getElementById("Nome").value = data.nome;
-      document.getElementById("Idade").value = data.idade;
-      document.getElementById("Altura").value = data.altura;
-      document.getElementById("Peso").value = data.peso;
-      document.getElementById("Endereco").value = data.endereco;
-      document.getElementById("CPF").value = data.cpf;
+    //   document.getElementById("Nome").value = data.nome;
+    //   document.getElementById("Idade").value = data.idade;
+    //   document.getElementById("Altura").value = data.altura;
+    //   document.getElementById("Peso").value = data.peso;
+    //   document.getElementById("Endereco").value = data.endereco;
+    //   document.getElementById("CPF").value = data.cpf;
        
-     })
-    .catch(error => {
-      console.error(error);
-    });
+    //  })
+    // .catch(error => {
+    //   console.error(error);
+    // });
   };
    
  
@@ -133,6 +133,16 @@ const DadosUsuario = ({ route }) => {
             /> 
         </div>
 
+        <div className='Input-Cadastro'>
+          <label htmlFor="Senha">Senha</label>
+          <input
+            type="text"
+            name="Senha"
+            id="Senha"
+            placeholder="Senha"
+            onChange={handleInputChange}
+            /> 
+        </div>
         
       </form>
       <div className="Bolinha" />

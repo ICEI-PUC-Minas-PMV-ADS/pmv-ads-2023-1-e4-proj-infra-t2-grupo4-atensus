@@ -8,6 +8,7 @@ import Agendamento from './pages/Agendamento/Agendamento';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ReactDOM  from 'react-dom/client';
 import Duvidas from './pages/Duvidas/Duvidas';
+import DadosUsuario from './pages/DadosUsuario/DadosUsuario';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,7 +22,7 @@ root.render(
       <Route path='/Duvidas' strict element={<Duvidas />} />
       <Route path='/Cadastro' strict element={<Cadastro />} />
       <Route path='/Agendamento' strict element={<Agendamento />} />
-
+      <Route path='/DadosUsuario' strict element={<DadosUsuario />} />
     </Routes> 
   </BrowserRouter>
 

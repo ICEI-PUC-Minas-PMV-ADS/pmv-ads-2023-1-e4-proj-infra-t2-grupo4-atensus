@@ -34,16 +34,6 @@ const Agendamento = () => {
                     </textarea>
                 </div>
 
-                <div className='Input-Agendamento'>
-                    <label htmlFor="Observacoes">Observações</label>
-                    <textarea
-                        type="text"
-                        Name="Observacoes"
-                        Id="Observacoes"
-                        placeholder=" Observacoes">
-                    </textarea>
-                </div>
-
                 <button className="Button">Enviar</button>
                 <button className="ButtonCancel">Cancelar</button>
 

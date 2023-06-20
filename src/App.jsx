@@ -5,6 +5,7 @@ import Hospital from './pages/Sistema(Hospital)';
 import Duvidas from './pages/Duvidas';
 import Cadastro from './pages/Cadastro';
 import Agendamento from './pages/Agendamento';
+import DadosUsuario from "./pages/DadosUsuario";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -22,7 +23,7 @@ export const App = () => {
                 <Route path ='/Duvidas' exact element={<Duvidas />} />
                 <Route path ='/Cadastro' exact element={<Cadastro />} />
                 <Route path ='/Agendamento' exact element={<Agendamento />} />
-
+                <Route path ='/DadosUsuario' exact element={<DadosUsuario />} />
 
             </Routes>
         </BrowserRouter>

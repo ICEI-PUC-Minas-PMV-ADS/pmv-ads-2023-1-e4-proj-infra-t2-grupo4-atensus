@@ -14,9 +14,9 @@ const Login = () => {
   async function handleLogin(event) {
     event.preventDefault();
     try {
-      const response = await api.get(`/pacientes/login?CPF=${cpf}&senha=${senha}`);
+      const response = await api.get(`/pacientes/login/${cpf}/${senha}`);
       console.log(response.data);
-      navigate('/Agendamento'); // Navegue para a página de agendamentos em caso de sucesso
+      navigate('/DadosUsuario'); // Navegue para a página de agendamentos em caso de sucesso
     } catch (error) {
       console.log(error);
       setErro(true); // Configure o estado de erro como verdadeiro em caso de falha
