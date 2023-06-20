@@ -15,10 +15,27 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddCors(p => p.AddPolicy("corsapp", builder =>
+
+
+builder.Services.AddCors(options =>
 {
-    builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
-}));
+    options.AddPolicy("Development",
+        builder =>
+            builder
+            .AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader());
+
+
+    options.AddPolicy("Production",
+        builder =>
+            builder
+                .WithMethods("GET")
+                .WithOrigins("http://desenvolvedor.io")
+                .SetIsOriginAllowedToAllowWildcardSubdomains()
+                //.WithHeaders(HeaderNames.ContentType, "x-custom-header")
+                .AllowAnyHeader());
+});
 
 
 var app = builder.Build();
@@ -26,15 +43,15 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseCors((g) => g.AllowAnyOrigin() 
-                                     .AllowAnyMethod()
-                                     .AllowAnyHeader());
+    app.UseCors("Development");
+
 
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();
+app.UseCors("Development"); // Usar apenas nas demos => Configuração Ideal: Production
 
 app.UseAuthorization();
 app.UseCors((g) => g.AllowAnyOrigin()

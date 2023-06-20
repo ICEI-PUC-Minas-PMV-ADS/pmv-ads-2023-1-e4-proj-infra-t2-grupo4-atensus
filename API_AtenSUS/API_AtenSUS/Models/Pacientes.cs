@@ -21,13 +21,13 @@ namespace API_AtenSUS.Models
         public double Peso { get; set; }
 
         [BsonElement("Endereco")]
-        public string Endereco { get; set; } = null;
+        public string? Endereco { get; set; }  
 
         [BsonElement("Sintomas")]
-        public string Sintomas { get; set; } = null;
+        public string? Sintomas { get; set; }  
 
         [BsonElement("Descricao")]
-        public string Descricao { get; set; } = null;
+        public string? Descricao { get; set; }  
 
         [BsonElement("CPF")]
         public string CPF { get; set; }

@@ -40,7 +40,8 @@ namespace API_AtenSUS.Controllers
                 return NotFound();
             }
 
-            return Ok(paciente);
+            
+         return Ok(paciente);
         }
 
 
