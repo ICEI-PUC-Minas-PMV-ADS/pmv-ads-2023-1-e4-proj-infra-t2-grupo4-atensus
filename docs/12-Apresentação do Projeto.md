@@ -6,11 +6,11 @@ Conjunto de slides em um arquivo PowerPoint ou PDF com a apresentação do proje
 
 ## Título do Projeto
 
-Nome e marca do projeto
+AtenSUS
 
 ## Identidade Visual (Marca, Design)
 
-O grupo deve ter o cuidado em utilizar figuras, imagens, e cores dentro do contexto da solução proposta, de forma a manter a temática do problema.
+#Logo do projeto:
 
 > **Links Úteis**:
 > - [10 dicas de design para slides](https://rockcontent.com/blog/design-para-slides/)
@@ -19,8 +19,9 @@ O grupo deve ter o cuidado em utilizar figuras, imagens, e cores dentro do conte
 
 ## Conjunto de Slides (Estrutura)
 
-O grupo deve distribuir de forma coerente o conteúdo a ser apresentado, dentro do tempo determinado. Importante ressaltar a importância da descrição clara de todo o andamento do projeto, insumos gerados e requisitos atendidos.
- 
+
+ **Link da Apresentação**:
+ https://docs.google.com/presentation/d/1oEoLaRRHGuMYGCFUYVX6heWF2RbA-Gu1O-HyF9Ur7XE/edit?usp=sharing
 > **Links Úteis**:
 > - [A regra 10-20-30 para apresentações de sucesso](https://revistapegn.globo.com/Noticias/noticia/2014/07/regra-10-20-30-para-apresentacoes-de-sucesso.html)
 > - [Top Tips for Effective Presentations](https://www.skillsyouneed.com/present/presentation-tips.html)
