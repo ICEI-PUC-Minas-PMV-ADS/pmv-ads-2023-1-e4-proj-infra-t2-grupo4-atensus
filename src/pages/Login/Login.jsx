@@ -5,22 +5,42 @@ import Medico from '../../assets/medico.png';
 import { useState } from 'react';
 import api from '../../lib/axios';
 
+
 const Login = () => {
   const navigate = useNavigate(); // Importe o useNavigate
+
   const [cpf, setCpf] = useState('');
   const [senha, setSenha] = useState('');
   const [erro, setErro] = useState(false); // Crie um estado para armazenar se houve um erro de login
 
+
   async function handleLogin(event) {
+
     event.preventDefault();
+
     try {
-      const response = await api.get(`/pacientes/login/${cpf}/${senha}`);
-      console.log(response.data);
-      navigate('/DadosUsuario'); // Navegue para a página de agendamentos em caso de sucesso
+      const response = await api.get(`/pacientes/login/020/020`);
+
+      var id = response.data.id
+      var nome = response.data.nome
+      var idade = response.data.idade
+      var altura = response.data.altura
+      var descricao = response.data.descricao
+      var peso = response.data.peso
+      var endereco = response.data.endereco
+      var sintomas = response.data.sintomas
+      var cpf = response.data.cpf
+      var senha = response.data.senha
+
+      navigate('/DadosUsuario', {
+        state: {id: id, nome: nome, idade: idade, altura: altura, descricao: descricao, peso: peso, endereco: endereco, sintomas: sintomas, cpf: cpf, senha: senha}
+      })
+      // navigate('/DadosUsuario', { state:{ response} }); // Navegue para a página de agendamentos em caso de sucesso
     } catch (error) {
       console.log(error);
-      setErro(true); // Configure o estado de erro como verdadeiro em caso de falha
+      setErro(error); // Configure o estado de erro como verdadeiro em caso de falha
     }
+
   }
 
   return (
@@ -64,7 +84,7 @@ const Login = () => {
           </div>
 
           {erro && <p>Faça seu cadastro!</p>} {/* Exibe a mensagem de erro se o estado de erro for verdadeiro */}
-          
+
           <button type="submit" className="Button">Entrar</button>
           <div className="footer">
             <Link to="/Cadastro"><p> Não tem Cadastro? Registre-se aqui</p></Link>
