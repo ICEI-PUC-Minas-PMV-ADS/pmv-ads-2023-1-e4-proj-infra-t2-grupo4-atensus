@@ -4,39 +4,23 @@ import LogoAtensus from '../../assets/logo atensus.png'
 import MedicaCadastro from '../../assets/medicaCadastro.png';
 import { useLocation } from 'react-router-dom';
 import { type } from '@testing-library/user-event/dist/type';
-
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const DadosUsuario = ({ route }) => {
 
-  // var location = useLocation();
+  var location = useLocation();
+  const navigate = useNavigate(); // Importe o useNavigate
 
-  const objetoRota = route
-  var valor;
-  var objeto = JSON.stringify(objetoRota);
-console.log(objeto)
+  const objetoRota = location.state
 
-  for (var i in objetoRota) {
-    console.log(objetoRota[i])
-
-  }
-
-  // document.getElementById("Nome").value = objetoRota.nome;
-  // document.getElementById("Idade").value = objetoRota.idade;
-  // document.getElementById("Altura").value = objetoRota.altura;
-  // document.getElementById("Peso").value = objetoRota.peso;
-  // document.getElementById("Endereco").value = objetoRota.endereco;
-  // document.getElementById("CPF").value = objetoRota.cpf;
-
-  // Object.entries(objetoRota).map(([key, value]) => {
-  //     valor = value
-  //     console.log(valor)
-  // })
-
-
-
-  // const cpf = location.state.cpf;
-  // const senha = location.state.senha;
+  const [Nome, setNome] = useState(objetoRota.nome);
+  const [Idade, setIdade] = useState(objetoRota.idade);
+  const [Altura, setAltura] = useState(objetoRota.altura);
+  const [Peso, setPeso] = useState(objetoRota.peso);
+  const [Endereco, setEndereco] = useState(objetoRota.endereco);
+  const [CPF, setCpf] = useState(objetoRota.cpf);
+  const [Senha, setSenha] = useState(objetoRota.senha);
 
   const [formData, setFormData] = useState({
 
@@ -48,35 +32,31 @@ console.log(objeto)
     CPF: '',
     Senha: ''
   });
-
-  const handleInputChange = (event) => {
-    const { name, value } = event.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-
-  // console.log( cpf );
-  //  console.log( senha );
-
+ 
 
   const handleSubmit = () => {
 
-    // fetch(`https://localhost:7160/api/Pacientes/login/${cpf}/${senha}`, {
-    //   method: 'GET',
-    //   headers: {
-    //     'Content-Type': 'application/json'
-    //   }
-    // })
-    // .then(response => response.json())
-    // .then(data => {
-    //  console.log(document.location)
+    console.log('Atualizando')
+    console.log(document.getElementById("Nome").value)
+
+    navigate('/Agendamento', { state: { id: objetoRota.id } })
+    //   fetch(`https://localhost:7160/api/Pacientes/atualizar`, {
+    //     method: 'PUT',
+    //     headers: {
+    //       'Content-Type': 'application/json'
+    //     }
+    //   })
+    //     .then(response => response.json())
+    //     .then(data => {
+    //       console.log(document.location)
 
 
 
-    //  })
-    // .catch(error => {
-    //   console.error(error);
-    // });
+    //     })
+    //     .catch(error => {
+    //       console.error(error);
+    //     });
+
   };
 
 
@@ -88,26 +68,30 @@ console.log(objeto)
       </header>
       <img src={MedicaCadastro} alt='Médica' className="Imagem_Principal3" />
 
-      <form onClick={handleSubmit()}>
+      <form onClick={handleSubmit}>
+
         <div className='Input-Cadastro'>
           <label htmlFor="Nome">Nome Completo</label>
           <input
             type="text"
             name="Nome"
             id="Nome"
-
+            value={Nome}
             placeholder="Nome Completo"
-            onChange={handleInputChange}
+            // onChange={handleInputChange}
+            onChange={(event) => setNome(event.target.value)}
           />
         </div>
+
         <div className='Input-Cadastro'>
           <label htmlFor="Idade">Idade</label>
           <input
             type="text"
             name="Idade"
             id="Idade"
+            value={Idade}
             placeholder="Idade"
-            onChange={handleInputChange}
+            onChange={(event) => setIdade(event.target.value)}
           />
         </div>
         <div className='Input-Cadastro'>
@@ -115,9 +99,10 @@ console.log(objeto)
           <input
             type="text"
             name="Altura"
+            value={Altura}
             id="Altura"
             placeholder="Altura"
-            onChange={handleInputChange}
+            onChange={(event) => setAltura(event.target.value)}
           />
         </div>
         <div className='Input-Cadastro'>
@@ -126,8 +111,9 @@ console.log(objeto)
             type="text"
             name="Peso"
             id="Peso"
+            value={Peso}
             placeholder="Peso"
-            onChange={handleInputChange}
+            onChange={(event) => setPeso(event.target.value)}
           />
         </div>
         <div className='Input-Cadastro'>
@@ -136,8 +122,9 @@ console.log(objeto)
             type="text"
             name="Endereco"
             id="Endereco"
+            value={Endereco}
             placeholder="Rua, Nº, Bairro, Cidade/Estado"
-            onChange={handleInputChange}
+            onChange={(event) => setEndereco(event.target.value)}
           />
         </div>
         <div className='Input-Cadastro'>
@@ -146,21 +133,26 @@ console.log(objeto)
             type="text"
             name="CPF"
             id="CPF"
+            value={CPF}
             placeholder="CPF"
-            onChange={handleInputChange}
+            onChange={(event) => setCpf(event.target.value)}
           />
         </div>
 
         <div className='Input-Cadastro'>
           <label htmlFor="Senha">Senha</label>
           <input
-            type="text"
+            type="password"
             name="Senha"
             id="Senha"
+            value={Senha}
             placeholder="Senha"
-            onChange={handleInputChange}
+            onChange={(event) => setSenha(event.target.value)}
           />
         </div>
+
+        <button type="submit" className="Button">Alterar Dados</button>
+        <button type="submit" className="Button">Ir para Agendameto</button>
 
       </form>
       <div className="Bolinha" />
