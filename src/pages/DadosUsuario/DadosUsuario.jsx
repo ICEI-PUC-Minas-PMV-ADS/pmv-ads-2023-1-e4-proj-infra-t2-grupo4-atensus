@@ -24,7 +24,7 @@ const DadosUsuario = ({ route }) => {
 
   const [formData, setFormData] = useState({
 
-    Nome: '',
+    Nome:'',
     Idade: '',
     Altura: '',
     Peso: '',
@@ -34,29 +34,33 @@ const DadosUsuario = ({ route }) => {
   });
  
 
-  const handleSubmit = () => {
+  async function handleSubmit  (event)  {
 
-    console.log('Atualizando')
-    console.log(document.getElementById("Nome").value)
+    event.preventDefault();
+    formData.id = objetoRota.id
+    formData.Nome =  document.getElementById('Nome').value
+    formData.Idade =  document.getElementById('Idade').value
+    formData.Altura =  document.getElementById('Altura').value
+    formData.Peso =  document.getElementById('Peso').value
+    formData.Endereco =  document.getElementById('Endereco').value
+    formData.CPF =  document.getElementById('CPF').value
+    formData.Senha =  document.getElementById('Senha').value
 
-    navigate('/Agendamento', { state: { id: objetoRota.id } })
-    //   fetch(`https://localhost:7160/api/Pacientes/atualizar`, {
-    //     method: 'PUT',
-    //     headers: {
-    //       'Content-Type': 'application/json'
-    //     }
-    //   })
-    //     .then(response => response.json())
-    //     .then(data => {
-    //       console.log(document.location)
-
-
-
-    //     })
-    //     .catch(error => {
-    //       console.error(error);
-    //     });
-
+    console.log(JSON.stringify(formData))
+      fetch('https://localhost:7160/api/Pacientes/atualizar', {
+        method: 'PUT',
+        body: JSON.stringify(formData),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+      })
+      .catch(error => {
+        console.error(error);
+      });
   };
 
 
@@ -68,7 +72,7 @@ const DadosUsuario = ({ route }) => {
       </header>
       <img src={MedicaCadastro} alt='Médica' className="Imagem_Principal3" />
 
-      <form onClick={handleSubmit}>
+      <form  onSubmit={ handleSubmit}>
 
         <div className='Input-Cadastro'>
           <label htmlFor="Nome">Nome Completo</label>
@@ -78,7 +82,6 @@ const DadosUsuario = ({ route }) => {
             id="Nome"
             value={Nome}
             placeholder="Nome Completo"
-            // onChange={handleInputChange}
             onChange={(event) => setNome(event.target.value)}
           />
         </div>
