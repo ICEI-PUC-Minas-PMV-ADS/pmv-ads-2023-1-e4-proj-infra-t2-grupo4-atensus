@@ -74,7 +74,7 @@
       background-color: #e6e6e6;
   }
   
-  .Container-Cadastro form .Button {
+  .Container-Cadastro .Button {
       margin-top: 30px;
       margin-bottom: 30px;
       display: flex;
@@ -89,6 +89,7 @@
       font-size: 18px;
       line-height: 22px;
       color: #fff;
+      
   }
   
   .Container-Cadastro form .Button:hover {

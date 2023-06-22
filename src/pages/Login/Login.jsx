@@ -5,22 +5,20 @@ import Medico from '../../assets/medico.png';
 import { useState } from 'react';
 import api from '../../lib/axios';
 
-
 const Login = () => {
+
   const navigate = useNavigate(); // Importe o useNavigate
-
-  const [cpf, setCpf] = useState('');
-  const [senha, setSenha] = useState('');
+  const [CPF, setCpf] = useState('');
+  const [SENHA, setSenha] = useState('');
   const [erro, setErro] = useState(false); // Crie um estado para armazenar se houve um erro de login
-
 
   async function handleLogin(event) {
 
     event.preventDefault();
 
     try {
-      const response = await api.get(`/pacientes/login/020/020`);
 
+      const response = await api.get(`/pacientes/login/${CPF}/${SENHA}`);
       var id = response.data.id
       var nome = response.data.nome
       var idade = response.data.idade
@@ -31,17 +29,15 @@ const Login = () => {
       var sintomas = response.data.sintomas
       var cpf = response.data.cpf
       var senha = response.data.senha
-  
-       
+
       navigate('/DadosUsuario', {
-        state: {id: id, nome: nome, idade: idade, altura: altura, descricao: descricao, peso: peso, endereco: endereco, sintomas: sintomas, cpf: cpf, senha: senha}
+        state: { id: id, nome: nome, idade: idade, altura: altura, descricao: descricao, peso: peso, endereco: endereco, sintomas: sintomas, cpf: cpf, senha: senha }
       })
-      // navigate('/DadosUsuario', { state:{ response} }); // Navegue para a página de agendamentos em caso de sucesso
+
     } catch (error) {
       console.log(error);
-      setErro(error); // Configure o estado de erro como verdadeiro em caso de falha
+      setErro(true); // Configure o estado de erro como verdadeiro em caso de falha
     }
-
   }
 
   return (
@@ -66,7 +62,7 @@ const Login = () => {
               type="text"
               name="CPF"
               id="CPF"
-              value={cpf}
+              value={CPF}
               onChange={(event) => setCpf(event.target.value)}
               placeholder=" Ex: 856.457.857-86">
             </input>
@@ -78,7 +74,7 @@ const Login = () => {
               type="password"
               name="Password"
               id="Password"
-              value={senha}
+              value={SENHA}
               onChange={(event) => setSenha(event.target.value)}
               placeholder="**********">
             </input>

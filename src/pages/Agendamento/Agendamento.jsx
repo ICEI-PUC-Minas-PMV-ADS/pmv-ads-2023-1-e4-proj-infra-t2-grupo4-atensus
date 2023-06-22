@@ -4,8 +4,6 @@ import { opcoesTriagem } from "./opcoes-consulta";
 import { Link, useNavigate } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 
-
-
 const Agendamento = () => {
 
     const navigate = useNavigate(); // Importe o useNavigate
@@ -13,6 +11,13 @@ const Agendamento = () => {
   
     console.log(location)
  
+    const handleFila = (event) => {
+        navigate('/Fila')
+      };
+
+      const handleCancelar = (event ) => {
+        navigate('/Login')
+      };
 
     async function handleSubmit  (event)  {
         event.preventDefault();
@@ -67,8 +72,10 @@ const Agendamento = () => {
                 </div>
 
                 <button type="submit"  className="Button">Enviar</button>
- 
-                <button className="ButtonCancel">Cancelar</button>
+                <button type="submit" className="Button"  onClick={handleFila} >Fila</button>
+
+                <button className="ButtonCancel" onClick={handleCancelar} >Cancelar</button>
+            
             </form>
 
             <div className="Bolinha" />
@@ -77,8 +84,6 @@ const Agendamento = () => {
             <div className="Bolinha3" />
             <div className="Bolinha4" />
         </div>
-
-
     )
 }
 

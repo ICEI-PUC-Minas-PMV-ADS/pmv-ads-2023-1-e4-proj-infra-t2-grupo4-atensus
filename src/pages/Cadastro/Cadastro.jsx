@@ -5,6 +5,9 @@ import MedicaCadastro from '../../assets/medicaCadastro.png';
 import { useNavigate } from 'react-router-dom';
 
 const Cadastro = () => {
+
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
     Nome: '',
     Idade: '',
@@ -15,8 +18,6 @@ const Cadastro = () => {
     CPF: '',
     Senha: ''
   });
-
-  const navigate = useNavigate();
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -33,17 +34,15 @@ const Cadastro = () => {
         'Content-Type': 'application/json'
       }
     })
-    .then(response => response.json())
-    .then(data => {
-      console.log(data);
-      navigate('/login');
-    })
-    .catch(error => {
-      console.error(error);
-    });
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        navigate('/login');
+      })
+      .catch(error => {
+        console.error(error);
+      });
   };
-
-  
 
   return (
     <div className="Container-Cadastro">
@@ -51,7 +50,7 @@ const Cadastro = () => {
         <img src={LogoAtensus} className='Logo'></img>
       </header>
       <img src={MedicaCadastro} alt='Médica' className="Imagem_Principal3" />
-      
+
       <form onSubmit={handleSubmit}>
         <div className='Input-Cadastro'>
           <label htmlFor="Nome">Nome Completo</label>
@@ -122,7 +121,7 @@ const Cadastro = () => {
             id="CPF"
             placeholder="CPF"
             onChange={handleInputChange}
-            /> 
+          />
         </div>
 
         <div className='Input-Cadastro'>
@@ -133,12 +132,12 @@ const Cadastro = () => {
             id="Senha"
             placeholder="Senha"
             onChange={handleInputChange}
-            /> 
+          />
         </div>
 
         <button type="submit" className="Button">Cadastrar</button>
       </form>
-      
+
       <div className="Bolinha" />
       <div className="Bolinha1" />
       <div className="Bolinha2" />

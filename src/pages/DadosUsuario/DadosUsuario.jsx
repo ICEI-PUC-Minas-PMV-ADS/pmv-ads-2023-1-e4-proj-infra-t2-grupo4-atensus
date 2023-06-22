@@ -6,7 +6,6 @@ import { useLocation } from 'react-router-dom';
 import { type } from '@testing-library/user-event/dist/type';
 import { Link, useNavigate } from 'react-router-dom';
 
-
 const DadosUsuario = ({ route }) => {
 
   var location = useLocation();
@@ -22,9 +21,10 @@ const DadosUsuario = ({ route }) => {
   const [CPF, setCpf] = useState(objetoRota.cpf);
   const [Senha, setSenha] = useState(objetoRota.senha);
 
+  var atualizei = false;
   const [formData, setFormData] = useState({
 
-    Nome:'',
+    Nome: '',
     Idade: '',
     Altura: '',
     Peso: '',
@@ -32,45 +32,51 @@ const DadosUsuario = ({ route }) => {
     CPF: '',
     Senha: ''
   });
- 
+
   const handleAgendamento = (event) => {
-    navigate('/Agendamento', {
-      state: {formData}
-    })
+
+    if (atualizei) {
+
+      navigate('/Agendamento', {
+        state: { formData }
+      })
+    }else{
+      navigate('/Agendamento', {
+        state: { objetoRota }
+      })
+    }
   };
 
-
-  async function handleSubmit  (event)  {
+  async function handleSubmit(event) {
 
     event.preventDefault();
     formData.id = objetoRota.id
-    formData.Nome =  document.getElementById('Nome').value
-    formData.Idade =  document.getElementById('Idade').value
-    formData.Altura =  document.getElementById('Altura').value
-    formData.Peso =  document.getElementById('Peso').value
-    formData.Endereco =  document.getElementById('Endereco').value
-    formData.CPF =  document.getElementById('CPF').value
-    formData.Senha =  document.getElementById('Senha').value
+    formData.Nome = document.getElementById('Nome').value
+    formData.Idade = document.getElementById('Idade').value
+    formData.Altura = document.getElementById('Altura').value
+    formData.Peso = document.getElementById('Peso').value
+    formData.Endereco = document.getElementById('Endereco').value
+    formData.CPF = document.getElementById('CPF').value
+    formData.Senha = document.getElementById('Senha').value
 
     console.log(JSON.stringify(formData))
 
-      fetch('https://localhost:7160/api/Pacientes/atualizar', {
-        method: 'PUT',
-        body: JSON.stringify(formData),
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      })
+    fetch('https://localhost:7160/api/Pacientes/atualizar', {
+      method: 'PUT',
+      body: JSON.stringify(formData),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
       .then(response => response.json())
       .then(data => {
-        
+        atualizei = true;
         console.log(data);
       })
       .catch(error => {
         console.error(error);
       });
   };
-
 
   return (
 
@@ -80,7 +86,7 @@ const DadosUsuario = ({ route }) => {
       </header>
       <img src={MedicaCadastro} alt='Médica' className="Imagem_Principal3" />
 
-      <form  onSubmit={ handleSubmit}>
+      <form onSubmit={handleSubmit}>
 
         <div className='Input-Cadastro'>
           <label htmlFor="Nome">Nome Completo</label>
@@ -161,11 +167,11 @@ const DadosUsuario = ({ route }) => {
             onChange={(event) => setSenha(event.target.value)}
           />
         </div>
-
+      
         <button type="submit" className="Button">Alterar Dados</button>
-       
-
+      
       </form>
+
       <button type="submit" className="Button" onClick={handleAgendamento} >Ir para Agendameto</button>
 
       <div className="Bolinha" />
