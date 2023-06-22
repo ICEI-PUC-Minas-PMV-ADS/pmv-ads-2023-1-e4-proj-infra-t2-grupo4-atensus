@@ -33,6 +33,12 @@ const DadosUsuario = ({ route }) => {
     Senha: ''
   });
  
+  const handleAgendamento = (event) => {
+    navigate('/Agendamento', {
+      state: {formData}
+    })
+  };
+
 
   async function handleSubmit  (event)  {
 
@@ -47,6 +53,7 @@ const DadosUsuario = ({ route }) => {
     formData.Senha =  document.getElementById('Senha').value
 
     console.log(JSON.stringify(formData))
+
       fetch('https://localhost:7160/api/Pacientes/atualizar', {
         method: 'PUT',
         body: JSON.stringify(formData),
@@ -56,6 +63,7 @@ const DadosUsuario = ({ route }) => {
       })
       .then(response => response.json())
       .then(data => {
+        
         console.log(data);
       })
       .catch(error => {
@@ -155,9 +163,11 @@ const DadosUsuario = ({ route }) => {
         </div>
 
         <button type="submit" className="Button">Alterar Dados</button>
-        <button type="submit" className="Button">Ir para Agendameto</button>
+       
 
       </form>
+      <button type="submit" className="Button" onClick={handleAgendamento} >Ir para Agendameto</button>
+
       <div className="Bolinha" />
       <div className="Bolinha1" />
       <div className="Bolinha2" />

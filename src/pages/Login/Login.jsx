@@ -31,7 +31,8 @@ const Login = () => {
       var sintomas = response.data.sintomas
       var cpf = response.data.cpf
       var senha = response.data.senha
-
+  
+       
       navigate('/DadosUsuario', {
         state: {id: id, nome: nome, idade: idade, altura: altura, descricao: descricao, peso: peso, endereco: endereco, sintomas: sintomas, cpf: cpf, senha: senha}
       })
