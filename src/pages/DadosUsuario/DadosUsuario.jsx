@@ -21,7 +21,7 @@ const DadosUsuario = ({ route }) => {
   const [CPF, setCpf] = useState(objetoRota.cpf);
   const [Senha, setSenha] = useState(objetoRota.senha);
 
-  var atualizei = false;
+  var atualizeiDadosCadastro = false;
   const [formData, setFormData] = useState({
 
     Nome: '',
@@ -38,11 +38,11 @@ const DadosUsuario = ({ route }) => {
     if (atualizei) {
 
       navigate('/Agendamento', {
-        state: { formData }
+        state: { formData, atualizeiDadosCadastro }
       })
     }else{
       navigate('/Agendamento', {
-        state: { objetoRota }
+        state: { objetoRota,atualizeiDadosCadastro }
       })
     }
   };
@@ -58,7 +58,8 @@ const DadosUsuario = ({ route }) => {
     formData.Endereco = document.getElementById('Endereco').value
     formData.CPF = document.getElementById('CPF').value
     formData.Senha = document.getElementById('Senha').value
-
+    formData.descricao = '';
+    
     console.log(JSON.stringify(formData))
 
     fetch('https://localhost:7160/api/Pacientes/atualizar', {
