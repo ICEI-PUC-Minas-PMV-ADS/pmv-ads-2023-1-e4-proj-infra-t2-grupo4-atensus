@@ -3,10 +3,13 @@ import './DadosUsuario.css';
 import LogoAtensus from '../../assets/logo atensus.png'
 import MedicaCadastro from '../../assets/medicaCadastro.png';
 import { useLocation } from 'react-router-dom';
-import { type } from '@testing-library/user-event/dist/type';
-import { Link, useNavigate } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import React from 'react';
 
 const DadosUsuario = ({ route }) => {
+  const toastId = React.useRef(null);
 
   var location = useLocation();
   const navigate = useNavigate(); // Importe o useNavigate
@@ -35,7 +38,7 @@ const DadosUsuario = ({ route }) => {
 
   const handleAgendamento = (event) => {
 
-    if (atualizei) {
+    if (atualizeiDadosCadastro) {
 
       navigate('/Agendamento', {
         state: { formData, atualizeiDadosCadastro }
@@ -71,10 +74,11 @@ const DadosUsuario = ({ route }) => {
     })
       .then(response => response.json())
       .then(data => {
-        atualizei = true;
-        console.log(data);
+        atualizeiDadosCadastro = true;
+          toastId.current = toast.success('Dados Atualizados com Sucesso' );
       })
       .catch(error => {
+          toastId.current = toast.error('Ocorreu um erro ao alterar os dados' );
         console.error(error);
       });
   };
@@ -86,7 +90,18 @@ const DadosUsuario = ({ route }) => {
         <img src={LogoAtensus} className='Logo'></img>
       </header>
       <img src={MedicaCadastro} alt='Médica' className="Imagem_Principal3" />
-
+      <ToastContainer
+        position='top-right'
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme='light'
+      />
       <form onSubmit={handleSubmit}>
 
         <div className='Input-Cadastro'>
