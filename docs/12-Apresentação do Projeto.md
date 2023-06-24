@@ -6,6 +6,8 @@ Conjunto de slides em um arquivo PowerPoint ou PDF com a apresentação do proje
 
 Link: https://docs.google.com/presentation/d/1oEoLaRRHGuMYGCFUYVX6heWF2RbA-Gu1O-HyF9Ur7XE/edit#slide=id.g1e423c4de6f_0_376
 
+Vídeo Apresentação Link: https://youtu.be/p3bGuCNXGuI
+
 ## Título do Projeto
 
 AtenSUS
