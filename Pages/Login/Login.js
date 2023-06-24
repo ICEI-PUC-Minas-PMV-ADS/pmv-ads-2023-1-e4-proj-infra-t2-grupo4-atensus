@@ -12,8 +12,8 @@ export default function Login() {
 
   async function handleLogin() {
     try {
-
-      const url = `/pacientes/login/${cpf}/${senha}`;
+        
+      const url = `https://localhost:7160/api/Pacientes/login/${cpf}/${senha}`;
 
       const response = await api.get(url);
       var usuario = response.data
